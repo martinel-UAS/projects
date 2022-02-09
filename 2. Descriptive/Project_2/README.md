@@ -9,23 +9,29 @@
 
 ### Dataset
 <hr>
-In this work, I use <a href="https://www.kaggle.com/lakshmi25npathi/imdb-dataset-of-50k-movie-reviews">50.000 IMDB Movie Reviews from Kaggle</a>.
-This dataset contains 2 columns, where the first column is the list of movie reviews and the second column is the list of sentiments (positive and negative). It is split equally between the positve and negative data.
+In this work, I use the Keras API to load the data of IMDB dataset <a href="https://www.tensorflow.org/api_docs/python/tf/keras/datasets/imdb/load_data">
+
+This is a dataset for binary sentiment classification containing substantially more data than previous benchmark datasets. We provide a set of 25,000 highly polar movie reviews for training, and 25,000 for testing. There is additional unlabeled data for use as well. Raw text and already processed bag of words formats are provided. See the README file contained in the release for more details.
 
 ### Steps
 <hr>
 <ol type="1">
     <li>1. Import all the dependencies</li>
-    <li>LSTM Layer</li>
-    <li>Dense (activation function using Sigmoid)</li>
-    <li>Optimizer: Adam, Loss Function: Binary Crossentropy</li>
+    <li>2. Defining Key Values</li>
+    <li>3. Loading the data</li>
+    <li>4. Data preprocessing</li>
+    <li>5. Building the model</li>
+    <li>6. Compiling and fitting the model</li>
+    <li>7. Evaluating the model</li>
+    <li>8. Plotting results</li>
 </ol>
 
-### Architecture
+### Model Architecture
 <hr>
 <ol type="1">
     <li>Embedding Layer</li>
     <li>LSTM Layer</li>
+    <li>Dense (activation function using RELU)</li>
     <li>Dense (activation function using Sigmoid)</li>
     <li>Optimizer: Adam, Loss Function: Binary Crossentropy</li>
 </ol>
@@ -53,4 +59,10 @@ This dataset contains 2 columns, where the first column is the list of movie rev
 </li>
 <li><a href="https://medium.com/@hunterheidenreich/understanding-keras-dense-layers-2abadff9b990">
     https://medium.com/@hunterheidenreich/understanding-keras-dense-layers-2abadff9b990</a>
+</li>
+
+### My References
+<hr>
+<li><a href=https://medium.com/geekculture/10-hyperparameters-to-keep-an-eye-on-for-your-lstm-model-and-other-tips-f0ff5b63fcd4>
+    https://medium.com/geekculture/10-hyperparameters-to-keep-an-eye-on-for-your-lstm-model-and-other-tips-f0ff5b63fcd4
 </li>
