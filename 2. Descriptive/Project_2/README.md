@@ -31,8 +31,7 @@ This is a dataset for binary sentiment classification containing substantially m
 <ol type="1">
     <li>Embedding Layer</li>
     <li>LSTM Layer</li>
-    <li>Dense (activation function using RELU)</li>
-    <li>Dense (activation function using Sigmoid)</li>
+    <li>Dense (activation function using sigmoid)</li>
     <li>Optimizer: Adam, Loss Function: Binary Crossentropy</li>
 </ol>
     
