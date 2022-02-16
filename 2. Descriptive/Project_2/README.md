@@ -16,14 +16,14 @@ This is a dataset for binary sentiment classification containing substantially m
 ### Steps
 <hr>
 <ol type="1">
-    <li>1. Import all the dependencies</li>
-    <li>2. Defining Key Values</li>
-    <li>3. Loading the data</li>
-    <li>4. Data preprocessing</li>
-    <li>5. Building the model</li>
-    <li>6. Compiling and fitting the model</li>
-    <li>7. Evaluating the model</li>
-    <li>8. Plotting results</li>
+    <li>Import all the dependencies</li>
+    <li>Defining Key Values</li>
+    <li>Loading the data</li>
+    <li>Data preprocessing</li>
+    <li>Building the model</li>
+    <li>Compiling and fitting the model</li>
+    <li>Evaluating the model</li>
+    <li>Plotting results</li>
 </ol>
 
 ### Model Architecture
