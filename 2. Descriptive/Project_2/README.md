@@ -32,36 +32,21 @@ This is a dataset for binary sentiment classification containing substantially m
     <li>Embedding Layer</li>
     <li>LSTM Layer</li>
     <li>Dense (activation function using sigmoid)</li>
-    <li>Optimizer: Adam, Loss Function: Binary Crossentropy</li>
+    <li>Optimizer: Rmsprop, Loss Function: Binary Crossentropy</li>
 </ol>
-    
 
-### References
+### Model Tuning
 <hr>
-<li><a href="https://www.tensorflow.org/api_docs/python/tf/keras">
-    https://www.tensorflow.org/api_docs/python/tf/keras</a>
-</li>
-<li><a href="https://github.com/sanjay-raghu/sentiment-analysis-using-LSTM-keras/blob/master/lstm-sentiment-analysis-data-imbalance-keras.ipynb">
-    https://github.com/sanjay-raghu/sentiment-analysis-using-LSTM-keras/blob/master/lstm-sentiment-analysis-data-imbalance-keras.ipynb</a>
-</li>
-<li><a href="https://towardsdatascience.com/sentiment-analysis-using-lstm-step-by-step-50d074f09948">
-    https://towardsdatascience.com/sentiment-analysis-using-lstm-step-by-step-50d074f09948</a>
-</li>
-<li><a href="https://www.kaggle.com/ngyptr/lstm-sentiment-analysis-keras">
-    https://www.kaggle.com/ngyptr/lstm-sentiment-analysis-keras</a>
-</li>
-<li><a href="https://www.youtube.com/watch?v=qpb_39IjZA0">
-    https://www.youtube.com/watch?v=qpb_39IjZA0</a>
-</li>
-<li><a href="https://towardsdatascience.com/illustrated-guide-to-lstms-and-gru-s-a-step-by-step-explanation-44e9eb85bf21">
-    https://towardsdatascience.com/illustrated-guide-to-lstms-and-gru-s-a-step-by-step-explanation-44e9eb85bf21</a>
-</li>
-<li><a href="https://medium.com/@hunterheidenreich/understanding-keras-dense-layers-2abadff9b990">
-    https://medium.com/@hunterheidenreich/understanding-keras-dense-layers-2abadff9b990</a>
-</li>
 
-### My References
+### Comparing with GRU
+<hr>
+    
+### References
 <hr>
 <li><a href=https://medium.com/geekculture/10-hyperparameters-to-keep-an-eye-on-for-your-lstm-model-and-other-tips-f0ff5b63fcd4>
     https://medium.com/geekculture/10-hyperparameters-to-keep-an-eye-on-for-your-lstm-model-and-other-tips-f0ff5b63fcd4
+</li>
+
+<li><a href=https://deepdatascience.wordpress.com/2016/11/18/which-lstm-optimizer-to-use/>
+    https://deepdatascience.wordpress.com/2016/11/18/which-lstm-optimizer-to-use/
 </li>
