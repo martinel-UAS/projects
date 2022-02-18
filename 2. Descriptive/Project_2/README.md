@@ -21,7 +21,7 @@ This is a dataset for binary sentiment classification containing substantially m
     <li>Loading the data</li>
     <li>Data preprocessing</li>
     <li>Building the model</li>
-    <li>Compiling and fitting the model</li>
+    <li>Training the model</li>
     <li>Evaluating the model</li>
     <li>Plotting results</li>
 </ol>
@@ -37,9 +37,21 @@ This is a dataset for binary sentiment classification containing substantially m
 
 ### Model Tuning
 <hr>
+<ol type="1">
+    <li>Increase the number of epochs</li>
+    <li>Reduce batch size</li>
+    <li>Change the optimizer from rmsprop to adam</li>
+    <li>Increase the maximun number of words to consider</li>
+    <li>Increase the number of dictinct words</li>
+    <li>Reduce the size of the vector space in which words will be embedded</li>
+    <li>Reduce the number of LSTM units</li>
+    <li>Add dropout layer</li>
+    <li>Add early stopper</li>
+</ol>
 
 ### Comparing with GRU
 <hr>
+Here we will carry out a comparative analysis of our LSTM tuned model with another RNN: Gated Recurrent Units (GRU)
     
 ### References
 <hr>
@@ -49,4 +61,8 @@ This is a dataset for binary sentiment classification containing substantially m
 
 <li><a href=https://deepdatascience.wordpress.com/2016/11/18/which-lstm-optimizer-to-use/>
     https://deepdatascience.wordpress.com/2016/11/18/which-lstm-optimizer-to-use/
+</li>
+
+<li><a href=https://www.kaggle.com/lakshmi25npathi/imdb-dataset-of-50k-movie-reviews>
+    https://www.kaggle.com/lakshmi25npathi/imdb-dataset-of-50k-movie-reviews
 </li>
