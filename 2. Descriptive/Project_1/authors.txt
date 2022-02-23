@@ -288,7 +288,7 @@ Asaad Al-Ahmadgaid
 Eryani Fadhl,Habash Nizar
 Esmeir Saher
 Fourati Chayma,Haddad Hatem,Messaoudi Abir,BenHajhmida Moez,Ben Elhaj Mabrouk Aymen,Naski Malek
-Sheikh Ali Zien,Mansour Watheq,Elsayed Tamer,Al�Ali Abdulaziz
+Sheikh Ali Zien,Mansour Watheq,Elsayed Tamer,Al‐Ali Abdulaziz
 Nguyen Minh Van,Nguyen Thien Huu
 Abdul-Mageed Muhammad,Zhang Chiyu,Elmadany AbdelRahim,Bouamor Houda,Habash Nizar
 AlKhamissi Badr,Gabr Mohamed,ElNokrashy Muhammad,Essam Khaled
@@ -48947,7 +48947,7 @@ Frank Robert
 Kiefer Peter
 Kobele Gregory M.
 Parmentier Yannick,Kallmeyer Laura,Maier Wolfgang,Lichte Timm,Dellert Johannes
-L{\^e} Hồng Phương,Nguyễn Thị Minh Huy�n,Roussanaly Azim
+L{\^e} Hồng Phương,Nguyễn Thị Minh Huyền,Roussanaly Azim
 Lerman Kevin,Rambow Owen
 Schmitz Sylvain,Le Roux Joseph
 Storoshenko Dennis R.,Han Chung-hye,Potter David
@@ -49948,7 +49948,7 @@ Rizov Borislav
 Luj{\'a}n M{\'\i}riam,Mart{\'\i}nez Carlos D.,Alabau Vicent
 Sitbon Laurianne,Bellot Patrice,Blache Philippe
 Bieler Heike,Dipper Stefanie
-{\DJ}inh Quang Thắng,L{\^e} Hồng Phương,Nguyễn Thị Minh Huy�n,Nguyễn Cẩm T{\'u},Rossignol Mathias,V{\~u} Xu{\^a}n Lương
+{\DJ}inh Quang Thắng,L{\^e} Hồng Phương,Nguyễn Thị Minh Huyền,Nguyễn Cẩm T{\'u},Rossignol Mathias,V{\~u} Xu{\^a}n Lương
 Bosco Cristina,Mazzei Alessro,Lombardo Vincenzo,Attardi Giuseppe,Corazza Anna,Lavelli Alberto,Lesmo Leonardo,Satta Giorgio,Simi Maria
 Magnini Bernardo,Cappelli Amedeo,Tamburini Fabio,Bosco Cristina,Mazzei Alessro,Lombardo Vincenzo,Bertagna Francesca,Calzolari Nicoletta,Toral Antonio,Bartalesi Lenzi Valentina,Sprugnoli Rachele,Speranza Manuela
 Pazienza Maria Teresa,Stellato Armo,Tudorache Alexra
@@ -52509,7 +52509,7 @@ Chae Hee-Rahk
 Nakamura Hiroaki
 Huang Chu-Ren,Ma Wei-Yun,Wu Yi-Ching,Chiu Chih-Ming
 Nguyen Cam-Tu,Nguyen Trung-Kien,Phan Xuan-Hieu,Nguyen Le-Minh,Ha Quang-Thuy
-Nguyễn Thi Minh Huy�n,Rossignol Mathias
+Nguyễn Thi Minh Huyền,Rossignol Mathias
 Jiang Di
 He Tingting,Xu Ting,Qu Guozhong,Tu Xinhui
 Zhang Yun-liang,Zhang Quan
@@ -59857,7 +59857,7 @@ Andrei Ştefan
 Bertsch Eberhard,Nederhof Mark-Jan
 Carrol John,Briscoe Ted
 Ciortuz Liviu
-Fortes Ga�lvez Jose�,Farr{\'e} Jacques
+Fortes Gálvez José,Farr{\'e} Jacques
 Guo Yikun,Weng Fuliang,Wu Lide
 Klein Dan,Manning Christopher D.
 Lv Xin,Zhao Tie-jun,Liu Zhan-yi,Yang Mu-yun
