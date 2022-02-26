@@ -1,0 +1,1705 @@
+frozenset({'Androutsopoulos Ion', 'Pavlopoulos John'}) 13
+frozenset({'Xu Wei', 'Ritter Alan'}) 19
+frozenset({'Sumita Eiichiro', 'Utiyama Masao'}) 90
+frozenset({'Watanabe Taro', 'Sumita Eiichiro'}) 26
+frozenset({'Solorio Thamar', 'Aguilar Gustavo'}) 10
+frozenset({'Zhang Wenxuan', 'Lam Wai'}) 10
+frozenset({'Chersoni Emmanuele', 'Santus Enrico'}) 19
+frozenset({'Rezagholizadeh Mehdi', 'Rashid Ahmad'}) 10
+frozenset({"Seddah Djam{\\'e}", 'Sagot Beno{\\^\\i}t'}) 15
+frozenset({'Chatterjee Rajen', 'Federmann Christian'}) 12
+frozenset({'Chatterjee Rajen', 'Graham Yvette'}) 10
+frozenset({'Chatterjee Rajen', 'Haddow Barry'}) 11
+frozenset({'Chatterjee Rajen', 'Huck Matthias'}) 11
+frozenset({'Chatterjee Rajen', 'Koehn Philipp'}) 11
+frozenset({'Chatterjee Rajen', 'Monz Christof'}) 10
+frozenset({'Federmann Christian', 'Graham Yvette'}) 12
+frozenset({'Federmann Christian', 'Haddow Barry'}) 17
+frozenset({'Federmann Christian', 'Huck Matthias'}) 12
+frozenset({'Federmann Christian', 'Koehn Philipp'}) 16
+frozenset({'Monz Christof', 'Federmann Christian'}) 14
+frozenset({'Fraser Alexer', 'Huck Matthias'}) 12
+frozenset({'Huck Matthias', 'Freitag Markus'}) 17
+frozenset({'Graham Yvette', 'Haddow Barry'}) 13
+frozenset({'Graham Yvette', 'Huck Matthias'}) 10
+frozenset({'Graham Yvette', 'Koehn Philipp'}) 12
+frozenset({'Monz Christof', 'Graham Yvette'}) 10
+frozenset({'Haddow Barry', 'Huck Matthias'}) 17
+frozenset({'Haddow Barry', 'Koehn Philipp'}) 36
+frozenset({'Monz Christof', 'Haddow Barry'}) 15
+frozenset({'Koehn Philipp', 'Huck Matthias'}) 21
+frozenset({'Monz Christof', 'Huck Matthias'}) 10
+frozenset({'Monz Christof', 'Koehn Philipp'}) 31
+frozenset({'Chatterjee Rajen', 'Bojar Ond{\\v{r}}ej'}) 10
+frozenset({'Federmann Christian', 'Bojar Ond{\\v{r}}ej'}) 15
+frozenset({'Graham Yvette', 'Bojar Ond{\\v{r}}ej'}) 14
+frozenset({'Haddow Barry', 'Bojar Ond{\\v{r}}ej'}) 21
+frozenset({'Huck Matthias', 'Bojar Ond{\\v{r}}ej'}) 14
+frozenset({'Kocmi Tom', 'Bojar Ond{\\v{r}}ej'}) 13
+frozenset({'Koehn Philipp', 'Bojar Ond{\\v{r}}ej'}) 16
+frozenset({'Monz Christof', 'Bojar Ond{\\v{r}}ej'}) 13
+frozenset({'Chatterjee Rajen', 'Negri Matteo'}) 21
+frozenset({'Chatterjee Rajen', 'Turchi Marco'}) 21
+frozenset({'Federmann Christian', 'Negri Matteo'}) 10
+frozenset({'Federmann Christian', 'Turchi Marco'}) 10
+frozenset({'Heafield Kenneth', 'Grundkiewicz Roman'}) 12
+frozenset({'Koehn Philipp', 'Knight Kevin'}) 11
+frozenset({'Nagata Masaaki', 'Morishita Makoto'}) 10
+frozenset({'Turchi Marco', 'Negri Matteo'}) 73
+frozenset({'Zampieri Marcos', 'Pal Santanu'}) 10
+frozenset({'Chaudhary Vishrav', "Guzm{\\'a}n Francisco"}) 17
+frozenset({'Bogoychev Nikolay', 'Heafield Kenneth'}) 12
+frozenset({'Erdmann Grant', 'Gwinnup Jeremy'}) 14
+frozenset({'Gwinnup Jeremy', 'Anderson Tim'}) 10
+frozenset({'Escolano Carlos', "Fonollosa Jos{\\'e} A. R."}) 10
+frozenset({'Popel Martin', 'Bojar Ond{\\v{r}}ej'}) 13
+frozenset({'Li Zuchao', 'Zhao Hai'}) 19
+frozenset({'Zhao Hai', 'Utiyama Masao'}) 14
+frozenset({'Sumita Eiichiro', 'Zhao Hai'}) 12
+frozenset({'Li Lei', 'Wang Mingxuan'}) 24
+frozenset({'Li Lei', 'Zhou Hao'}) 19
+frozenset({'Wang Longyue', 'Shi Shuming'}) 11
+frozenset({'Wang Longyue', 'Tu Zhaopeng'}) 24
+frozenset({'Wang Longyue', 'Wang Xing'}) 10
+frozenset({'Shi Shuming', 'Tu Zhaopeng'}) 22
+frozenset({'Shi Shuming', 'Wang Xing'}) 13
+frozenset({'Wang Xing', 'Tu Zhaopeng'}) 19
+frozenset({'Wei Daimeng', 'Shang Hengchao'}) 10
+frozenset({'Wei Daimeng', 'Wang Minghan'}) 10
+frozenset({'Wei Daimeng', 'Lei Lizhi'}) 10
+frozenset({'Yang Hao', 'Wei Daimeng'}) 11
+frozenset({'Qin Ying', 'Wei Daimeng'}) 10
+frozenset({'Shang Hengchao', 'Wang Minghan'}) 10
+frozenset({'Lei Lizhi', 'Shang Hengchao'}) 10
+frozenset({'Yang Hao', 'Shang Hengchao'}) 11
+frozenset({'Qin Ying', 'Shang Hengchao'}) 10
+frozenset({'Yang Hao', 'Guo Jiaxin'}) 10
+frozenset({'Yang Hao', 'Wang Minghan'}) 15
+frozenset({'Qin Ying', 'Wang Minghan'}) 11
+frozenset({'Yang Hao', 'Lei Lizhi'}) 10
+frozenset({'Qin Ying', 'Lei Lizhi'}) 10
+frozenset({'Yang Hao', 'Qin Ying'}) 12
+frozenset({'Xu Jinan', 'Meng Fong'}) 11
+frozenset({'Zhou Jie', 'Meng Fong'}) 35
+frozenset({'Li Peng', 'Zhou Jie'}) 29
+frozenset({'Xu Jinan', 'Zhou Jie'}) 11
+frozenset({'Xiao Tong', 'Li Bei'}) 10
+frozenset({'Li Bei', 'Zhu Jingbo'}) 10
+frozenset({'Xiao Tong', 'Zhu Jingbo'}) 39
+frozenset({'Byopadhyay Sivaji', 'Pakray Partha'}) 12
+frozenset({'Dong Li', 'Wei Furu'}) 24
+frozenset({'Huang Shaohan', 'Wei Furu'}) 16
+frozenset({'Junczys-Dowmunt Marcin', 'Grundkiewicz Roman'}) 16
+frozenset({'Hangya Viktor', 'Fraser Alexer'}) 16
+frozenset({'Fraser Alexer', 'Stojanovski Dario'}) 12
+frozenset({'Specia Lucia', 'Fomicheva Marina'}) 17
+frozenset({'Specia Lucia', "Blain Fr{\\'e}d{\\'e}ric"}) 20
+frozenset({'Neves Mariana', "N{\\'e}v{\\'e}ol Aur{\\'e}lie"}) 13
+frozenset({'Senellart Jean', 'Crego Josep'}) 19
+frozenset({'Luo Weihua', 'Chen Boxing'}) 13
+frozenset({'Post Matt', 'Federmann Christian'}) 12
+frozenset({'Post Matt', 'Koehn Philipp'}) 20
+frozenset({'Marie Benjamin', 'Fujita Atsushi'}) 17
+frozenset({'Liu Qun', 'Li Liangyou'}) 22
+frozenset({'Nakamura Satoshi', 'Sudoh Katsuhito'}) 17
+frozenset({'Chao Lidia S.', 'Wong Derek F.'}) 40
+frozenset({'Hu Junjie', 'Neubig Graham'}) 13
+frozenset({'Nakazawa Toshiaki', 'Goto Isao'}) 15
+frozenset({'Mino Hideya', 'Nakazawa Toshiaki'}) 12
+frozenset({'Nakazawa Toshiaki', 'Ding Chenchen'}) 10
+frozenset({'Nakazawa Toshiaki', 'Dabre Raj'}) 11
+frozenset({'Nakazawa Toshiaki', 'Chu Chenhui'}) 16
+frozenset({'Kurohashi Sadao', 'Nakazawa Toshiaki'}) 49
+frozenset({'Mino Hideya', 'Goto Isao'}) 17
+frozenset({'Goto Isao', 'Ding Chenchen'}) 10
+frozenset({'Kurohashi Sadao', 'Goto Isao'}) 14
+frozenset({'Kurohashi Sadao', 'Mino Hideya'}) 12
+frozenset({'Kunchukuttan Anoop', 'Dabre Raj'}) 10
+frozenset({'Kurohashi Sadao', 'Dabre Raj'}) 16
+frozenset({'Bhattacharyya Pushpak', 'Dabre Raj'}) 11
+frozenset({'Kunchukuttan Anoop', 'Bhattacharyya Pushpak'}) 28
+frozenset({'Parida Shantipriya', 'Bojar Ond{\\v{r}}ej'}) 10
+frozenset({'Kurohashi Sadao', 'Chu Chenhui'}) 25
+frozenset({'Komachi Mamoru', 'Hirasawa Tosho'}) 11
+frozenset({'Imamura Kenji', 'Sumita Eiichiro'}) 21
+frozenset({'Komachi Mamoru', 'Kajiwara Tomoyuki'}) 13
+frozenset({'Ekbal Asif', 'Bhattacharyya Pushpak'}) 65
+frozenset({'Fi{\\v{s}}er Darja', "Ljube{\\v{s}}i{\\'c} Nikola"}) 17
+frozenset({'Collier Nigel', 'Pilehvar Mohammad Taher'}) 17
+frozenset({'Fornaciari Tommaso', 'Hovy Dirk'}) 11
+frozenset({'Habash Nizar', 'Bouamor Houda'}) 22
+frozenset({'Zaghouani Wajdi', 'Habash Nizar'}) 12
+frozenset({'Tomeh Nadi', 'Habash Nizar'}) 10
+frozenset({'Zaghouani Wajdi', 'Bouamor Houda'}) 13
+frozenset({'Abdelali Ahmed', 'Mubarak Hamdy'}) 24
+frozenset({'Abdelali Ahmed', 'Samih Younes'}) 11
+frozenset({'Abdelali Ahmed', 'Darwish Kareem'}) 19
+frozenset({'Mubarak Hamdy', 'Samih Younes'}) 11
+frozenset({'Mubarak Hamdy', 'Darwish Kareem'}) 27
+frozenset({'Darwish Kareem', 'Samih Younes'}) 10
+frozenset({'Nagoudi El Moatez Billah', 'Abdul-Mageed Muhammad'}) 10
+frozenset({'Lichouri Mohamed', 'Abbas Mourad'}) 11
+frozenset({'Priyadharshini Ruba', 'Chakravarthi Bharathi Raja'}) 14
+frozenset({'Jauhiainen Heidi', 'Jauhiainen Tommi'}) 15
+frozenset({"Lind{\\'e}n Krister", 'Jauhiainen Heidi'}) 15
+frozenset({"Lind{\\'e}n Krister", 'Jauhiainen Tommi'}) 15
+frozenset({'Schlechtweg Dominik', 'Schulte im Walde Sabine'}) 10
+frozenset({'Caines Andrew', 'Buttery Paula'}) 18
+frozenset({'Horbach Andrea', 'Zesch Torsten'}) 10
+frozenset({"S{\\'a}nchez-Mart{\\'\\i}nez Felipe", "P{\\'e}rez-Ortiz Juan Antonio"}) 14
+frozenset({'Kahane Sylvain', 'Gerdes Kim'}) 16
+frozenset({'Ustalov Dmitry', 'Panchenko Alexer'}) 11
+frozenset({'Li Manling', 'Ji Heng'}) 13
+frozenset({'Zhou Bowen', 'He Xiaodong'}) 14
+frozenset({'Klein Dan', 'Fried Daniel'}) 10
+frozenset({'Klein Dan', 'DeNero John'}) 13
+frozenset({'Wagner Joachim', 'Foster Jennifer'}) 18
+frozenset({'Neubig Graham', 'Anastasopoulos Antonios'}) 21
+frozenset({'Cotterell Ryan', 'Williams Adina'}) 10
+frozenset({'Goldberg Yoav', 'Elazar Yanai'}) 11
+frozenset({'Goldberg Yoav', 'Ravfogel Shauli'}) 11
+frozenset({'Liu Zhiyuan', 'Li Juanzi'}) 21
+frozenset({'Khashabi Daniel', 'Roth Dan'}) 13
+frozenset({'Xiong Caiming', 'Socher Richard'}) 30
+frozenset({"Vuli{\\'c} Ivan", 'Reichart Roi'}) 20
+frozenset({"Vuli{\\'c} Ivan", 'Korhonen Anna'}) 48
+frozenset({'Korhonen Anna', 'Reichart Roi'}) 31
+frozenset({'Shimorina Anastasia', 'Gardent Claire'}) 10
+frozenset({'Mistica Meladel', 'Baldwin Timothy'}) 10
+frozenset({'Salehi Bahar', 'Baldwin Timothy'}) 13
+frozenset({'Cotterell Ryan', 'Vieira Tim'}) 10
+frozenset({'Zhang Sheng', 'Van Durme Benjamin'}) 14
+frozenset({'White Aaron Steven', 'Van Durme Benjamin'}) 17
+frozenset({'Gao Jianfeng', 'Peng Baolin'}) 12
+frozenset({'Gaido Marco', 'Negri Matteo'}) 12
+frozenset({'Turchi Marco', 'Gaido Marco'}) 12
+frozenset({'Negri Matteo', 'Bentivogli Luisa'}) 13
+frozenset({'Turchi Marco', 'Bentivogli Luisa'}) 10
+frozenset({'Guo Xiaoxiao', 'Yu Mo'}) 16
+frozenset({'Smith Noah A.', 'Schwartz Roy'}) 18
+frozenset({'Neubig Graham', 'Rijhwani Shruti'}) 11
+frozenset({'Frank Anette', 'Opitz Juri'}) 11
+frozenset({'Ouchi Hiroki', 'Inui Kentaro'}) 13
+frozenset({'Suzuki Jun', 'Inui Kentaro'}) 27
+frozenset({'Inui Kentaro', 'Kobayashi Sosuke'}) 10
+frozenset({'Yokoi Sho', 'Inui Kentaro'}) 10
+frozenset({'Inui Kentaro', 'Kuribayashi Tatsuki'}) 12
+frozenset({'Chersoni Emmanuele', 'Lenci Alessro'}) 15
+frozenset({'Chersoni Emmanuele', 'Blache Philippe'}) 10
+frozenset({'Santus Enrico', 'Lenci Alessro'}) 15
+frozenset({'Blache Philippe', 'Lenci Alessro'}) 10
+frozenset({'Shwartz Vered', 'Dagan Ido'}) 15
+frozenset({'Stanovsky Gabriel', 'Dagan Ido'}) 17
+frozenset({'Eger Steffen', 'Zhao Wei'}) 11
+frozenset({'Augenstein Isabelle', 'Bjerva Johannes'}) 15
+frozenset({'Barrett Maria', 'S{\\o}gaard Anders'}) 14
+frozenset({'Goldberger Jacob', 'Dagan Ido'}) 20
+frozenset({'Cui Yiming', 'Liu Ting'}) 17
+frozenset({'Cui Yiming', 'Wang Shijin'}) 18
+frozenset({'Cui Yiming', 'Hu Guoping'}) 14
+frozenset({'Che Wanxiang', 'Liu Ting'}) 77
+frozenset({'Wang Shijin', 'Che Wanxiang'}) 10
+frozenset({'Wang Shijin', 'Liu Ting'}) 20
+frozenset({'Hu Guoping', 'Liu Ting'}) 20
+frozenset({'Wang Shijin', 'Hu Guoping'}) 18
+frozenset({'Ravi Sujith', 'Kozareva Zornitsa'}) 13
+frozenset({'Koller Alexer', 'Groschwitz Jonas'}) 11
+frozenset({'Fohr Dominique', 'Illina Irina'}) 10
+frozenset({'Gonzalez-Hernez Graciela', 'Weissenbacher Davy'}) 10
+frozenset({'Chen Yubo', 'Liu Kang'}) 32
+frozenset({'Chen Yubo', 'Zhao Jun'}) 35
+frozenset({'Liu Kang', 'Zhao Jun'}) 75
+frozenset({'Liu Kang', 'Liu Shengping'}) 10
+frozenset({'Zhao Jun', 'Liu Shengping'}) 10
+frozenset({'McCrae John P.', 'Chakravarthi Bharathi Raja'}) 10
+frozenset({'Cotterell Ryan', 'Vylomova Ekaterina'}) 13
+frozenset({'Silfverberg Miikka', 'Nicolai Garrett'}) 10
+frozenset({'Silfverberg Miikka', 'Hulden Mans'}) 17
+frozenset({'Cotterell Ryan', 'Pimentel Tiago'}) 21
+frozenset({'Cotterell Ryan', 'Mielke Sabrina J.'}) 12
+frozenset({'Habash Nizar', 'Khalifa Salam'}) 16
+frozenset({'Cotterell Ryan', 'Hulden Mans'}) 10
+frozenset({'Nakamura Satoshi', 'Yoshino Koichiro'}) 19
+frozenset({'Chen Nancy', 'Liu Zhengyuan'}) 10
+frozenset({'Winata Genta Indra', 'Fung Pascale'}) 26
+frozenset({'Majumder Navonil', 'Poria Soujanya'}) 12
+frozenset({'Poria Soujanya', 'Mihalcea Rada'}) 11
+frozenset({'Ultes Stefan', 'Minker Wolfgang'}) 18
+frozenset({'Mehri Shikib', 'Eskenazi Maxine'}) 10
+frozenset({'Madotto Andrea', 'Fung Pascale'}) 27
+frozenset({'Da San Martino Giovanni', 'Nakov Preslav'}) 25
+frozenset({'Chamberlain Jon', 'Poesio Massimo'}) 11
+frozenset({'Pouran Ben Veyseh Amir', 'Nguyen Thien Huu'}) 13
+frozenset({'Nguyen Thien Huu', 'Dernoncourt Franck'}) 11
+frozenset({'Zhang Xuejie', 'Wang Jin'}) 30
+frozenset({'Lu Qin', 'Xiang Rong'}) 10
+frozenset({'Huang Chu-Ren', 'Xiang Rong'}) 10
+frozenset({'Huang Chu-Ren', 'Chersoni Emmanuele'}) 14
+frozenset({'Lu Qin', 'Li Wenjie'}) 22
+frozenset({'Huang Chu-Ren', 'Lu Qin'}) 15
+frozenset({'Kondrak Grzegorz', 'Hauer Bradley'}) 20
+frozenset({'Bansal Mohit', 'Pasunuru Ramakanth'}) 19
+frozenset({'Wang Hsin-Min', 'Chen Kuan-Yu'}) 15
+frozenset({'Lo Tien-Hong', 'Chen Berlin'}) 10
+frozenset({'Lee Lung-Hao', 'Tseng Yuen-Hsien'}) 11
+frozenset({'Weir David', 'Weeds Julie'}) 15
+frozenset({'Winata Genta Indra', 'Liu Zihan'}) 16
+frozenset({'Fung Pascale', 'Liu Zihan'}) 22
+frozenset({'Winata Genta Indra', 'Madotto Andrea'}) 13
+frozenset({'Luo Fuli', 'Yang Pengcheng'}) 11
+frozenset({'Liu Tianyu', 'Sui Zhifang'}) 14
+frozenset({'Liu Tianyu', 'Chang Baobao'}) 15
+frozenset({'Sui Zhifang', 'Chang Baobao'}) 33
+frozenset({'Fung Pascale', 'Xu Peng'}) 14
+frozenset({'Rei Marek', 'Yannakoudakis Helen'}) 10
+frozenset({'Galitsky Boris', 'Ilvovsky Dmitry'}) 17
+frozenset({'Georgiev Georgi', 'Nakov Preslav'}) 11
+frozenset({'Nakov Preslav', 'Koychev Ivan'}) 15
+frozenset({'Angelova Galia', 'Boytcheva Svetla'}) 10
+frozenset({'Costa-juss{\\`a} Marta R.', 'Escolano Carlos'}) 11
+frozenset({'Kamigaito Hidetaka', 'Okumura Manabu'}) 27
+frozenset({'Espa{\\~n}a-Bonet Cristina', 'van Genabith Josef'}) 10
+frozenset({'Kamigaito Hidetaka', 'Takamura Hiroya'}) 18
+frozenset({'Okumura Manabu', 'Takamura Hiroya'}) 44
+frozenset({'Yeung Chak Yan', 'Lee John'}) 12
+frozenset({'Gravier Guillaume', "S{\\'e}billot Pascale"}) 12
+frozenset({'Simov Kiril', 'Osenova Petya'}) 51
+frozenset({'Poncelas Alberto', 'Way Andy'}) 12
+frozenset({'Vo Ngoc Phuoc An', 'Popescu Octavian'}) 15
+frozenset({'Villata Serena', 'Cabrio Elena'}) 14
+frozenset({'Ninomiya Takashi', 'Tamura Akihiro'}) 12
+frozenset({'Mohtarami Mitra', 'Glass James'}) 10
+frozenset({'Glass James', 'Nakov Preslav'}) 10
+frozenset({'Zhang Zhuosheng', 'Zhao Hai'}) 17
+frozenset({'Matsubara Shigeki', 'Kato Yoshihide'}) 15
+frozenset({'Pyysalo Sampo', 'Ginter Filip'}) 12
+frozenset({'Ginter Filip', 'Kanerva Jenna'}) 19
+frozenset({'{\\O}vrelid Lilja', 'Velldal Erik'}) 31
+frozenset({'Velldal Erik', 'Oepen Stephan'}) 16
+frozenset({'{\\O}vrelid Lilja', 'Oepen Stephan'}) 12
+frozenset({'Anderson Mark', "G{\\'o}mez-Rodr{\\'\\i}guez Carlos"}) 10
+frozenset({'Chang Walter', 'Dernoncourt Franck'}) 18
+frozenset({'Lin Jimmy', 'Xin Ji'}) 11
+frozenset({'Gerlach Johanna', 'Bouillon Pierrette'}) 14
+frozenset({'Tsourakis Nikos', 'Bouillon Pierrette'}) 10
+frozenset({'Mihalcea Rada', "P{\\'e}rez-Rosas Ver{\\'o}nica"}) 23
+frozenset({'Winata Genta Indra', 'Lin Zhaojiang'}) 12
+frozenset({'Madotto Andrea', 'Lin Zhaojiang'}) 16
+frozenset({'Lin Zhaojiang', 'Fung Pascale'}) 19
+frozenset({'Wang Haifeng', 'Wu Hua'}) 68
+frozenset({'Baldwin Timothy', 'Lau Jey Han'}) 35
+frozenset({'Lebanoff Logan', 'Liu Fei'}) 11
+frozenset({'Bernardy Jean-Philippe', 'Chatzikyriakidis Stergios'}) 10
+frozenset({'Sajjad Hassan', 'Dalvi Fahim'}) 17
+frozenset({'Sajjad Hassan', 'Durrani Nadir'}) 29
+frozenset({'Dalvi Fahim', 'Durrani Nadir'}) 16
+frozenset({'Bui Trung', 'Dernoncourt Franck'}) 16
+frozenset({'Verhagen Marc', 'Pustejovsky James'}) 28
+frozenset({'Komachi Mamoru', 'Kaneko Masahiro'}) 15
+frozenset({'Ananiadou Sophia', 'Miwa Makoto'}) 11
+frozenset({'Han Jiawei', 'Ji Heng'}) 22
+frozenset({'Roth Dan', 'Ning Qiang'}) 19
+frozenset({'Specia Lucia', 'Bojar Ond{\\v{r}}ej'}) 10
+frozenset({'Demeester Thomas', 'Develder Chris'}) 14
+frozenset({'Malakasiotis Prodromos', 'Androutsopoulos Ion'}) 16
+frozenset({'Reimers Nils', 'Gurevych Iryna'}) 11
+frozenset({'Daxenberger Johannes', 'Gurevych Iryna'}) 13
+frozenset({'Navigli Roberto', 'Conia Simone'}) 10
+frozenset({'Cohen Shay B.', 'Lapata Mirella'}) 12
+frozenset({'Gan Zhe', 'Cheng Yu'}) 13
+frozenset({'Gan Zhe', 'Liu Jingjing'}) 14
+frozenset({'Cheng Yu', 'Liu Jingjing'}) 12
+frozenset({'Zhang Rui', 'Radev Dragomir'}) 15
+frozenset({'Radev Dragomir', 'Yu Tao'}) 12
+frozenset({'Zhang Rui', 'Yu Tao'}) 10
+frozenset({'Neubig Graham', 'Wang Xinyi'}) 10
+frozenset({'Ruppenhofer Josef', 'Wieg Michael'}) 22
+frozenset({'Krahmer Emiel', 'van der Lee Chris'}) 10
+frozenset({'Zhu Chenguang', 'Zeng Michael'}) 13
+frozenset({'Du Xinya', 'Cardie Claire'}) 10
+frozenset({'Jiang Haoming', 'Zhao Tuo'}) 11
+frozenset({'Gao Jianfeng', 'Liu Xiaodong'}) 23
+frozenset({'Foster George', 'Cherry Colin'}) 14
+frozenset({'Gliozzo Alfio', 'Glass Michael'}) 10
+frozenset({'Khot Tushar', 'Sabharwal Ashish'}) 19
+frozenset({'Xia Congying', 'Yu Philip'}) 10
+frozenset({'Zhang Qi', 'Huang Xuanjing'}) 41
+frozenset({'Liu Pengfei', 'Huang Xuanjing'}) 16
+frozenset({'Yu Dong', 'Xu Kun'}) 10
+frozenset({'Hirao Tsutomu', 'Nagata Masaaki'}) 22
+frozenset({'Feng Yansong', 'Zhao Dongyan'}) 29
+frozenset({'Yan Rui', 'Zhao Dongyan'}) 26
+frozenset({'Duan Nan', 'Gong Yeyun'}) 14
+frozenset({'Wei Zhongyu', 'Huang Xuanjing'}) 20
+frozenset({'Suleman Kaheer', 'Trischler Adam'}) 10
+frozenset({'Li Zhenghua', 'Zhang Min'}) 33
+frozenset({'Zhang Yue', 'Zhang Min'}) 13
+frozenset({'Qiu Xipeng', 'Yan Hang'}) 10
+frozenset({'Liu Pengfei', 'Qiu Xipeng'}) 16
+frozenset({'Sun Xu', 'Ren Xuancheng'}) 20
+frozenset({'Sun Xu', 'Su Qi'}) 11
+frozenset({'Wu Chuhan', 'Wu Fangzhao'}) 28
+frozenset({'Wu Chuhan', 'Huang Yongfeng'}) 29
+frozenset({'Huang Yongfeng', 'Wu Fangzhao'}) 27
+frozenset({'Kim Doo Soon', 'Dernoncourt Franck'}) 12
+frozenset({'Kim Doo Soon', 'Bui Trung'}) 11
+frozenset({'Liang Paul Pu', 'Morency Louis-Philippe'}) 13
+frozenset({'Ge Tao', 'Wei Furu'}) 14
+frozenset({'Xu Ke', 'Wei Furu'}) 15
+frozenset({'Sawhney Ramit', 'Shah Rajiv Ratn'}) 15
+frozenset({'Lin Chenghua', 'Chen Guanyi'}) 10
+frozenset({'Plank Barbara', 'Hovy Dirk'}) 14
+frozenset({'Chang Kai-Wei', 'Ahmad Wasi'}) 10
+frozenset({'Yin Pengcheng', 'Neubig Graham'}) 10
+frozenset({'Song Yan', 'Tian Yuanhe'}) 20
+frozenset({'Dinan Emily', 'Weston Jason'}) 10
+frozenset({'Parikh Devi', 'Batra Dhruv'}) 13
+frozenset({'Chang Walter', 'Bui Trung'}) 13
+frozenset({'Zhou Ming', 'Wei Furu'}) 51
+frozenset({'Yang Nan', 'Zhou Ming'}) 11
+frozenset({'Yan Yuanmeng', 'He Keqing'}) 10
+frozenset({'Yan Yuanmeng', 'Xu Weiran'}) 12
+frozenset({'Xu Weiran', 'He Keqing'}) 11
+frozenset({'Prabhumoye Shrimai', 'Black Alan W'}) 11
+frozenset({'Qin Tao', 'Wu Lijun'}) 10
+frozenset({'Qin Tao', 'Liu Tie-Yan'}) 18
+frozenset({'Chang Kai-Wei', 'Zhao Jieyu'}) 13
+frozenset({'Chen Kehai', 'Wang Rui'}) 17
+frozenset({'Wang Rui', 'Utiyama Masao'}) 26
+frozenset({'Sumita Eiichiro', 'Wang Rui'}) 25
+frozenset({'Chen Kehai', 'Utiyama Masao'}) 15
+frozenset({'Chen Kehai', 'Sumita Eiichiro'}) 15
+frozenset({'Zhao Tiejun', 'Sumita Eiichiro'}) 12
+frozenset({'Zhou Ming', 'Zhang Dongdong'}) 23
+frozenset({'Li Zhoujun', 'Zhou Ming'}) 11
+frozenset({'Nie Yixin', 'Bansal Mohit'}) 10
+frozenset({'Riedel Sebastian', 'Stenetorp Pontus'}) 17
+frozenset({'Poesio Massimo', 'Yu Juntao'}) 12
+frozenset({'Han Jiawei', 'Ren Xiang'}) 13
+frozenset({'Muresan Smara', 'Chakrabarty Tuhin'}) 14
+frozenset({'Le Bras Ronan', 'Choi Yejin'}) 11
+frozenset({'Choi Yejin', 'Bhagavatula Chra'}) 14
+frozenset({'Xing Eric', 'Hu Zhiting'}) 13
+frozenset({'Bosselut Antoine', 'Choi Yejin'}) 14
+frozenset({'Biemann Chris', 'Yimam Seid Muhie'}) 19
+frozenset({'Gardner Matt', 'Dasigi Pradeep'}) 12
+frozenset({'Ren Xiang', 'Lin Bill Yuchen'}) 16
+frozenset({'Dhingra Bhuwan', 'Cohen William'}) 11
+frozenset({"Daum{\\'e} III Hal", 'Boyd-Graber Jordan'}) 13
+frozenset({'Liu Bing', 'Xu Hu'}) 15
+frozenset({'Gao Jianfeng', 'Celikyilmaz Asli'}) 13
+frozenset({'Choi Yejin', 'Holtzman Ari'}) 12
+frozenset({'Brockett Chris', 'Zhang Yizhe'}) 11
+frozenset({'Dolan Bill', 'Zhang Yizhe'}) 10
+frozenset({'Dolan Bill', 'Brockett Chris'}) 19
+frozenset({'Lei Tao', 'Barzilay Regina'}) 13
+frozenset({'Brockett Chris', 'Galley Michel'}) 15
+frozenset({'Gao Jianfeng', 'Galley Michel'}) 16
+frozenset({'Dolan Bill', 'Galley Michel'}) 15
+frozenset({'Brockett Chris', 'Gao Jianfeng'}) 14
+frozenset({'Dolan Bill', 'Gao Jianfeng'}) 13
+frozenset({'Xiang Bing', 'Nallapati Ramesh'}) 15
+frozenset({'Wei Zhongyu', 'Zhang Qi'}) 13
+frozenset({'Kurohashi Sadao', 'Murawaki Yugo'}) 15
+frozenset({'Yu Kai', 'Chen Lu'}) 17
+frozenset({'Yu Kai', 'Zhu Su'}) 11
+frozenset({'Yao Yuan', 'Liu Zhiyuan'}) 10
+frozenset({'Yao Yuan', 'Sun Maosong'}) 10
+frozenset({'Han Xu', 'Liu Zhiyuan'}) 29
+frozenset({'Han Xu', 'Sun Maosong'}) 22
+frozenset({'Liu Zhiyuan', 'Sun Maosong'}) 70
+frozenset({'Wu Youzheng', 'He Xiaodong'}) 11
+frozenset({'Bhattacharyya Pushpak', 'Saha Sriparna'}) 17
+frozenset({'Huang Shujian', 'Dai Xinyu'}) 15
+frozenset({'Huang Shujian', 'Chen Jiajun'}) 34
+frozenset({'Chen Jiajun', 'Dai Xinyu'}) 19
+frozenset({'Sun Maosong', 'Lin Yankai'}) 20
+frozenset({'Wang William Yang', 'Chen Wenhu'}) 13
+frozenset({'Wang William Yang', 'Xiong Wenhan'}) 15
+frozenset({'Li Yunyao', 'Chiticariu Laura'}) 14
+frozenset({'Liu Tingwen', 'Yu Bowen'}) 15
+frozenset({'Lin Ying', 'Ji Heng'}) 16
+frozenset({'Chang Shih-Fu', 'Ji Heng'}) 13
+frozenset({'Voss Clare', 'Ji Heng'}) 12
+frozenset({'Pan Xiaoman', 'Ji Heng'}) 18
+frozenset({'Brown Susan Windisch', 'Palmer Martha'}) 10
+frozenset({'Gong Hongyu', 'Bhat Suma'}) 10
+frozenset({'Alva-Manchego Ferno', 'Specia Lucia'}) 10
+frozenset({'Gaspari Federico', 'Way Andy'}) 10
+frozenset({'Haddow Barry', 'Birch Alexra'}) 19
+frozenset({'Voss Clare', 'Bonial Claire'}) 10
+frozenset({'Camacho-Collados Jose', 'Pilehvar Mohammad Taher'}) 12
+frozenset({'Pustejovsky James', 'Krishnaswamy Nikhil'}) 12
+frozenset({'Schlangen David', 'Kennington Casey'}) 15
+frozenset({'Mineshima Koji', 'Yanaka Hitomi'}) 11
+frozenset({'Mineshima Koji', 'Bekki Daisuke'}) 19
+frozenset({'Poria Soujanya', 'Cambria Erik'}) 17
+frozenset({'Choudhury Monojit', 'Bali Kalika'}) 29
+frozenset({'Paggio Patrizia', 'Navarretta Costanza'}) 10
+frozenset({'Kazantseva Anna', 'Szpakowicz Stan'}) 17
+frozenset({'Ruppenhofer Josef', 'Rehbein Ines'}) 15
+frozenset({'Grabar Natalia', "Cardon R{\\'e}mi"}) 11
+frozenset({'Wisniewski Guillaume', 'Yvon Fran{\\c{c}}ois'}) 38
+frozenset({'Kijak Ewa', 'Claveau Vincent'}) 10
+frozenset({'Ferret Olivier', 'Besan{\\c{c}}on Romaric'}) 19
+frozenset({'Ferret Olivier', 'Grau Brigitte'}) 15
+frozenset({'Niehues Jan', 'Waibel Alex'}) 50
+frozenset({'Sakti Sakriani', 'Nakamura Satoshi'}) 30
+frozenset({'Costa-juss{\\`a} Marta R.', "Fonollosa Jos{\\'e} A. R."}) 32
+frozenset({'Wang Changhan', 'Pino Juan'}) 10
+frozenset({'Zhang Biao', 'Sennrich Rico'}) 10
+frozenset({'Ney Hermann', 'Wang Weiyue'}) 16
+frozenset({'Ney Hermann', 'Khadivi Shahram'}) 10
+frozenset({'Guillaume Bruno', 'Perrier Guy'}) 16
+frozenset({'Wang Xinyu', 'Tu Kewei'}) 11
+frozenset({'Tu Kewei', 'Jiang Yong'}) 25
+frozenset({'van Noord Rik', 'Bos Johan'}) 12
+frozenset({'Bos Johan', 'Abzianidze Lasha'}) 15
+frozenset({'Postma Marten', 'Vossen Piek'}) 14
+frozenset({'Rogers Anna', 'Rumshisky Anna'}) 12
+frozenset({'Huang Minlie', 'Zhu Xiaoyan'}) 34
+frozenset({'Beck Daniel', 'Cohn Trevor'}) 10
+frozenset({'Miyao Yusuke', 'Noji Hiroshi'}) 12
+frozenset({'Zukerman Ingrid', 'Haffari Gholamreza'}) 10
+frozenset({'Gangal Varun', 'Hovy Eduard'}) 12
+frozenset({'Vossen Piek', 'Fellbaum Christiane'}) 11
+frozenset({'Arcan Mihael', 'Buitelaar Paul'}) 21
+frozenset({'Rayson Paul', 'El-Haj Mahmoud'}) 13
+frozenset({'Litvak Marina', 'Vanetik Natalia'}) 14
+frozenset({'Huang Hen-Hsen', 'Chen Chung-Chi'}) 10
+frozenset({'Chen Chung-Chi', 'Chen Hsin-Hsi'}) 10
+frozenset({'Huang Hen-Hsen', 'Chen Hsin-Hsi'}) 45
+frozenset({'Yu Dong', 'Yu Dian'}) 10
+frozenset({'Shi Shuming', 'Liu Lemao'}) 12
+frozenset({'Duan Nan', 'Tang Duyu'}) 20
+frozenset({'Gong Ming', 'Shou Linjun'}) 16
+frozenset({'Jiang Daxin', 'Shou Linjun'}) 14
+frozenset({'Duan Nan', 'Shou Linjun'}) 10
+frozenset({'Jiang Daxin', 'Gong Ming'}) 15
+frozenset({'Duan Nan', 'Gong Ming'}) 11
+frozenset({'Jiang Daxin', 'Duan Nan'}) 20
+frozenset({'Wu Hua', 'He Zhongjun'}) 16
+frozenset({'Wang Haifeng', 'He Zhongjun'}) 12
+frozenset({'Li Peng', 'Lin Yankai'}) 17
+frozenset({'Zhou Jie', 'Lin Yankai'}) 16
+frozenset({'Arase Yuki', 'Kajiwara Tomoyuki'}) 14
+frozenset({'Chen Yufeng', 'Xu Jinan'}) 22
+frozenset({'Abdelali Ahmed', 'Sajjad Hassan'}) 15
+frozenset({'Abdelali Ahmed', 'Durrani Nadir'}) 11
+frozenset({'Duh Kevin', 'Koehn Philipp'}) 13
+frozenset({'Duan Nan', 'Zhou Ming'}) 39
+frozenset({'Zhang Jiajun', 'Zong Chengqing'}) 48
+frozenset({'Zhou Guodong', 'Hong Yu'}) 10
+frozenset({'Kong Fang', 'Zhou Guodong'}) 16
+frozenset({'Qi Tao', 'Wu Fangzhao'}) 15
+frozenset({'Qi Tao', 'Wu Chuhan'}) 19
+frozenset({'Qi Tao', 'Huang Yongfeng'}) 18
+frozenset({'Xie Xing', 'Wu Fangzhao'}) 14
+frozenset({'Wu Chuhan', 'Xie Xing'}) 12
+frozenset({'Rieser Verena', 'Du{\\v{s}}ek Ond{\\v{r}}ej'}) 13
+frozenset({'Choubey Prafulla Kumar', 'Huang Ruihong'}) 11
+frozenset({'Ekbal Asif', 'Gupta Deepak'}) 11
+frozenset({'Zhang Jinchao', 'Meng Fong'}) 10
+frozenset({'Zhang Jinchao', 'Zhou Jie'}) 21
+frozenset({'Ton Niket', 'Clark Peter'}) 10
+frozenset({'Shang Lifeng', 'Jiang Xin'}) 11
+frozenset({'Shang Lifeng', 'Liu Qun'}) 10
+frozenset({'Liu Qun', 'Jiang Xin'}) 15
+frozenset({'Scialom Thomas', 'Staiano Jacopo'}) 11
+frozenset({'Al Khatib Khalid', 'Stein Benno'}) 11
+frozenset({'Wachsmuth Henning', 'Stein Benno'}) 34
+frozenset({'Bing Lidong', 'Lam Wai'}) 19
+frozenset({'Wang Longyue', 'Wong Derek F.'}) 15
+frozenset({'Wang Longyue', 'Chao Lidia S.'}) 13
+frozenset({'Yang Liang', 'Lin Hongfei'}) 13
+frozenset({'Liu Yang', 'Sun Maosong'}) 30
+frozenset({'Yannakoudakis Helen', 'Shutova Ekaterina'}) 11
+frozenset({'Yu Zhou', 'Shi Weiyan'}) 10
+frozenset({"{\\v{Z}}abokrtsk{\\'y} Zden{\\v{e}}k", 'Popel Martin'}) 12
+frozenset({"{\\v{Z}}abokrtsk{\\'y} Zden{\\v{e}}k", 'Zeman Daniel'}) 10
+frozenset({'Liu Xiaodong', 'He Pengcheng'}) 11
+frozenset({'Chen Weizhu', 'Liu Xiaodong'}) 12
+frozenset({'Chen Weizhu', 'He Pengcheng'}) 12
+frozenset({'Gao Jianfeng', 'He Pengcheng'}) 10
+frozenset({'Gao Jianfeng', 'Chen Weizhu'}) 12
+frozenset({'Cotterell Ryan', 'Eisner Jason'}) 18
+frozenset({'Cotterell Ryan', 'Meister Clara'}) 12
+frozenset({'Matsuo Yutaka', 'Marrese-Taylor Edison'}) 16
+frozenset({'Qin Tao', 'Tan Xu'}) 10
+frozenset({'Tan Xu', 'Liu Tie-Yan'}) 11
+frozenset({'Jin Lifeng', 'Schuler William'}) 13
+frozenset({'Toyoda Masashi', 'Yoshinaga Naoki'}) 14
+frozenset({'He Yulan', 'Zhou Deyu'}) 21
+frozenset({'Kitsuregawa Masaru', 'Yoshinaga Naoki'}) 15
+frozenset({"Vuli{\\'c} Ivan", 'Ponti Edoardo Maria'}) 18
+frozenset({'Ponti Edoardo Maria', 'Korhonen Anna'}) 18
+frozenset({'Glava{\\v{s}} Goran', "Vuli{\\'c} Ivan"}) 28
+frozenset({'Glava{\\v{s}} Goran', 'Korhonen Anna'}) 13
+frozenset({'Glava{\\v{s}} Goran', 'Lauscher Anne'}) 11
+frozenset({'Okazaki Naoaki', 'Takase Sho'}) 14
+frozenset({'Jiang Daxin', 'Zhou Ming'}) 10
+frozenset({'Cohn Trevor', 'Baldwin Timothy'}) 37
+frozenset({'Hovy Eduard', 'Mitamura Teruko'}) 20
+frozenset({'Liu Qian', 'Lou Jian-Guang'}) 10
+frozenset({'Zhou Ming', 'Liu Shujie'}) 34
+frozenset({'Han Xu', 'Lin Yankai'}) 10
+frozenset({'Han Xu', 'Li Peng'}) 12
+frozenset({'Han Xu', 'Zhou Jie'}) 11
+frozenset({'Liu Zhiyuan', 'Lin Yankai'}) 24
+frozenset({'Li Peng', 'Liu Zhiyuan'}) 17
+frozenset({'Liu Zhiyuan', 'Zhou Jie'}) 15
+frozenset({'Li Peng', 'Sun Maosong'}) 17
+frozenset({'Sun Maosong', 'Zhou Jie'}) 11
+frozenset({'Tang Duyu', 'Zhou Ming'}) 21
+frozenset({'El-Kishky Ahmed', "Guzm{\\'a}n Francisco"}) 10
+frozenset({'Sarikaya Ruhi', 'Kim Young-Bum'}) 18
+frozenset({'Wen Ji-Rong', 'Zhao Wayne Xin'}) 11
+frozenset({'Liu Zhiyuan', 'Qi Fanchao'}) 12
+frozenset({'Qi Fanchao', 'Sun Maosong'}) 12
+frozenset({'Huang Minlie', 'Takanobu Ryuichi'}) 10
+frozenset({'Zhou Junsheng', 'Qu Weiguang'}) 10
+frozenset({'Shindo Hiroyuki', 'Matsumoto Yuji'}) 29
+frozenset({'Chen Yubo', 'Cao Pengfei'}) 10
+frozenset({'Cao Pengfei', 'Liu Kang'}) 10
+frozenset({'Cao Pengfei', 'Zhao Jun'}) 11
+frozenset({'He Xiaofeng', 'Wang Chengyu'}) 10
+frozenset({'Sasaki Yutaka', 'Miwa Makoto'}) 11
+frozenset({'Sennrich Rico', 'Titov Ivan'}) 16
+frozenset({'Bhattacharyya Pushpak', 'Kanojia Diptesh'}) 32
+frozenset({'Duan Xiangyu', 'Zhang Min'}) 19
+frozenset({'Sun Changlong', 'Liu Xiaozhong'}) 13
+frozenset({'Ghosh Debanjan', 'Muresan Smara'}) 14
+frozenset({'Livescu Karen', 'Gimpel Kevin'}) 15
+frozenset({'Dalvi Bhavana', 'Clark Peter'}) 10
+frozenset({'Wanner Leo', 'Mille Simon'}) 28
+frozenset({'Wu Winston', 'Yarowsky David'}) 14
+frozenset({'Xiong Deyi', 'Su Jinsong'}) 13
+frozenset({'Ku Lun-Wei', 'Huang Ting-Hao'}) 10
+frozenset({'Zheng Renjie', 'Ma Mingbo'}) 14
+frozenset({'Ma Mingbo', 'Huang Liang'}) 23
+frozenset({'Zheng Renjie', 'Huang Liang'}) 14
+frozenset({'Yu Jianfei', 'Xia Rui'}) 11
+frozenset({'Chen Yidong', 'Shi Xiaodong'}) 17
+frozenset({'Li Sujian', 'Wang Houfeng'}) 17
+frozenset({'Krishna Amrith', 'Goyal Pawan'}) 15
+frozenset({'Zhang Wei-Nan', 'Liu Ting'}) 13
+frozenset({'Zhang Yue', 'Liu Ting'}) 11
+frozenset({'Potthast Martin', 'Stein Benno'}) 18
+frozenset({'Schwartz H. Andrew', 'Ungar Lyle'}) 16
+frozenset({'Mittal Arpit', 'Christodoulopoulos Christos'}) 12
+frozenset({'Thorne James', 'Christodoulopoulos Christos'}) 10
+frozenset({'Vlachos Andreas', 'Christodoulopoulos Christos'}) 10
+frozenset({'Thorne James', 'Mittal Arpit'}) 10
+frozenset({'Vlachos Andreas', 'Mittal Arpit'}) 10
+frozenset({'Thorne James', 'Vlachos Andreas'}) 15
+frozenset({'Grouin Cyril', 'Zweigenbaum Pierre'}) 22
+frozenset({'Zweigenbaum Pierre', 'Lavergne Thomas'}) 11
+frozenset({'Wang Rui', 'Zhao Hai'}) 14
+frozenset({'Gui Tao', 'Zhang Qi'}) 11
+frozenset({'Zhang Yu', 'Liu Ting'}) 11
+frozenset({'Gui Lin', 'Xu Ruifeng'}) 10
+frozenset({'Yang Min', 'Xu Ruifeng'}) 11
+frozenset({'Lin Jimmy', 'Tang Raphael'}) 14
+frozenset({"Vuli{\\'c} Ivan", 'Gerz Daniela'}) 14
+frozenset({"Vuli{\\'c} Ivan", "Mrk{\\v{s}}i{\\'c} Nikola"}) 15
+frozenset({'Budzianowski Pawe{\\l}', 'Su Pei-Hao'}) 10
+frozenset({'Casanueva I{\\~n}igo', 'Su Pei-Hao'}) 11
+frozenset({'Su Pei-Hao', "Mrk{\\v{s}}i{\\'c} Nikola"}) 20
+frozenset({'Su Pei-Hao', 'Wen Tsung-Hsien'}) 22
+frozenset({'Budzianowski Pawe{\\l}', 'Casanueva I{\\~n}igo'}) 14
+frozenset({'Casanueva I{\\~n}igo', 'Wen Tsung-Hsien'}) 11
+frozenset({'Wen Tsung-Hsien', "Mrk{\\v{s}}i{\\'c} Nikola"}) 20
+frozenset({'Agirre Eneko', 'Lopez de Lacalle Oier'}) 15
+frozenset({'Labaka Gorka', 'Agirre Eneko'}) 19
+frozenset({'Gardner Matt', 'Singh Sameer'}) 21
+frozenset({'Dredze Mark', 'Van Durme Benjamin'}) 12
+frozenset({'Rahimi Afshin', 'Baldwin Timothy'}) 12
+frozenset({'Luan Huanbo', 'Liu Yang'}) 14
+frozenset({'Luan Huanbo', 'Sun Maosong'}) 17
+frozenset({'He Shizhu', 'Liu Kang'}) 18
+frozenset({'He Shizhu', 'Zhao Jun'}) 18
+frozenset({'Zhu Qiaoming', 'Li Peifeng'}) 16
+frozenset({'Xu Jinan', 'Zhang Yujie'}) 12
+frozenset({'Chen Yufeng', 'Zhang Yujie'}) 11
+frozenset({'Bach Nguyen', 'Jiang Yong'}) 10
+frozenset({'Wang Tao', 'Jiang Yong'}) 12
+frozenset({'Huang Zhongqiang', 'Jiang Yong'}) 11
+frozenset({'Huang Fei', 'Jiang Yong'}) 12
+frozenset({'Wang Tao', 'Bach Nguyen'}) 10
+frozenset({'Bach Nguyen', 'Huang Fei'}) 11
+frozenset({'Huang Zhongqiang', 'Wang Tao'}) 11
+frozenset({'Wang Tao', 'Huang Fei'}) 12
+frozenset({'Huang Zhongqiang', 'Huang Fei'}) 11
+frozenset({'Lan Man', 'Wu Yuanbin'}) 21
+frozenset({'Sun Xu', 'Yang Pengcheng'}) 15
+frozenset({'Feng Xiaocheng', 'Qin Bing'}) 12
+frozenset({'Liu Qun', 'Liu Yang'}) 27
+frozenset({'Liu Ting', 'Ding Xiao'}) 14
+frozenset({'Qin Bing', 'Liu Ting'}) 45
+frozenset({'Liu Qun', 'Xiong Deyi'}) 13
+frozenset({'Matsubayashi Yuichiroh', 'Inui Kentaro'}) 10
+frozenset({'Zhang Hongming', 'Song Yangqiu'}) 13
+frozenset({'Xiao Xinyan', 'Wu Hua'}) 13
+frozenset({'Okazaki Naoaki', 'Inui Kentaro'}) 34
+frozenset({'Li Juanzi', 'Hou Lei'}) 18
+frozenset({'Che Wanxiang', 'Wang Haifeng'}) 10
+frozenset({'Zhou Guodong', 'Li Junhui'}) 17
+frozenset({'Li Shoushan', 'Zhou Guodong'}) 30
+frozenset({'Zhou Guodong', 'Zhang Min'}) 19
+frozenset({'Zhang Yue', 'Teng Zhiyang'}) 10
+frozenset({'Zhou Yu', 'Zhang Jiajun'}) 16
+frozenset({'Zhou Yu', 'Zong Chengqing'}) 25
+frozenset({'Han Xianpei', 'Lin Hongyu'}) 18
+frozenset({'Lin Hongyu', 'Sun Le'}) 17
+frozenset({'Han Xianpei', 'Sun Le'}) 38
+frozenset({'Cui Lei', 'Wei Furu'}) 11
+frozenset({'Jaakkola Tommi', 'Barzilay Regina'}) 12
+frozenset({'Huang Lifu', 'Ji Heng'}) 21
+frozenset({'Cer Daniel', 'Yang Yinfei'}) 12
+frozenset({'Webber Bonnie', 'Fancellu Federico'}) 10
+frozenset({'Inoue Naoya', 'Inui Kentaro'}) 20
+frozenset({'Shah Rajiv Ratn', 'Mahata Debanjan'}) 10
+frozenset({'Roukos Salim', 'Florian Radu'}) 14
+frozenset({'Cohn Trevor', 'Haffari Gholamreza'}) 16
+frozenset({'Shu Lei', 'Liu Bing'}) 11
+frozenset({'Shu Lei', 'Xu Hu'}) 11
+frozenset({'Korhonen Anna', 'McCarthy Diana'}) 12
+frozenset({'Klein Dan', 'Pauls Adam'}) 15
+frozenset({"S{\\'a}nchez-Cartagena V{\\'\\i}ctor M.", "P{\\'e}rez-Ortiz Juan Antonio"}) 11
+frozenset({"S{\\'a}nchez-Cartagena V{\\'\\i}ctor M.", "S{\\'a}nchez-Mart{\\'\\i}nez Felipe"}) 10
+frozenset({'Espl{\\`a}-Gomis Miquel', "S{\\'a}nchez-Mart{\\'\\i}nez Felipe"}) 12
+frozenset({'Li Juanzi', 'Cao Yixin'}) 12
+frozenset({'Liu Zhiyuan', 'Cao Yixin'}) 10
+frozenset({'Liu Zhiyuan', 'Hou Lei'}) 10
+frozenset({'Aharonov Ranit', 'Slonim Noam'}) 19
+frozenset({'Hahn Udo', 'Buechel Sven'}) 11
+frozenset({'McCallum Andrew', 'Das Rajarshi'}) 13
+frozenset({'Cheng Xueqi', 'Guo Jiafeng'}) 10
+frozenset({'Tamchyna Ale{\\v{s}}', 'Bojar Ond{\\v{r}}ej'}) 14
+frozenset({"Fern{\\'a}ndez-Gonz{\\'a}lez Daniel", "G{\\'o}mez-Rodr{\\'\\i}guez Carlos"}) 11
+frozenset({'Zhang Boliang', 'Knight Kevin'}) 11
+frozenset({'Bar-Haim Roy', 'Slonim Noam'}) 12
+frozenset({'Tu Kewei', 'Han Wenjuan'}) 12
+frozenset({'Han Wenjuan', 'Jiang Yong'}) 10
+frozenset({'Lin Yi-Chung', 'Su Keh-Yih'}) 17
+frozenset({'Su Hui', 'Shen Xiaoyu'}) 10
+frozenset({'Wang Xin', 'Wang William Yang'}) 12
+frozenset({'Verspoor Karin', 'Baldwin Timothy'}) 10
+frozenset({'Taniguchi Tomoki', 'Taniguchi Motoki'}) 10
+frozenset({'Ohkuma Tomoko', 'Taniguchi Motoki'}) 13
+frozenset({'Taniguchi Tomoki', 'Ohkuma Tomoko'}) 15
+frozenset({'Specia Lucia', 'Ive Julia'}) 10
+frozenset({'Suzuki Jun', 'Nagata Masaaki'}) 22
+frozenset({'Rozovskaya Alla', 'Roth Dan'}) 17
+frozenset({'Yu Mo', 'Chang Shiyu'}) 18
+frozenset({'Choi Yejin', 'Sap Maarten'}) 17
+frozenset({'Bhattacharyya Pushpak', 'Kulkarni Malhar'}) 15
+frozenset({'Idiart Marco', 'Villavicencio Aline'}) 20
+frozenset({'Ponzetto Simone Paolo', 'Glava{\\v{s}} Goran'}) 14
+frozenset({'Choudhury Monojit', 'Sitaram Sunayana'}) 11
+frozenset({'Biemann Chris', 'Panchenko Alexer'}) 25
+frozenset({'Byopadhyay Sivaji', 'Das Dipankar'}) 35
+frozenset({"Dell{'}Orletta Felice", 'Brunato Dominique'}) 11
+frozenset({'Venturi Giulia', "Dell{'}Orletta Felice"}) 24
+frozenset({'Carenini Giuseppe', 'Ng Raymond'}) 15
+frozenset({'Gurevych Iryna', 'Eckart de Castilho Richard'}) 12
+frozenset({'Mayhew Stephen', 'Roth Dan'}) 11
+frozenset({'S{\\o}gaard Anders', 'Plank Barbara'}) 23
+frozenset({'Specia Lucia', 'Scarton Carolina'}) 28
+frozenset({'Huang Chu-Ren', 'Santus Enrico'}) 11
+frozenset({'Huang Chu-Ren', 'Lenci Alessro'}) 10
+frozenset({'Manning Christopher D.', 'de Marneffe Marie-Catherine'}) 15
+frozenset({'Wan Xiaojun', 'Sun Weiwei'}) 22
+frozenset({'Hazarika Devamanyu', 'Poria Soujanya'}) 10
+frozenset({'Li Bin', 'Qu Weiguang'}) 11
+frozenset({'Zhu Muhua', 'Zhu Jingbo'}) 12
+frozenset({'Wang Huizhen', 'Zhu Jingbo'}) 11
+frozenset({'Rapp Reinhard', 'Sharoff Serge'}) 13
+frozenset({'Rapp Reinhard', 'Zweigenbaum Pierre'}) 11
+frozenset({'Sharoff Serge', 'Zweigenbaum Pierre'}) 10
+frozenset({'Pivovarova Lidia', 'Yangarber Roman'}) 17
+frozenset({'Belinkov Yonatan', 'Sajjad Hassan'}) 14
+frozenset({'Alishahi Afra', 'Chrupa{\\l}a Grzegorz'}) 15
+frozenset({'Liu Haokun', 'Bowman Samuel R.'}) 11
+frozenset({'Cohen Kevin Bretonnel', 'Demner-Fushman Dina'}) 11
+frozenset({'Ananiadou Sophia', 'Demner-Fushman Dina'}) 15
+frozenset({'Ananiadou Sophia', 'Cohen Kevin Bretonnel'}) 11
+frozenset({'Lin Chen', 'Miller Timothy'}) 13
+frozenset({'Lin Chen', 'Dligach Dmitriy'}) 11
+frozenset({'Lin Chen', 'Bethard Steven'}) 12
+frozenset({'Lin Chen', 'Savova Guergana'}) 13
+frozenset({'Miller Timothy', 'Dligach Dmitriy'}) 17
+frozenset({'Bethard Steven', 'Miller Timothy'}) 14
+frozenset({'Miller Timothy', 'Savova Guergana'}) 20
+frozenset({'Bethard Steven', 'Dligach Dmitriy'}) 11
+frozenset({'Dligach Dmitriy', 'Savova Guergana'}) 14
+frozenset({'Bethard Steven', 'Savova Guergana'}) 16
+frozenset({'Leacock Claudia', 'Burstein Jill'}) 13
+frozenset({'Kiesel Johannes', 'Stein Benno'}) 10
+frozenset({'Yao Jianmin', 'Hong Yu'}) 10
+frozenset({'Ney Hermann', 'Gao Yingbo'}) 11
+frozenset({'Mitkov Ruslan', 'Orasan Constantin'}) 12
+frozenset({'Zhu Qiaoming', 'Zhou Guodong'}) 31
+frozenset({'Basili Roberto', 'Croce Danilo'}) 24
+frozenset({'Johnson Mark', 'Dras Mark'}) 11
+frozenset({'Huang Xuanjing', 'Qiu Xipeng'}) 46
+frozenset({'Lin Junyang', 'Sun Xu'}) 12
+frozenset({'Lin Hongyu', 'Lu Yaojie'}) 11
+frozenset({'Han Xianpei', 'Lu Yaojie'}) 11
+frozenset({'Lu Yaojie', 'Sun Le'}) 11
+frozenset({'Wilcox Ethan', 'Levy Roger'}) 10
+frozenset({'Feng Xiaocheng', 'Liu Ting'}) 10
+frozenset({'Oh Jong-Hoon', 'Kloetzer Julien'}) 10
+frozenset({'Oh Jong-Hoon', 'Torisawa Kentaro'}) 20
+frozenset({'Torisawa Kentaro', 'Kloetzer Julien'}) 12
+frozenset({'Haddow Barry', 'Sennrich Rico'}) 18
+frozenset({'King Irwin', 'Lyu Michael'}) 10
+frozenset({'Andreas Jacob', 'Klein Dan'}) 14
+frozenset({'Zhang Yue', 'Song Linfeng'}) 16
+frozenset({'Song Wei', 'Fu Ruiji'}) 10
+frozenset({'Song Wei', 'Liu Ting'}) 11
+frozenset({'Song Wei', 'Liu Lizhen'}) 11
+frozenset({'Liu Ting', 'Fu Ruiji'}) 14
+frozenset({'Zhou Yaqian', 'Huang Xuanjing'}) 10
+frozenset({'Artetxe Mikel', 'Labaka Gorka'}) 16
+frozenset({'Artetxe Mikel', 'Agirre Eneko'}) 14
+frozenset({'Agirre Eneko', 'Soroa Aitor'}) 30
+frozenset({'Smith Noah A.', 'Sap Maarten'}) 10
+frozenset({'Smith Noah A.', 'Swayamdipta Swabha'}) 11
+frozenset({'Choi Yejin', 'Smith Noah A.'}) 14
+frozenset({'Specia Lucia', 'Koehn Philipp'}) 12
+frozenset({'Belinkov Yonatan', 'Durrani Nadir'}) 11
+frozenset({'Koehn Philipp', 'Durrani Nadir'}) 13
+frozenset({'Way Andy', 'Haque Rejwanul'}) 22
+frozenset({'Dyer Chris', 'Ling Wang'}) 18
+frozenset({'Dyer Chris', 'Blunsom Phil'}) 20
+frozenset({'Saunders Danielle', 'Byrne Bill'}) 12
+frozenset({'Fraser Alexer', 'Schmid Helmut'}) 12
+frozenset({'Bhattacharyya Pushpak', 'Redkar Hanumant'}) 11
+frozenset({'Nivre Joakim', 'de Lhoneux Miryam'}) 11
+frozenset({'Zampieri Marcos', 'Malmasi Shervin'}) 21
+frozenset({'Zettlemoyer Luke', 'Levy Omer'}) 10
+frozenset({'Burkett David', 'Klein Dan'}) 11
+frozenset({'Klein Dan', 'Liang Percy'}) 14
+frozenset({'Lewis Mike', 'Zettlemoyer Luke'}) 11
+frozenset({'Strzalkowski Tomek', 'Shaikh Samira'}) 19
+frozenset({'Rappoport Ari', 'Abend Omri'}) 24
+frozenset({'Adda-Decker Martine', 'Lamel Lori'}) 10
+frozenset({'Cotterell Ryan', 'McCarthy Arya D.'}) 10
+frozenset({'Kirov Christo', 'Cotterell Ryan'}) 11
+frozenset({'Vu Ngoc Thang', 'Yu Xiang'}) 10
+frozenset({'Oraby Shereen', 'Walker Marilyn'}) 12
+frozenset({'Komatani Kazunori', 'Nakano Mikio'}) 11
+frozenset({'Da San Martino Giovanni', "Barr{\\'o}n-Cede{\\~n}o Alberto"}) 16
+frozenset({'Nakov Preslav', "Barr{\\'o}n-Cede{\\~n}o Alberto"}) 16
+frozenset({'Cohan Arman', 'Goharian Nazli'}) 14
+frozenset({'Yu Liang-Chih', 'Lee Lung-Hao'}) 12
+frozenset({'Sedoc Jo{\\~a}o', 'Ungar Lyle'}) 11
+frozenset({'Huang Chu-Ren', 'Ahrens Kathleen'}) 20
+frozenset({'Shinnou Hiroyuki', 'Komiya Kanako'}) 16
+frozenset({'Isahara Hitoshi', 'Kanzaki Kyoko'}) 27
+frozenset({'Isahara Hitoshi', 'Yamamoto Eiko'}) 12
+frozenset({'Song Yan', 'Xia Fei'}) 16
+frozenset({'Kawahara Daisuke', 'Kurohashi Sadao'}) 71
+frozenset({"Guti{\\'e}rrez Yoan", "Montoyo Andr{\\'e}s"}) 18
+frozenset({"Guti{\\'e}rrez Yoan", 'Mu{\\~n}oz Rafael'}) 14
+frozenset({"Montoyo Andr{\\'e}s", 'Mu{\\~n}oz Rafael'}) 13
+frozenset({'Ide Nancy', 'Suderman Keith'}) 19
+frozenset({'Ide Nancy', 'Pustejovsky James'}) 10
+frozenset({'Neubig Graham', 'Oda Yusuke'}) 13
+frozenset({"Libovick{\\'y} Jind{\\v{r}}ich", 'Helcl Jind{\\v{r}}ich'}) 10
+frozenset({'Savary Agata', 'Ramisch Carlos'}) 11
+frozenset({'Bohnet Bernd', 'Mille Simon'}) 15
+frozenset({'Wanner Leo', 'Bohnet Bernd'}) 20
+frozenset({'Calzolari Nicoletta', 'Choukri Khalid'}) 16
+frozenset({'Calzolari Nicoletta', 'Maegaard Bente'}) 10
+frozenset({'Calzolari Nicoletta', 'Mariani Joseph'}) 11
+frozenset({'Calzolari Nicoletta', 'Odijk Jan'}) 10
+frozenset({'Calzolari Nicoletta', 'Piperidis Stelios'}) 15
+frozenset({'Maegaard Bente', 'Choukri Khalid'}) 13
+frozenset({'Choukri Khalid', 'Mariani Joseph'}) 10
+frozenset({'Choukri Khalid', 'Odijk Jan'}) 10
+frozenset({'Choukri Khalid', 'Piperidis Stelios'}) 15
+frozenset({'Lu Qin', 'Long Yunfei'}) 10
+frozenset({'Bunt Harry', 'Petukhova Volha'}) 18
+frozenset({'Fung Pascale', 'Wu Chien-Sheng'}) 12
+frozenset({'Ishida Toru', 'Lin Donghui'}) 13
+frozenset({'Traum David', 'Artstein Ron'}) 18
+frozenset({'Matsubara Shigeki', 'Ohno Tomohiro'}) 11
+frozenset({'Traum David', 'Georgila Kallirroi'}) 13
+frozenset({'Traum David', 'Leuski Anton'}) 12
+frozenset({"Branco Ant{\\'o}nio", 'Silva Jo{\\~a}o'}) 24
+frozenset({'Montemagni Simonetta', "Dell{'}Orletta Felice"}) 22
+frozenset({'Montemagni Simonetta', 'Venturi Giulia'}) 20
+frozenset({'Montemagni Simonetta', 'Lenci Alessro'}) 14
+frozenset({"Pol{\\'a}kov{\\'a} Lucie", "M{\\'\\i}rovsk{\\'y} Ji{\\v{r}}{\\'\\i}"}) 13
+frozenset({'Komachi Mamoru', 'Katsumata Satoru'}) 10
+frozenset({'Kar Sudipta', 'Solorio Thamar'}) 10
+frozenset({'Suzuki Yoshimi', 'Fukumoto Fumiyo'}) 23
+frozenset({'Iyyer Mohit', 'Boyd-Graber Jordan'}) 10
+frozenset({'Cui Lei', 'Zhou Ming'}) 17
+frozenset({'Bossy Robert', "N{\\'e}dellec Claire"}) 10
+frozenset({"Del{\\'e}ger Louise", 'Zweigenbaum Pierre'}) 10
+frozenset({'Lu Di', 'Ji Heng'}) 11
+frozenset({'Ananiadou Sophia', 'Thompson Paul'}) 16
+frozenset({'Hahn-Powell Gus', "Valenzuela-Esc{\\'a}rcega Marco A."}) 10
+frozenset({'Utiyama Masao', 'Ding Chenchen'}) 14
+frozenset({'Sumita Eiichiro', 'Ding Chenchen'}) 14
+frozenset({'Vossen Piek', 'Fokkens Antske'}) 14
+frozenset({'Ciobanu Alina Maria', 'Dinu Liviu P.'}) 17
+frozenset({'Erjavec Toma{\\v{z}}', "Ljube{\\v{s}}i{\\'c} Nikola"}) 10
+frozenset({'Choukri Khalid', 'Arranz Victoria'}) 12
+frozenset({'Choukri Khalid', "Mapelli Val{\\'e}rie"}) 13
+frozenset({'Cieri Christopher', 'DiPersio Denise'}) 11
+frozenset({'Cieri Christopher', 'Strassel Stephanie'}) 11
+frozenset({'Liberman Mark', 'Cieri Christopher'}) 19
+frozenset({'Wright Jonathan', 'Strassel Stephanie'}) 10
+frozenset({'Vanallemeersch Tom', 'Van den Bogaert Joachim'}) 10
+frozenset({'Kurohashi Sadao', 'Cromieres Fabien'}) 11
+frozenset({'Hathout Nabil', 'Namer Fiammetta'}) 10
+frozenset({'Habash Nizar', 'Zalmout Nasser'}) 14
+frozenset({'Mott Justin', 'Bies Ann'}) 13
+frozenset({'Bies Ann', 'Strassel Stephanie'}) 13
+frozenset({'Zeman Daniel', 'Haji{\\v{c}} Jan'}) 10
+frozenset({'Est{\\`e}ve Yannick', 'Camelin Nathalie'}) 13
+frozenset({'Mayfield James', 'McNamee Paul'}) 12
+frozenset({"Branco Ant{\\'o}nio", 'Saedi Chakaveh'}) 11
+frozenset({'Vossen Piek', 'Maks Isa'}) 11
+frozenset({'Bhattacharyya Pushpak', 'Joshi Aditya'}) 24
+frozenset({'Bosco Cristina', 'Sanguinetti Manuela'}) 10
+frozenset({'Surdeanu Mihai', "Valenzuela-Esc{\\'a}rcega Marco A."}) 14
+frozenset({'Rudinger Rachel', 'Van Durme Benjamin'}) 19
+frozenset({'Cuadros Montse', 'Rigau German'}) 13
+frozenset({'Marciniak Malgorzata', 'Mykowiecka Agnieszka'}) 12
+frozenset({'Remus Steffen', 'Biemann Chris'}) 10
+frozenset({'Ponzetto Simone Paolo', 'Biemann Chris'}) 11
+frozenset({'Ponzetto Simone Paolo', 'Panchenko Alexer'}) 11
+frozenset({'Proisl Thomas', 'Kabashi Besim'}) 11
+frozenset({'Portet Fran{\\c{c}}ois', 'Vacher Michel'}) 13
+frozenset({'Persing Isaac', 'Ng Vincent'}) 10
+frozenset({'Sharp Rebecca', 'Surdeanu Mihai'}) 12
+frozenset({'Habash Nizar', 'Obeid Ossama'}) 11
+frozenset({'Cho Eunah', 'Waibel Alex'}) 20
+frozenset({'Grabar Natalia', 'Hamon Thierry'}) 22
+frozenset({"Damnati G{\\'e}raldine", 'Charlet Delphine'}) 14
+frozenset({'Ferret Olivier', 'Tannier Xavier'}) 12
+frozenset({'Tannier Xavier', "N{\\'e}v{\\'e}ol Aur{\\'e}lie"}) 10
+frozenset({'Illouz Gabriel', 'Vilnat Anne'}) 11
+frozenset({"Delvaux V{\\'e}ronique", 'Huet Kathy'}) 10
+frozenset({"Delvaux V{\\'e}ronique", 'Piccaluga Myriam'}) 10
+frozenset({"Delvaux V{\\'e}ronique", 'Harmegnies Bernard'}) 10
+frozenset({'Piccaluga Myriam', 'Huet Kathy'}) 10
+frozenset({'Harmegnies Bernard', 'Huet Kathy'}) 10
+frozenset({'Harmegnies Bernard', 'Piccaluga Myriam'}) 10
+frozenset({'Nerima Luka', 'Wehrli Eric'}) 14
+frozenset({'Besacier Laurent', 'Lecouteux Benjamin'}) 13
+frozenset({'Sripada Somayajulu', 'Reiter Ehud'}) 12
+frozenset({'Krahmer Emiel', 'Wubben Ser'}) 21
+frozenset({'Hagen Matthias', 'Stein Benno'}) 12
+frozenset({'Ji Heng', 'Knight Kevin'}) 16
+frozenset({'Liu Shih-Hung', 'Chen Berlin'}) 15
+frozenset({'Sharma Dipti Misra', 'Sangal Rajeev'}) 10
+frozenset({'Vela Mihaela', 'van Genabith Josef'}) 14
+frozenset({'Ekbal Asif', 'Saha Sriparna'}) 20
+frozenset({'Gao Jianfeng', 'Li Xiujun'}) 12
+frozenset({'Bilu Yonatan', 'Slonim Noam'}) 14
+frozenset({'Zhou Ming', 'Ge Tao'}) 11
+frozenset({'Bi Wei', 'Liu Xiaojiang'}) 13
+frozenset({'Che Wanxiang', 'Qin Bing'}) 11
+frozenset({'Habernal Ivan', 'Gurevych Iryna'}) 15
+frozenset({'Tang Duyu', 'Qin Bing'}) 12
+frozenset({'Tang Duyu', 'Liu Ting'}) 12
+frozenset({'Bhattacharyya Pushpak', 'Gupta Deepak'}) 10
+frozenset({'Mare{\\v{c}}ek David', 'Rosa Rudolf'}) 11
+frozenset({'Bernardi Raffaella', 'Pezzelle Sro'}) 11
+frozenset({'Wang Guoyin', 'Carin Lawrence'}) 10
+frozenset({'Poliak Adam', 'Van Durme Benjamin'}) 13
+frozenset({'Beigman Klebanov Beata', 'Flor Michael'}) 13
+frozenset({'Koehn Philipp', 'Khayrallah Huda'}) 12
+frozenset({'Nagata Masaaki', 'Nishino Masaaki'}) 10
+frozenset({'Zhao Tiejun', 'Zhu Conghui'}) 12
+frozenset({'Vilares David', "G{\\'o}mez-Rodr{\\'\\i}guez Carlos"}) 20
+frozenset({'Choi Yejin', 'Rashkin Hannah'}) 11
+frozenset({'Guo Xiaoxiao', 'Chang Shiyu'}) 11
+frozenset({'Johannsen Anders', "Mart{\\'\\i}nez Alonso H{\\'e}ctor"}) 10
+frozenset({'Carin Lawrence', 'Shen Dinghan'}) 14
+frozenset({'Shi Shuming', 'Liu Xiaojiang'}) 10
+frozenset({'Miura Yasuhide', 'Ohkuma Tomoko'}) 19
+frozenset({'Ney Hermann', 'Kim Yunsu'}) 14
+frozenset({'Forcada Mikel L.', "S{\\'a}nchez-Mart{\\'\\i}nez Felipe"}) 18
+frozenset({'Forcada Mikel L.', "P{\\'e}rez-Ortiz Juan Antonio"}) 10
+frozenset({'Espl{\\`a}-Gomis Miquel', 'Forcada Mikel L.'}) 11
+frozenset({'Palmer Martha', 'Xue Nianwen'}) 14
+frozenset({'Hershcovich Daniel', 'Abend Omri'}) 12
+frozenset({'Eger Steffen', 'Gurevych Iryna'}) 12
+frozenset({'Sayeed Asad', 'Demberg Vera'}) 16
+frozenset({'Beck Daniel', 'Specia Lucia'}) 10
+frozenset({'Chen Wenliang', 'Zhang Min'}) 16
+frozenset({'Chen Qingcai', 'Wang Xiaolong'}) 10
+frozenset({'Banea Carmen', 'Mihalcea Rada'}) 21
+frozenset({'Sumita Eiichiro', 'Tamura Akihiro'}) 10
+frozenset({'Napoles Courtney', 'Tetreault Joel'}) 10
+frozenset({'Blache Philippe', "Rauzy St{\\'e}phane"}) 14
+frozenset({'Hazem Amir', 'Morin Emmanuel'}) 15
+frozenset({'Makhoul John', 'Schwartz Richard'}) 24
+frozenset({'Chamberlain Jon', 'Kruschwitz Udo'}) 10
+frozenset({'Poesio Massimo', 'Kruschwitz Udo'}) 15
+frozenset({'Korhonen Anna', 'Poibeau Thierry'}) 11
+frozenset({'Belinkov Yonatan', 'Glass James'}) 11
+frozenset({'Zhang Yue', 'Zhang Meishan'}) 16
+frozenset({'Zhao Tiejun', 'Li Sheng'}) 14
+frozenset({'Cahill Aoife', 'Madnani Nitin'}) 15
+frozenset({'Surdeanu Mihai', 'Hahn-Powell Gus'}) 10
+frozenset({'Liu Ting', 'Wang Haifeng'}) 20
+frozenset({'Che Wanxiang', 'Liu Yijia'}) 13
+frozenset({'Liu Ting', 'Liu Yijia'}) 11
+frozenset({'Eskenazi Maxine', 'Zhao Tiancheng'}) 13
+frozenset({'Meyer Christian M.', 'Gurevych Iryna'}) 15
+frozenset({'Hoang Hieu', 'Koehn Philipp'}) 18
+frozenset({'Zhou Guodong', 'Li Peifeng'}) 13
+frozenset({'Fern Xiaoli', 'Tadepalli Prasad'}) 10
+frozenset({'Hovy Eduard', 'Ma Xuezhe'}) 13
+frozenset({'Stahlberg Felix', 'Byrne Bill'}) 18
+frozenset({'Dredze Mark', 'Andrews Nicholas'}) 10
+frozenset({'Bhattacharyya Pushpak', 'Mishra Abhijit'}) 15
+frozenset({"Freitas Andr{\\'e}", 'Hschuh Siegfried'}) 17
+frozenset({'Zarrie{\\ss} Sina', 'Schlangen David'}) 15
+frozenset({"Seddah Djam{\\'e}", 'Cito Marie'}) 14
+frozenset({"Fu{\\v{c}}{\\'\\i}kov{\\'a} Eva", "Ure{\\v{s}}ov{\\'a} Zde{\\v{n}}ka"}) 10
+frozenset({"Ure{\\v{s}}ov{\\'a} Zde{\\v{n}}ka", 'Haji{\\v{c}} Jan'}) 17
+frozenset({'Song Zhiyi', 'Strassel Stephanie'}) 15
+frozenset({'Bies Ann', 'Kulick Seth'}) 25
+frozenset({'van Genabith Josef', 'Pal Santanu'}) 14
+frozenset({'Zampieri Marcos', 'van Genabith Josef'}) 13
+frozenset({'Wang Xiaolin', 'Sumita Eiichiro'}) 12
+frozenset({'Eshghi Arash', 'Lemon Oliver'}) 10
+frozenset({'Post Matt', 'Bojar Ond{\\v{r}}ej'}) 11
+frozenset({'Post Matt', 'Haddow Barry'}) 12
+frozenset({'Monz Christof', 'Post Matt'}) 14
+frozenset({'Verspoor Karin', 'Neves Mariana'}) 10
+frozenset({"Sanchis-Trilles Germ{\\'a}n", 'Casacuberta Francisco'}) 13
+frozenset({'Naskar Sudip Kumar', 'Pal Santanu'}) 15
+frozenset({'Naskar Sudip Kumar', 'van Genabith Josef'}) 14
+frozenset({'Byrne Bill', 'de Gispert Adri{\\`a}'}) 14
+frozenset({'Ha Thanh-Le', 'Niehues Jan'}) 15
+frozenset({'Mitamura Teruko', 'Nyberg Eric'}) 23
+frozenset({'Samih Younes', 'Attia Mohammed'}) 13
+frozenset({'Hajj Hazem', 'El-Hajj Wassim'}) 10
+frozenset({'Rambow Owen', 'Habash Nizar'}) 38
+frozenset({'Reisert Paul', 'Inui Kentaro'}) 11
+frozenset({'Evang Kilian', 'Bos Johan'}) 10
+frozenset({'Hahn Udo', 'Hellrich Johannes'}) 11
+frozenset({"Daum{\\'e} III Hal", 'Rao Sudha'}) 10
+frozenset({'{\\v{S}}najder Jan', 'Karan Mladen'}) 10
+frozenset({'Stepanov Evgeny', 'Riccardi Giuseppe'}) 13
+frozenset({'Allauzen Cyril', 'Riley Michael'}) 11
+frozenset({'Webber Bonnie', 'Prasad Rashmi'}) 14
+frozenset({'Prasad Rashmi', 'Lee Alan'}) 10
+frozenset({'Ekbal Asif', 'Akhtar Md Shad'}) 14
+frozenset({'Bhattacharyya Pushpak', 'Akhtar Md Shad'}) 12
+frozenset({'Cocos Anne', 'Callison-Burch Chris'}) 11
+frozenset({'Callison-Burch Chris', 'Apidianaki Marianna'}) 12
+frozenset({'Martin Maite', "Ure{\\~n}a-L{\\'o}pez L. Alfonso"}) 10
+frozenset({'Lefever Els', "Hoste V{\\'e}ronique"}) 22
+frozenset({'Bontcheva Kalina', 'Maynard Diana'}) 13
+frozenset({'Bontcheva Kalina', 'Derczynski Leon'}) 12
+frozenset({'Semeraro Giovanni', 'Basile Pierpaolo'}) 11
+frozenset({'van den Bosch Antal', 'Krahmer Emiel'}) 11
+frozenset({'Maharjan Suraj', 'Solorio Thamar'}) 14
+frozenset({'Solorio Thamar', 'Montes Manuel'}) 10
+frozenset({"M{\\`a}rquez Llu{\\'\\i}s", "Barr{\\'o}n-Cede{\\~n}o Alberto"}) 13
+frozenset({"M{\\`a}rquez Llu{\\'\\i}s", 'Nakov Preslav'}) 27
+frozenset({'Gildea Daniel', 'Song Linfeng'}) 12
+frozenset({'Choi Yejin', 'Cardie Claire'}) 10
+frozenset({'Carenini Giuseppe', 'Joty Shafiq'}) 10
+frozenset({'Murray Gabriel', 'Carenini Giuseppe'}) 10
+frozenset({'Chen Jhih-Jie', 'Chang Jason'}) 10
+frozenset({'Duh Kevin', 'Van Durme Benjamin'}) 11
+frozenset({'Dahlmeier Daniel', 'Ng Hwee Tou'}) 17
+frozenset({'Stab Christian', 'Gurevych Iryna'}) 14
+frozenset({'Hsieh Yu-Lun', 'Hsu Wen-Lian'}) 11
+frozenset({'Sun Xu', 'Ma Shuming'}) 14
+frozenset({'Wong Kam-Fai', 'Gao Wei'}) 12
+frozenset({'May Jonathan', 'Knight Kevin'}) 16
+frozenset({'Clark Stephen', 'Rimell Laura'}) 11
+frozenset({'Grangier David', 'Auli Michael'}) 10
+frozenset({'Liu Qun', 'Feng Yang'}) 11
+frozenset({'Wieting John', 'Gimpel Kevin'}) 10
+frozenset({'Sun Xu', 'Xu Jingjing'}) 12
+frozenset({'Miller Tristan', 'Gurevych Iryna'}) 12
+frozenset({'Mohammad Saif', 'Kiritchenko Svetlana'}) 22
+frozenset({'Rumshisky Anna', 'Romanov Alexey'}) 13
+frozenset({'McCallum Andrew', 'Verga Patrick'}) 10
+frozenset({"Vuli{\\'c} Ivan", 'Moens Marie-Francine'}) 12
+frozenset({'Nguyen Dat Quoc', 'Nguyen Dai Quoc'}) 12
+frozenset({'Yang Jie', 'Zhang Yue'}) 10
+frozenset({'Hashimoto Kazuma', 'Tsuruoka Yoshimasa'}) 13
+frozenset({'Cohen Shay B.', 'Narayan Shashi'}) 12
+frozenset({'Flickinger Dan', 'Oepen Stephan'}) 25
+frozenset({'Roth Dan', 'Upadhyay Shyam'}) 11
+frozenset({'Roth Dan', 'Peng Haoruo'}) 10
+frozenset({'Ramisch Carlos', 'Villavicencio Aline'}) 23
+frozenset({'Castro Ferreira Thiago', 'Krahmer Emiel'}) 10
+frozenset({"Hoste V{\\'e}ronique", "De Clercq Orph{\\'e}e"}) 10
+frozenset({'Kurohashi Sadao', 'Shibata Tomohide'}) 14
+frozenset({'Resnik Philip', 'Boyd-Graber Jordan'}) 15
+frozenset({'Koehn Philipp', 'Knowles Rebecca'}) 10
+frozenset({'Klein Dan', 'Berg-Kirkpatrick Taylor'}) 15
+frozenset({'Nakov Preslav', 'Joty Shafiq'}) 15
+frozenset({'Zhou Guodong', 'Qian Longhua'}) 11
+frozenset({'Chang Yung-Chun', 'Hsu Wen-Lian'}) 11
+frozenset({'Palmer Martha', 'Vaidya Ashwini'}) 10
+frozenset({'Rosset Sophie', 'Zweigenbaum Pierre'}) 18
+frozenset({'Birch Alexra', 'Sennrich Rico'}) 10
+frozenset({'Federico Marcello', 'Negri Matteo'}) 12
+frozenset({'Patel Kevin', 'Bhattacharyya Pushpak'}) 11
+frozenset({'Sasaki Minoru', 'Komiya Kanako'}) 10
+frozenset({'Shinnou Hiroyuki', 'Sasaki Minoru'}) 20
+frozenset({'Volodina Elena', "Pil{\\'a}n Ildik{\\'o}"}) 11
+frozenset({'Meurers Detmar', 'Ziai Ramon'}) 10
+frozenset({'Pan Xiaoman', 'Knight Kevin'}) 10
+frozenset({'Zhang Boliang', 'Ji Heng'}) 15
+frozenset({'Al-Khatib Khalid', 'Stein Benno'}) 10
+frozenset({"Gerv{\\'a}s Pablo", "Herv{\\'a}s Raquel"}) 10
+frozenset({'Specia Lucia', 'Haddow Barry'}) 11
+frozenset({'Monz Christof', 'Specia Lucia'}) 11
+frozenset({'Post Matt', 'Specia Lucia'}) 12
+frozenset({'Specia Lucia', 'Turchi Marco'}) 11
+frozenset({'Burchardt Aljoscha', 'Avramidis Eleftherios'}) 17
+frozenset({'Logacheva Varvara', 'Specia Lucia'}) 15
+frozenset({'Papavassiliou Vassilis', 'Prokopidis Prokopis'}) 11
+frozenset({'Way Andy', 'Toral Antonio'}) 16
+frozenset({'Ney Hermann', 'Alkhouli Tamer'}) 14
+frozenset({'Grishman Ralph', 'Nguyen Thien Huu'}) 10
+frozenset({'Asahara Masayuki', 'Matsumoto Yuji'}) 34
+frozenset({'Kondrak Grzegorz', 'Nicolai Garrett'}) 13
+frozenset({'Esker Ramy', 'Rambow Owen'}) 15
+frozenset({'Ultes Stefan', 'Rojas-Barahona Lina M.'}) 11
+frozenset({'Rojas-Barahona Lina M.', "Ga{\\v{s}}i{\\'c} Milica"}) 12
+frozenset({'Ultes Stefan', "Ga{\\v{s}}i{\\'c} Milica"}) 14
+frozenset({'Erjavec Toma{\\v{z}}', 'Fi{\\v{s}}er Darja'}) 12
+frozenset({'Budzianowski Pawe{\\l}', "Ga{\\v{s}}i{\\'c} Milica"}) 11
+frozenset({'Allen James', 'Galescu Lucian'}) 10
+frozenset({'Rojas-Barahona Lina M.', 'Young Steve'}) 10
+frozenset({'Young Steve', "Ga{\\v{s}}i{\\'c} Milica"}) 23
+frozenset({'Araki Jun', 'Mitamura Teruko'}) 10
+frozenset({'Vossen Piek', 'Caselli Tommaso'}) 12
+frozenset({'Palmer Martha', 'Bonial Claire'}) 19
+frozenset({'Dasgupta Tirthankar', 'Sinha Manjira'}) 12
+frozenset({"Max Aur{\\'e}lien", 'Vilnat Anne'}) 11
+frozenset({'Yoshimi Takehiko', 'Kotani Katsunori'}) 10
+frozenset({'Chen Liang-Pu', 'Wu Shih-Hung'}) 10
+frozenset({'Neubig Graham', 'Nakamura Satoshi'}) 37
+frozenset({'Zhao Shiqi', 'Wang Haifeng'}) 12
+frozenset({'Banchs Rafael E.', 'Li Haizhou'}) 15
+frozenset({'Duan Xiangyu', 'Li Haizhou'}) 13
+frozenset({'Li Haizhou', 'Zhang Min'}) 60
+frozenset({'Uryupina Olga', 'Poesio Massimo'}) 10
+frozenset({'Burstein Jill', 'Tetreault Joel'}) 12
+frozenset({'Leacock Claudia', 'Tetreault Joel'}) 11
+frozenset({'Plank Barbara', "Mart{\\'\\i}nez Alonso H{\\'e}ctor"}) 14
+frozenset({'Barbieri Francesco', 'Saggion Horacio'}) 11
+frozenset({'Ronzano Francesco', 'Saggion Horacio'}) 16
+frozenset({'Espinosa-Anke Luis', 'Saggion Horacio'}) 10
+frozenset({'Nikolova Ivelina', 'Angelova Galia'}) 10
+frozenset({'Thater Stefan', 'Pinkal Manfred'}) 12
+frozenset({'Hermann Karl Moritz', 'Blunsom Phil'}) 13
+frozenset({'Hermjakob Ulf', 'Knight Kevin'}) 11
+frozenset({'Moschitti Alessro', 'Da San Martino Giovanni'}) 11
+frozenset({'Shimbo Masashi', 'Matsumoto Yuji'}) 10
+frozenset({'Zettlemoyer Luke', 'Lee Kenton'}) 12
+frozenset({'Sun Xu', 'Wang Houfeng'}) 19
+frozenset({'Li Mu', 'Liu Shujie'}) 19
+frozenset({'Zhou Ming', 'Li Mu'}) 39
+frozenset({'Li Sujian', 'Li Wenjie'}) 11
+frozenset({'Thomson Sam', 'Smith Noah A.'}) 10
+frozenset({'Zhao Tiejun', 'Zhou Ming'}) 12
+frozenset({'Gardent Claire', 'Narayan Shashi'}) 12
+frozenset({'Biemann Chris', 'Riedl Martin'}) 23
+frozenset({'Moschitti Alessro', "M{\\`a}rquez Llu{\\'\\i}s"}) 15
+frozenset({'Moschitti Alessro', 'Nakov Preslav'}) 14
+frozenset({'Wilkens Rodrigo', 'Villavicencio Aline'}) 10
+frozenset({'Wisniewski Guillaume', 'Aufrant Lauriane'}) 11
+frozenset({'Yvon Fran{\\c{c}}ois', 'Aufrant Lauriane'}) 12
+frozenset({'Vogel Stephan', 'Sajjad Hassan'}) 14
+frozenset({'Iglesias Gonzalo', 'de Gispert Adri{\\`a}'}) 11
+frozenset({'Su Pei-Hao', 'Rojas-Barahona Lina M.'}) 10
+frozenset({'Su Pei-Hao', "Ga{\\v{s}}i{\\'c} Milica"}) 16
+frozenset({'Liu Qun', 'Way Andy'}) 28
+frozenset({'Gimpel Kevin', 'Bansal Mohit'}) 10
+frozenset({'Gao Jianfeng', 'He Xiaodong'}) 13
+frozenset({'Nagata Masaaki', 'Hayashi Katsuhiko'}) 10
+frozenset({'Smith Noah A.', 'Schneider Nathan'}) 17
+frozenset({'Rambow Owen', 'Prabhakaran Vinodkumar'}) 17
+frozenset({'Deng Li', 'He Xiaodong'}) 11
+frozenset({"N{\\'e}v{\\'e}ol Aur{\\'e}lie", 'Zweigenbaum Pierre'}) 10
+frozenset({'Grouin Cyril', "N{\\'e}v{\\'e}ol Aur{\\'e}lie"}) 10
+frozenset({'Ananiadou Sophia', 'McNaught John'}) 11
+frozenset({'Vincze Veronika', "Farkas Rich{\\'a}rd"}) 10
+frozenset({'van den Bosch Antal', 'Hendrickx Iris'}) 14
+frozenset({'Kordoni Valia', 'Egg Markus'}) 11
+frozenset({'Chang Baobao', 'Ge Tao'}) 11
+frozenset({'Sui Zhifang', 'Ge Tao'}) 10
+frozenset({'Roth Dan', 'Sammons Mark'}) 18
+frozenset({'Roth Dan', 'Srikumar Vivek'}) 12
+frozenset({'Bisazza Arianna', 'Monz Christof'}) 15
+frozenset({'Davis Brian', 'Hschuh Siegfried'}) 10
+frozenset({'Francopoulo Gil', 'Paroubek Patrick'}) 10
+frozenset({'Abdelali Ahmed', 'Vogel Stephan'}) 12
+frozenset({'Huang Chu-Ren', 'Xu Hongzhi'}) 13
+frozenset({'Sarasola Kepa', 'Labaka Gorka'}) 16
+frozenset({'Oflazer Kemal', 'Bouamor Houda'}) 15
+frozenset({'Oflazer Kemal', 'Zaghouani Wajdi'}) 10
+frozenset({'Ishida Toru', 'Murakami Yohei'}) 10
+frozenset({'Bird Steven', 'Cohn Trevor'}) 11
+frozenset({'Specia Lucia', 'Paetzold Gustavo'}) 21
+frozenset({'Liu Jing', 'Lin Chin-Yew'}) 10
+frozenset({'Esker Ramy', 'Habash Nizar'}) 18
+frozenset({'Frontini Francesca', 'Monachini Monica'}) 12
+frozenset({'Hagen Kristin', 'Johannessen Janne Bondi'}) 11
+frozenset({'Bechet Frederic', 'Favre Benoit'}) 12
+frozenset({'Salakoski Tapio', 'Ginter Filip'}) 11
+frozenset({'Dras Mark', 'Malmasi Shervin'}) 18
+frozenset({'Kuhlmann Marco', 'Satta Giorgio'}) 10
+frozenset({'Ney Hermann', 'Peter Jan-Thorsten'}) 19
+frozenset({'Moschitti Alessro', 'Nicosia Massimo'}) 11
+frozenset({'Preo{\\c{t}}iuc-Pietro Daniel', 'Ungar Lyle'}) 12
+frozenset({'Levin Lori', 'Carbonell Jaime'}) 16
+frozenset({'Callison-Burch Chris', 'Pavlick Ellie'}) 15
+frozenset({'Way Andy', 'Du Jinhua'}) 22
+frozenset({'Liu Qun', 'Tu Zhaopeng'}) 11
+frozenset({'Dyer Chris', 'Smith Noah A.'}) 34
+frozenset({"M{\\`a}rquez Llu{\\'\\i}s", 'Joty Shafiq'}) 14
+frozenset({'Wen Tsung-Hsien', "Ga{\\v{s}}i{\\'c} Milica"}) 14
+frozenset({'Su Keh-Yih', 'Zong Chengqing'}) 10
+frozenset({'Federico Marcello', 'Cettolo Mauro'}) 33
+frozenset({'Ringger Eric', 'Felt Paul'}) 12
+frozenset({'Seppi Kevin', 'Felt Paul'}) 13
+frozenset({'Ringger Eric', 'Seppi Kevin'}) 17
+frozenset({'van den Bosch Antal', 'Wubben Ser'}) 10
+frozenset({'Iosif Elias', 'Potamianos Alexros'}) 19
+frozenset({'Maziarz Marek', 'Piasecki Maciej'}) 11
+frozenset({'Bond Francis', 'Baldwin Timothy'}) 11
+frozenset({'Patra Braja Gopal', 'Das Dipankar'}) 13
+frozenset({'Byopadhyay Sivaji', 'Patra Braja Gopal'}) 13
+frozenset({'Utsuro Takehito', 'Yamamoto Mikio'}) 13
+frozenset({"Ga{\\v{s}}i{\\'c} Milica", "Mrk{\\v{s}}i{\\'c} Nikola"}) 14
+frozenset({'Young Steve', "Mrk{\\v{s}}i{\\'c} Nikola"}) 15
+frozenset({'Su Pei-Hao', 'Young Steve'}) 13
+frozenset({'Young Steve', 'Wen Tsung-Hsien'}) 13
+frozenset({'An Pranav', 'Walker Marilyn'}) 10
+frozenset({'Buck Christian', 'Koehn Philipp'}) 10
+frozenset({'Koehn Philipp', 'Birch Alexra'}) 13
+frozenset({'Cho Eunah', 'Niehues Jan'}) 20
+frozenset({'Allauzen Alexre', 'Yvon Fran{\\c{c}}ois'}) 29
+frozenset({'Federico Marcello', 'Bertoldi Nicola'}) 33
+frozenset({'Foster George', 'Chen Boxing'}) 15
+frozenset({'Chen Boxing', 'Kuhn Rol'}) 17
+frozenset({'Foster George', 'Kuhn Rol'}) 27
+frozenset({'Ha Thanh-Le', 'Cho Eunah'}) 11
+frozenset({'Zhao Kai', 'Huang Liang'}) 14
+frozenset({'Kamran Amir', 'Bojar Ond{\\v{r}}ej'}) 10
+frozenset({'S{\\o}gaard Anders', 'Hovy Dirk'}) 17
+frozenset({'Sha Lei', 'Chang Baobao'}) 10
+frozenset({'{\\v{S}}najder Jan', 'Glava{\\v{s}} Goran'}) 12
+frozenset({'Xiao Jianguo', 'Wan Xiaojun'}) 13
+frozenset({'Perez-Beltrachini Laura', 'Gardent Claire'}) 16
+frozenset({'Ha Thanh-Le', 'Waibel Alex'}) 11
+frozenset({'Marcu Daniel', 'Knight Kevin'}) 22
+frozenset({'Weir David', 'Reffin Jeremy'}) 10
+frozenset({'Marimon Montserrat', "Bel N{\\'u}ria"}) 10
+frozenset({'Habash Nizar', 'Diab Mona'}) 18
+frozenset({'Al-Badrashiny Mohamed', 'Diab Mona'}) 13
+frozenset({'Diab Mona', 'Hawwari Abdelati'}) 14
+frozenset({"{\\v{Z}}abokrtsk{\\'y} Zden{\\v{e}}k", 'Mare{\\v{c}}ek David'}) 15
+frozenset({'Boldrini Ester', "Mart{\\'\\i}nez-Barco Patricio"}) 10
+frozenset({'Navigli Roberto', 'Pilehvar Mohammad Taher'}) 13
+frozenset({'Rus Vasile', 'Banjade Rajendra'}) 11
+frozenset({'McCallum Andrew', 'Riedel Sebastian'}) 11
+frozenset({'Xu Feiyu', 'Uszkoreit Hans'}) 29
+frozenset({'Xu Feiyu', 'Krause Sebastian'}) 12
+frozenset({'Krause Sebastian', 'Uszkoreit Hans'}) 11
+frozenset({'Joubert Alain', 'Lafourcade Mathieu'}) 16
+frozenset({'Kiela Douwe', 'Clark Stephen'}) 12
+frozenset({'Li Hang', 'Lu Zhengdong'}) 13
+frozenset({'Quirk Chris', 'Toutanova Kristina'}) 10
+frozenset({'Zhang Yuan', 'Barzilay Regina'}) 10
+frozenset({'Su Pei-Hao', 'Vyke David'}) 10
+frozenset({'Vyke David', "Mrk{\\v{s}}i{\\'c} Nikola"}) 10
+frozenset({'Wen Tsung-Hsien', 'Vyke David'}) 10
+frozenset({'Vyke David', "Ga{\\v{s}}i{\\'c} Milica"}) 10
+frozenset({'Young Steve', 'Vyke David'}) 11
+frozenset({'Moschitti Alessro', 'Severyn Aliaksei'}) 11
+frozenset({'Xiang Bing', 'Zhou Bowen'}) 15
+frozenset({'Gurevych Iryna', 'Eckle-Kohler Judith'}) 14
+frozenset({'Wan Stephen', "Paris C{\\'e}cile"}) 15
+frozenset({'Finch Andrew', 'Utiyama Masao'}) 14
+frozenset({'Finch Andrew', 'Sumita Eiichiro'}) 45
+frozenset({'Liu Zhanyi', 'Wu Hua'}) 13
+frozenset({'Xiong Deyi', 'Zhang Min'}) 29
+frozenset({'Li Mu', 'Zhang Dongdong'}) 21
+frozenset({'Thomson Blaise', 'Young Steve'}) 18
+frozenset({'Chen Kuan-Yu', 'Chen Berlin'}) 19
+frozenset({'Wang Hsin-Min', 'Chen Berlin'}) 15
+frozenset({'Wang Yu-Chun', 'Tsai Richard Tzong-Han'}) 13
+frozenset({'Hung Hsiao-Tsung', 'Chen Berlin'}) 10
+frozenset({'Liu Yang', 'Qian Xian'}) 10
+frozenset({'Rappoport Ari', 'Reichart Roi'}) 26
+frozenset({"Guzm{\\'a}n Francisco", 'Nakov Preslav'}) 13
+frozenset({'Korhonen Anna', 'Hill Felix'}) 10
+frozenset({'Callison-Burch Chris', 'Irvine Ann'}) 11
+frozenset({'Dyer Chris', 'Ballesteros Miguel'}) 11
+frozenset({'Way Andy', 'Li Liangyou'}) 11
+frozenset({'Bethard Steven', 'Moens Marie-Francine'}) 10
+frozenset({'Graham Yvette', 'Baldwin Timothy'}) 11
+frozenset({'S{\\o}gaard Anders', "Mart{\\'\\i}nez Alonso H{\\'e}ctor"}) 13
+frozenset({'Ananiadou Sophia', "Tsujii Jun{'}ichi"}) 29
+frozenset({'Yvon Fran{\\c{c}}ois', 'Lavergne Thomas'}) 15
+frozenset({'Lu Qin', 'Xu Ruifeng'}) 11
+frozenset({'Rambow Owen', 'Nasr Alexis'}) 11
+frozenset({'Mukherjee Animesh', 'Choudhury Monojit'}) 13
+frozenset({'Liu Ting', 'Zhang Meishan'}) 10
+frozenset({'Ligozat Anne-Laure', 'Grau Brigitte'}) 14
+frozenset({'Wisniewski Guillaume', 'Allauzen Alexre'}) 10
+frozenset({'Ma Qing', 'Murata Masaki'}) 21
+frozenset({'Duh Kevin', 'Matsumoto Yuji'}) 16
+frozenset({'Naskar Sudip Kumar', 'Byopadhyay Sivaji'}) 11
+frozenset({'Rieser Verena', 'Lemon Oliver'}) 17
+frozenset({'Mare{\\v{c}}ek David', 'Popel Martin'}) 10
+frozenset({'Bhingardive Sudha', 'Bhattacharyya Pushpak'}) 12
+frozenset({'Basu Anupam', 'Sinha Manjira'}) 10
+frozenset({'Dasgupta Tirthankar', 'Basu Anupam'}) 13
+frozenset({'Bethard Steven', 'Solorio Thamar'}) 10
+frozenset({'Diab Mona', 'Ghoneim Mahmoud'}) 14
+frozenset({'Maier Wolfgang', 'Kallmeyer Laura'}) 13
+frozenset({'Kordoni Valia', 'Cholakov Kostadin'}) 11
+frozenset({'Finch Andrew', 'Wang Xiaolin'}) 10
+frozenset({'Nagata Masaaki', 'Sudoh Katsuhito'}) 21
+frozenset({'Banchs Rafael E.', 'Lambert Patrik'}) 14
+frozenset({'Costa-juss{\\`a} Marta R.', 'Lambert Patrik'}) 11
+frozenset({'Costa-juss{\\`a} Marta R.', 'Banchs Rafael E.'}) 13
+frozenset({'Wu Dekai', 'Saers Markus'}) 27
+frozenset({'Wilcock Graham', 'Jokinen Kristiina'}) 10
+frozenset({'McShane Marjorie', 'Nirenburg Sergei'}) 15
+frozenset({'Gaizauskas Robert', 'Aker Ahmet'}) 14
+frozenset({'Hepple Mark', 'Gaizauskas Robert'}) 10
+frozenset({'Specia Lucia', 'Aziz Wilker'}) 19
+frozenset({'Rambow Owen', 'Bangalore Srinivas'}) 12
+frozenset({'Li Chen', 'Liu Yang'}) 11
+frozenset({'Kumaran A', 'Zhang Min'}) 14
+frozenset({'Kumaran A', 'Li Haizhou'}) 18
+frozenset({'Faruqui Manaal', 'Tsvetkov Yulia'}) 10
+frozenset({'Dyer Chris', 'Faruqui Manaal'}) 17
+frozenset({'Dyer Chris', 'Tsvetkov Yulia'}) 19
+frozenset({'Mediani Mohammed', 'Niehues Jan'}) 15
+frozenset({'Ney Hermann', 'Huck Matthias'}) 26
+frozenset({'Byopadhyay Sivaji', 'Pal Santanu'}) 14
+frozenset({"Max Aur{\\'e}lien", 'Yvon Fran{\\c{c}}ois'}) 18
+frozenset({'Specia Lucia', 'Shah Kashif'}) 13
+frozenset({'Wuebker Joern', 'Ney Hermann'}) 31
+frozenset({'Henrich Verena', 'Hinrichs Erhard'}) 11
+frozenset({'Webber Bonnie', 'Joshi Aravind'}) 24
+frozenset({'Prasad Rashmi', 'Joshi Aravind'}) 17
+frozenset({'Elfardy Heba', 'Diab Mona'}) 10
+frozenset({'Zesch Torsten', 'Gurevych Iryna'}) 21
+frozenset({'Schuurman Ineke', 'Veghinste Vincent'}) 15
+frozenset({'Ling Wang', 'Trancoso Isabel'}) 21
+frozenset({'Agirre Eneko', 'Rigau German'}) 19
+frozenset({'Wiebe Janyce', 'Banea Carmen'}) 10
+frozenset({'Wiebe Janyce', 'Mihalcea Rada'}) 16
+frozenset({'van Genabith Josef', 'Tan Liling'}) 10
+frozenset({'Moschitti Alessro', 'Basili Roberto'}) 13
+frozenset({'S{\\o}gaard Anders', 'Johannsen Anders'}) 18
+frozenset({'Bouillon Pierrette', 'Rayner Manny'}) 38
+frozenset({'Tsourakis Nikos', 'Rayner Manny'}) 13
+frozenset({'Lazaridou Angeliki', 'Baroni Marco'}) 12
+frozenset({'Dagan Ido', 'Levy Omer'}) 11
+frozenset({'Wang Haifeng', 'Liu Zhanyi'}) 11
+frozenset({'Chen Chen', 'Ng Vincent'}) 12
+frozenset({'Dyer Chris', 'Lavie Alon'}) 11
+frozenset({'Li Sujian', 'Chang Baobao'}) 11
+frozenset({'Li Sujian', 'Sui Zhifang'}) 10
+frozenset({'Durrett Greg', 'Klein Dan'}) 11
+frozenset({'Post Matt', 'Callison-Burch Chris'}) 12
+frozenset({'Afantenos Stergos', 'Asher Nicholas'}) 10
+frozenset({'Thomson Blaise', "Ga{\\v{s}}i{\\'c} Milica"}) 10
+frozenset({'Kondrak Grzegorz', 'Cherry Colin'}) 11
+frozenset({'Schmitt Alexer', 'Minker Wolfgang'}) 10
+frozenset({'Cook Paul', 'Baldwin Timothy'}) 19
+frozenset({'Saratxaga Ibon', 'Navas Eva'}) 10
+frozenset({'Bies Ann', 'Maamouri Mohamed'}) 15
+frozenset({'Shaikh Samira', 'Liu Ting'}) 10
+frozenset({'Strzalkowski Tomek', 'Liu Ting'}) 15
+frozenset({'Vossen Piek', 'Rigau German'}) 12
+frozenset({'Laparra Egoitz', 'Rigau German'}) 16
+frozenset({'Ganguly Niloy', 'Choudhury Monojit'}) 11
+frozenset({'Oflazer Kemal', 'Mohit Behrang'}) 13
+frozenset({"Popovi{\\'c} Maja", 'Avramidis Eleftherios'}) 13
+frozenset({'Burchardt Aljoscha', "Popovi{\\'c} Maja"}) 11
+frozenset({'Galibert Olivier', 'Rosset Sophie'}) 14
+frozenset({'Uchimoto Kiyotaka', 'Isahara Hitoshi'}) 40
+frozenset({'Isahara Hitoshi', 'Utiyama Masao'}) 14
+frozenset({'Wu Xiaofeng', 'Liu Qun'}) 10
+frozenset({'Bouamor Dhouha', 'Zweigenbaum Pierre'}) 12
+frozenset({'Soria Claudia', 'Monachini Monica'}) 15
+frozenset({'Calzolari Nicoletta', 'Monachini Monica'}) 23
+frozenset({'Calzolari Nicoletta', 'Soria Claudia'}) 21
+frozenset({'Babych Bogdan', 'Sharoff Serge'}) 11
+frozenset({'Tateisi Yuka', 'Miyao Yusuke'}) 11
+frozenset({'Pyysalo Sampo', 'Ohta Tomoko'}) 22
+frozenset({'Rambow Owen', 'Diab Mona'}) 16
+frozenset({"Gonz{\\'a}lez-Rubio Jes{\\'u}s", 'Casacuberta Francisco'}) 18
+frozenset({'Casacuberta Francisco', "Ortiz-Mart{\\'\\i}nez Daniel"}) 17
+frozenset({'Zhao Jun', 'Xu Liheng'}) 11
+frozenset({'Liu Kang', 'Xu Liheng'}) 11
+frozenset({'Bisazza Arianna', 'Federico Marcello'}) 12
+frozenset({'Funakoshi Kotaro', 'Nakano Mikio'}) 11
+frozenset({'Hashimoto Chikara', 'Oh Jong-Hoon'}) 12
+frozenset({'Hashimoto Chikara', 'Torisawa Kentaro'}) 18
+frozenset({'Kaji Nobuhiro', 'Kitsuregawa Masaru'}) 13
+frozenset({'Besacier Laurent', "Blanchon Herv{\\'e}"}) 14
+frozenset({'Lu Bao-Liang', 'Zhao Hai'}) 10
+frozenset({"Daille B{\\'e}atrice", 'Morin Emmanuel'}) 19
+frozenset({'Wehrli Eric', 'Seretan Violeta'}) 11
+frozenset({'Inui Kentaro', 'Mizuno Junta'}) 10
+frozenset({'Fraser Alexer', 'Weller Marion'}) 10
+frozenset({'Lewis William', 'Xia Fei'}) 10
+frozenset({'Niehues Jan', 'Herrmann Teresa'}) 21
+frozenset({'Mediani Mohammed', 'Herrmann Teresa'}) 12
+frozenset({'Waibel Alex', 'Herrmann Teresa'}) 22
+frozenset({'Mediani Mohammed', 'Waibel Alex'}) 14
+frozenset({'Williams Philip', 'Koehn Philipp'}) 10
+frozenset({'Lo Chi-kiu', 'Wu Dekai'}) 20
+frozenset({'Neubig Graham', 'Sakti Sakriani'}) 20
+frozenset({'Neubig Graham', 'Toda Tomoki'}) 19
+frozenset({'Sakti Sakriani', 'Toda Tomoki'}) 19
+frozenset({'Nakamura Satoshi', 'Toda Tomoki'}) 19
+frozenset({'Peitz Stephan', 'Freitag Markus'}) 20
+frozenset({'Ney Hermann', 'Freitag Markus'}) 24
+frozenset({'Peitz Stephan', 'Ney Hermann'}) 32
+frozenset({'Ney Hermann', 'Feng Minwei'}) 10
+frozenset({'Haertel Robbie', 'Ringger Eric'}) 11
+frozenset({'Haertel Robbie', 'Seppi Kevin'}) 11
+frozenset({'Shaikh Samira', 'Taylor Sarah'}) 11
+frozenset({'Strzalkowski Tomek', 'Taylor Sarah'}) 11
+frozenset({'Carpuat Marine', 'Wu Dekai'}) 24
+frozenset({'Hirst Graeme', 'Brooke Julian'}) 16
+frozenset({'Guo Weiwei', 'Diab Mona'}) 15
+frozenset({'Wilks Yorick', 'Guthrie Louise'}) 11
+frozenset({'Xu Feiyu', 'Li Hong'}) 12
+frozenset({'Li Hong', 'Uszkoreit Hans'}) 11
+frozenset({'Ganitkevitch Juri', 'Callison-Burch Chris'}) 14
+frozenset({'Yao Xuchen', 'Van Durme Benjamin'}) 10
+frozenset({'Callison-Burch Chris', 'Van Durme Benjamin'}) 16
+frozenset({'Dyer Chris', 'Schneider Nathan'}) 11
+frozenset({'Liu Qun', 'Jiang Wenbin'}) 14
+frozenset({'Zhou Guangyou', 'Zhao Jun'}) 12
+frozenset({'Menezes Arul', 'Quirk Chris'}) 12
+frozenset({'Iida Ryu', 'Tokunaga Takenobu'}) 16
+frozenset({'Wuebker Joern', 'Peitz Stephan'}) 17
+frozenset({'Zhang Yue', 'Clark Stephen'}) 12
+frozenset({'Dagan Ido', 'Berant Jonathan'}) 11
+frozenset({'Zhou Ming', 'Liu Xiaohua'}) 16
+frozenset({'Li Sheng', 'Yang Muyun'}) 10
+frozenset({'Artzi Yoav', 'Zettlemoyer Luke'}) 10
+frozenset({'El Kholy Ahmed', 'Habash Nizar'}) 10
+frozenset({'Grishman Ralph', 'Meyers Adam'}) 17
+frozenset({'Lui Marco', 'Baldwin Timothy'}) 13
+frozenset({'Nothman Joel', 'Curran James R.'}) 11
+frozenset({'Hastie Helen', 'Lemon Oliver'}) 16
+frozenset({'Traum David', 'DeVault David'}) 12
+frozenset({'Dethlefs Nina', "Cuay{\\'a}huitl Heriberto"}) 12
+frozenset({'Liu Xingkun', 'Lemon Oliver'}) 14
+frozenset({'Vassiliou Marina', 'Sofianopoulos Sokratis'}) 10
+frozenset({'Wu Dekai', 'Addanki Karteek'}) 10
+frozenset({'Wuebker Joern', 'Freitag Markus'}) 12
+frozenset({'Peitz Stephan', 'Huck Matthias'}) 13
+frozenset({'Wuebker Joern', 'Huck Matthias'}) 10
+frozenset({'Hanneman Greg', 'Lavie Alon'}) 12
+frozenset({'Denkowski Michael', 'Lavie Alon'}) 15
+frozenset({'Mansour Saab', 'Ney Hermann'}) 15
+frozenset({'Miyao Yusuke', 'Matsuzaki Takuya'}) 18
+frozenset({'Stevenson Suzanne', 'Fazly Afsaneh'}) 16
+frozenset({'Wu Jian-Cheng', 'Chang Jason S.'}) 18
+frozenset({'Wang Houfeng', 'Zhang Longkai'}) 10
+frozenset({'Dagan Ido', 'Szpektor Idan'}) 16
+frozenset({'Vincze Veronika', "Nagy T. Istv{\\'a}n"}) 10
+frozenset({'Pirrelli Vito', 'Lenci Alessro'}) 12
+frozenset({'Janarthanam Srinivasan', 'Lemon Oliver'}) 13
+frozenset({'Schlangen David', 'Baumann Timo'}) 14
+frozenset({'Zhang Yi', 'Wang Rui'}) 12
+frozenset({'Green Spence', 'Manning Christopher D.'}) 10
+frozenset({'Liu Bing', 'Mukherjee Arjun'}) 10
+frozenset({'Carroll John', 'Weir David'}) 11
+frozenset({'Tseng Yuen-Hsien', 'Chen Kuang-hua'}) 11
+frozenset({'Huang Shu-Ling', 'Chen Keh-Jiann'}) 11
+frozenset({'Hsieh Yu-Ming', 'Chen Keh-Jiann'}) 13
+frozenset({'Tsai Richard Tzong-Han', 'Hsu Wen-Lian'}) 10
+frozenset({'Korhonen Anna', 'Sun Lin'}) 10
+frozenset({'Huang Chu-Ren', 'Li Shoushan'}) 10
+frozenset({'Tannier Xavier', "Moriceau V{\\'e}ronique"}) 12
+frozenset({'Levin Lori', 'Frederking Robert'}) 11
+frozenset({'Hamon Olivier', 'Choukri Khalid'}) 11
+frozenset({'Ramanathan Ananthakrishnan', 'Visweswariah Karthik'}) 11
+frozenset({'Vilnat Anne', 'Paroubek Patrick'}) 13
+frozenset({'Radev Dragomir', 'Abu-Jbara Amjad'}) 16
+frozenset({'Smith Noah A.', 'Gimpel Kevin'}) 15
+frozenset({'Das Dipanjan', 'Smith Noah A.'}) 12
+frozenset({'Ney Hermann', 'Vilar David'}) 24
+frozenset({'Blanco Eduardo', 'Moldovan Dan'}) 10
+frozenset({'Weese Jonathan', 'Callison-Burch Chris'}) 11
+frozenset({"Pad{\\'o} Sebastian", 'Erk Katrin'}) 14
+frozenset({'Nenkova Ani', 'Louis Annie'}) 15
+frozenset({'Klakow Dietrich', 'Wieg Michael'}) 14
+frozenset({"M{\\`a}rquez Llu{\\'\\i}s", 'Carreras Xavier'}) 13
+frozenset({'Liu Qun', 'Mi Haitao'}) 16
+frozenset({'Liu Qun', 'Lin Shouxun'}) 22
+frozenset({'Beale Stephen', 'McShane Marjorie'}) 14
+frozenset({'Eck Matthias', 'Waibel Alex'}) 15
+frozenset({'Duh Kevin', 'Nagata Masaaki'}) 12
+frozenset({'Cettolo Mauro', 'Bertoldi Nicola'}) 18
+frozenset({'Duh Kevin', 'Sudoh Katsuhito'}) 18
+frozenset({'Naskar Sudip Kumar', 'Way Andy'}) 13
+frozenset({'Sankaran Baskaran', 'Sarkar Anoop'}) 10
+frozenset({'Komachi Mamoru', 'Matsumoto Yuji'}) 19
+frozenset({'Bai Ming-Hong', 'Chen Keh-Jiann'}) 12
+frozenset({'Yu Liang-Chih', 'Wu Chung-Hsien'}) 10
+frozenset({'Byopadhyay Sivaji', 'Ekbal Asif'}) 18
+frozenset({'McKeown Kathleen', 'Thadani Kapil'}) 11
+frozenset({'Callison-Burch Chris', 'Koehn Philipp'}) 21
+frozenset({'Monz Christof', 'Callison-Burch Chris'}) 14
+frozenset({'Costa-juss{\\`a} Marta R.', "Mari{\\~n}o Jos{\\'e} B."}) 12
+frozenset({"Mari{\\~n}o Jos{\\'e} B.", "Fonollosa Jos{\\'e} A. R."}) 13
+frozenset({'Byrne William', 'de Gispert Adri{\\`a}'}) 13
+frozenset({'Kim Jin-Dong', 'Ohta Tomoko'}) 13
+frozenset({'Kim Jin-Dong', 'Pyysalo Sampo'}) 10
+frozenset({"Tsujii Jun{'}ichi", 'Ohta Tomoko'}) 22
+frozenset({"Tsujii Jun{'}ichi", 'Pyysalo Sampo'}) 20
+frozenset({'Johnson Mark', 'Goldwater Sharon'}) 10
+frozenset({'Power Richard', 'Williams Sra'}) 10
+frozenset({'Gotti Fabrizio', 'Langlais Philippe'}) 12
+frozenset({'Swift Mary', 'Allen James'}) 13
+frozenset({"Branco Ant{\\'o}nio", 'Costa Francisco'}) 10
+frozenset({'Mehdad Yashar', 'Negri Matteo'}) 13
+frozenset({'{Mausam}', 'Etzioni Oren'}) 14
+frozenset({'Bontcheva Kalina', 'Tablan Valentin'}) 10
+frozenset({'Cunningham Hamish', 'Tablan Valentin'}) 10
+frozenset({'Cunningham Hamish', 'Bontcheva Kalina'}) 19
+frozenset({'Dagan Ido', 'Shnarch Eyal'}) 10
+frozenset({'Goldwasser Dan', 'Roth Dan'}) 10
+frozenset({'Duh Kevin', 'Tsukada Hajime'}) 17
+frozenset({'Tsukada Hajime', 'Sudoh Katsuhito'}) 21
+frozenset({'Sarkar Anoop', 'Haffari Gholamreza'}) 10
+frozenset({'De Saeger Stijn', 'Torisawa Kentaro'}) 19
+frozenset({'Hashimoto Chikara', 'De Saeger Stijn'}) 12
+frozenset({"Kazama Jun{'}ichi", 'Torisawa Kentaro'}) 29
+frozenset({'De Saeger Stijn', "Kazama Jun{'}ichi"}) 12
+frozenset({'Schwartz Richard', 'Matsoukas Spyros'}) 10
+frozenset({'Etzioni Oren', 'Soderl Stephen'}) 16
+frozenset({'Stymne Sara', 'Ahrenberg Lars'}) 10
+frozenset({'Velardi Paola', 'Navigli Roberto'}) 10
+frozenset({'Goldberg Yoav', 'Elhadad Michael'}) 16
+frozenset({'Meng Yao', 'Yu Hao'}) 12
+frozenset({'Li Sheng', 'Liu Ting'}) 21
+frozenset({'Tsukada Hajime', 'Nagata Masaaki'}) 11
+frozenset({'Tan Chew Lim', 'Zhang Min'}) 16
+frozenset({'Sumita Eiichiro', 'Yamamoto Seiichi'}) 11
+frozenset({'Kim Su Nam', 'Baldwin Timothy'}) 19
+frozenset({'Baldwin Timothy', 'Nicholson Jeremy'}) 10
+frozenset({'Sornlertlamvanich Virach', 'Charoenporn Thatsanee'}) 18
+frozenset({'Husain Samar', 'Sharma Dipti Misra'}) 10
+frozenset({'Husain Samar', 'Sangal Rajeev'}) 10
+frozenset({'Ney Hermann', 'Leusch Gregor'}) 16
+frozenset({"Amig{\\'o} Enrique", 'Gonzalo Julio'}) 10
+frozenset({'Gonzalo Julio', 'Verdejo Felisa'}) 16
+frozenset({'Chodorow Martin', 'Tetreault Joel'}) 14
+frozenset({'Cohn Trevor', 'Blunsom Phil'}) 12
+frozenset({'Way Andy', 'van Genabith Josef'}) 20
+frozenset({'Hartley Anthony', 'Babych Bogdan'}) 17
+frozenset({'Hartley Anthony', 'Sharoff Serge'}) 10
+frozenset({"Tsujii Jun{'}ichi", 'Matsuzaki Takuya'}) 21
+frozenset({"Gim{\\'e}nez Jes{\\'u}s", "M{\\`a}rquez Llu{\\'\\i}s"}) 14
+frozenset({'Ney Hermann', 'Zens Richard'}) 30
+frozenset({'Dymetman Marc', 'Cancedda Nicola'}) 11
+frozenset({'Ney Hermann', 'Mauser Arne'}) 12
+frozenset({'Zhou Ming', 'Li Chi-Ho'}) 13
+frozenset({'Xiong Deyi', 'Li Haizhou'}) 13
+frozenset({"Tsujii Jun{'}ichi", 'Miyao Yusuke'}) 46
+frozenset({'Byopadhyay Sivaji', 'Das Amitava'}) 11
+frozenset({'Morante Roser', 'Daelemans Walter'}) 11
+frozenset({"Max Aur{\\'e}lien", 'Bouamor Houda'}) 11
+frozenset({'Vilnat Anne', 'Bouamor Houda'}) 10
+frozenset({'Eisele Andreas', 'Chen Yu'}) 12
+frozenset({'Choukri Khalid', 'Mostefa Djamel'}) 10
+frozenset({'Gatt Albert', 'Belz Anja'}) 14
+frozenset({'Broeder Daan', 'Wittenburg Peter'}) 17
+frozenset({'Kow Eric', 'Belz Anja'}) 13
+frozenset({'Pustejovsky James', 'Rumshisky Anna'}) 10
+frozenset({'Lardilleux Adrien', 'Lepage Yves'}) 12
+frozenset({'White Michael', 'Rajkumar Rajakrishnan'}) 10
+frozenset({'Lin Shouxun', 'Liu Yang'}) 11
+frozenset({'Hori Chiori', 'Kashioka Hideki'}) 10
+frozenset({'Way Andy', 'Jiang Jie'}) 14
+frozenset({'Sumita Eiichiro', 'Paul Michael'}) 23
+frozenset({'Murata Masaki', 'Isahara Hitoshi'}) 32
+frozenset({'Okada Yoshihiro', 'Watanabe Yasuhiko'}) 12
+frozenset({'Nederhof Mark-Jan', 'Satta Giorgio'}) 17
+frozenset({'Dale Robert', 'Viethen Jette'}) 10
+frozenset({'Finch Andrew', 'Paul Michael'}) 10
+frozenset({'Stein Daniel', 'Ney Hermann'}) 17
+frozenset({'Vogel Stephan', 'Waibel Alex'}) 25
+frozenset({'Hewavitharana Sanjika', 'Vogel Stephan'}) 10
+frozenset({'Vogel Stephan', 'Bach Nguyen'}) 11
+frozenset({'Vogel Stephan', 'Gao Qin'}) 12
+frozenset({'Komatani Kazunori', 'Okuno Hiroshi G.'}) 11
+frozenset({'Weischedel Ralph', 'Ramshaw Lance'}) 12
+frozenset({"Tsujii Jun{'}ichi", 'Kim Jin-Dong'}) 16
+frozenset({"Montoyo Andr{\\'e}s", 'Balahur Alexra'}) 11
+frozenset({'Patry Alexre', 'Langlais Philippe'}) 15
+frozenset({'Chen Zheng', 'Ji Heng'}) 10
+frozenset({"Tsujii Jun{'}ichi", 'Okazaki Naoaki'}) 13
+frozenset({'Inui Kentaro', 'Matsumoto Yuji'}) 17
+frozenset({'Kordoni Valia', 'Zhang Yi'}) 19
+frozenset({'Charniak Eugene', 'Elsner Micha'}) 10
+frozenset({'Suzuki Jun', 'Isozaki Hideki'}) 15
+frozenset({'Vogel Stephan', 'Zollmann Andreas'}) 10
+frozenset({'Ravi Sujith', 'Knight Kevin'}) 11
+frozenset({'Grishman Ralph', 'Sekine Satoshi'}) 10
+frozenset({'Grishman Ralph', 'Ji Heng'}) 10
+frozenset({'Ma Yanjun', 'Way Andy'}) 19
+frozenset({'He Yifan', 'Way Andy'}) 10
+frozenset({'Su Jian', 'Tan Chew Lim'}) 16
+frozenset({'Chen Hsin-Hsi', 'Ku Lun-Wei'}) 10
+frozenset({'Vilnat Anne', 'Robba Isabelle'}) 14
+frozenset({'Sumita Eiichiro', 'Okuma Hideo'}) 12
+frozenset({"Mari{\\~n}o Jos{\\'e} B.", 'Banchs Rafael E.'}) 11
+frozenset({'Seneff Stephanie', 'Zue Victor'}) 13
+frozenset({'Huang Chu-Ren', 'Chen Ying'}) 10
+frozenset({'Tsou Benjamin K.', 'Kwong Oi Yee'}) 14
+frozenset({'Rappoport Ari', 'Davidov Dmitry'}) 13
+frozenset({'Pighin Daniele', 'Moschitti Alessro'}) 10
+frozenset({'Hahn Udo', 'Tomanek Katrin'}) 13
+frozenset({'Tsukada Hajime', 'Isozaki Hideki'}) 14
+frozenset({'Trost Harald', 'Matiasek Johannes'}) 11
+frozenset({'Wiebe Janyce', 'Somasundaran Swapna'}) 10
+frozenset({'Haghighi Aria', 'Klein Dan'}) 10
+frozenset({'Clark Stephen', 'Curran James R.'}) 10
+frozenset({'Johnson Mark', 'Charniak Eugene'}) 15
+frozenset({'Sornlertlamvanich Virach', 'Isahara Hitoshi'}) 13
+frozenset({'Lombardo Vincenzo', 'Lesmo Leonardo'}) 11
+frozenset({'Nivre Joakim', 'Hall Johan'}) 11
+frozenset({'Nilsson Jens', 'Nivre Joakim'}) 10
+frozenset({'Khalilov Maxim', "Fonollosa Jos{\\'e} A. R."}) 12
+frozenset({'Inagaki Yasuyoshi', 'Matsubara Shigeki'}) 13
+frozenset({'Nakao Yukie', 'Rayner Manny'}) 13
+frozenset({'Nakao Yukie', 'Bouillon Pierrette'}) 12
+frozenset({'Aw Aiti', 'Zhang Min'}) 18
+frozenset({'Aw Aiti', 'Li Haizhou'}) 17
+frozenset({'Lapalme Guy', 'Langlais Philippe'}) 14
+frozenset({'Huang Chu-Ren', 'Hsieh Shu-Kai'}) 11
+frozenset({'Johansson Richard', 'Nugues Pierre'}) 16
+frozenset({'Sagot Beno{\\^\\i}t', 'Boullier Pierre'}) 10
+frozenset({'Wan Stephen', 'Dale Robert'}) 10
+frozenset({'Dale Robert', "Paris C{\\'e}cile"}) 10
+frozenset({'Fujita Sanae', 'Bond Francis'}) 15
+frozenset({'Hockey Beth Ann', 'Rayner Manny'}) 25
+frozenset({'Hockey Beth Ann', 'Bouillon Pierrette'}) 15
+frozenset({'Wermter Joachim', 'Hahn Udo'}) 10
+frozenset({'Ney Hermann', 'Matusov Evgeny'}) 19
+frozenset({'Ney Hermann', 'Hasan Sa{\\v{s}}a'}) 13
+frozenset({'Bender Oliver', 'Ney Hermann'}) 11
+frozenset({"Tsujii Jun{'}ichi", 'Tsuruoka Yoshimasa'}) 19
+frozenset({'Eck Matthias', 'Vogel Stephan'}) 14
+frozenset({'Sumita Eiichiro', 'Yamamoto Hirofumi'}) 14
+frozenset({'Zollmann Andreas', 'Venugopal Ashish'}) 11
+frozenset({'Vogel Stephan', 'Venugopal Ashish'}) 10
+frozenset({'Zhang Hao', 'Gildea Daniel'}) 12
+frozenset({'Wilson Theresa', 'Wiebe Janyce'}) 12
+frozenset({'Vidal Enrique', 'Casacuberta Francisco'}) 11
+frozenset({'Lavie Alon', 'Carbonell Jaime'}) 10
+frozenset({'Starler Marianne', 'Bouillon Pierrette'}) 14
+frozenset({'Beale Stephen', 'Nirenburg Sergei'}) 22
+frozenset({'Santaholma Marianne', 'Rayner Manny'}) 13
+frozenset({'Santaholma Marianne', 'Bouillon Pierrette'}) 12
+frozenset({'Starler Marianne', 'Rayner Manny'}) 14
+frozenset({'Hockey Beth Ann', 'Starler Marianne'}) 10
+frozenset({'Santaholma Marianne', 'Starler Marianne'}) 10
+frozenset({'Cahill Aoife', 'van Genabith Josef'}) 10
+frozenset({'Seneff Stephanie', 'Glass James'}) 12
+frozenset({'Levin Lori', 'Lavie Alon'}) 24
+frozenset({'Crego Josep M.', 'Lambert Patrik'}) 10
+frozenset({'Crego Josep M.', "Mari{\\~n}o Jos{\\'e} B."}) 14
+frozenset({'Agirre Eneko', 'Martinez David'}) 10
+frozenset({'Su Jian', 'Yang Xiaofeng'}) 10
+frozenset({'Huang Chu-Ren', 'Chen Keh-Jiann'}) 22
+frozenset({'Tateisi Yuka', "Tsujii Jun{'}ichi"}) 10
+frozenset({'Montemagni Simonetta', 'Pirrelli Vito'}) 15
+frozenset({'Briscoe Ted', 'Carroll John'}) 14
+frozenset({'Calzolari Nicoletta', 'Bertagna Francesca'}) 12
+frozenset({'Zhang Yujie', 'Isahara Hitoshi'}) 14
+frozenset({'Ma Qing', 'Uchimoto Kiyotaka'}) 12
+frozenset({'Ma Qing', 'Isahara Hitoshi'}) 28
+frozenset({'Wong Kam-Fai', 'Li Wenjie'}) 10
+frozenset({'Bond Francis', 'Tanaka Takaaki'}) 11
+frozenset({'Matsumoto Yuji', 'Kudo Taku'}) 10
+frozenset({"Tsujii Jun{'}ichi", 'Ninomiya Takashi'}) 10
+frozenset({'Rayner Manny', 'Chatzichrisafis Nikos'}) 10
+frozenset({'Gliozzo Alfio', 'Strapparava Carlo'}) 11
+frozenset({'Hovy Eduard', 'Lin Chin-Yew'}) 16
+frozenset({'Hovy Eduard', 'Zhou Liang'}) 11
+frozenset({'van den Bosch Antal', 'Daelemans Walter'}) 12
+frozenset({'Ney Hermann', 'Ueffing Nicola'}) 11
+frozenset({'Power Richard', 'Scott Donia'}) 11
+frozenset({'Vogel Stephan', 'Zhang Ying'}) 10
+frozenset({'Fujii Atsushi', 'Ishikawa Tetsuya'}) 16
+frozenset({'Su Jian', 'Zhou GuoDong'}) 10
+frozenset({'Levin Lori', 'Gates Donna'}) 14
+frozenset({'Cunningham Hamish', 'Maynard Diana'}) 13
+frozenset({'Dorr Bonnie', 'Habash Nizar'}) 11
+frozenset({'Helmreich Stephen', 'Farwell David'}) 11
+frozenset({'Murata Masaki', 'Uchimoto Kiyotaka'}) 12
+frozenset({'Li Wei', 'Niu Cheng'}) 11
+frozenset({'Palmer Martha', 'Dang Hoa Trang'}) 11
+frozenset({'Tokunaga Takenobu', 'Tanaka Hozumi'}) 22
+frozenset({'Isahara Hitoshi', 'Sekine Satoshi'}) 14
+frozenset({'Sumita Eiichiro', 'Shimohata Mitsuo'}) 10
+frozenset({'Simard Michel', 'Langlais Philippe'}) 11
+frozenset({'Meyers Adam', 'Macleod Catherine'}) 10
+frozenset({'Grishman Ralph', 'Macleod Catherine'}) 15
+frozenset({'Basili Roberto', 'Pazienza Maria Teresa'}) 12
+frozenset({'Uchimoto Kiyotaka', 'Sekine Satoshi'}) 10
+frozenset({'Corston-Oliver Simon', 'Gamon Michael'}) 11
+frozenset({'Bruce Rebecca', 'Wiebe Janyce'}) 10
+frozenset({'Fakotakis Nikos', 'Kokkinakis George'}) 12
+frozenset({'Calzolari Nicoletta', 'Lenci Alessro'}) 12
+frozenset({'Och Franz Josef', 'Ney Hermann'}) 15
+frozenset({'Lavie Alon', 'Gates Donna'}) 12
+frozenset({'Raskin Victor', 'Nirenburg Sergei'}) 15
+frozenset({'Klein Dan', 'Manning Christopher D.'}) 11
+frozenset({"Tsujii Jun{'}ichi", 'Torisawa Kentaro'}) 13
+frozenset({'Cunningham Hamish', 'Wilks Yorick'}) 11
+frozenset({'Tochinai Koji', 'Araki Kenji'}) 10
+frozenset({'Calzolari Nicoletta', 'Zampolli Antonio'}) 12
+frozenset({'Gaizauskas Robert', 'Wilks Yorick'}) 10
+frozenset({'Grishman Ralph', 'Yangarber Roman'}) 11
+frozenset({'Seneff Stephanie', 'Polifroni Joseph'}) 14
+frozenset({'Boisen Sean', 'Weischedel Ralph'}) 12
+frozenset({'Chang Jing-Shin', 'Su Keh-Yih'}) 19
+frozenset({'Hobbs Jerry R.', 'Bear John'}) 11
+frozenset({'Grishman Ralph', 'Sterling John'}) 14
+frozenset({'Norton Lewis M.', 'Dahl Deborah A.'}) 12
+frozenset({'Iida Hitoshi', 'Furuse Osamu'}) 12
+frozenset({'Weischedel Ralph', 'Ayuso Damaris'}) 11
+frozenset({'Della Pietra Stephen A.', 'Della Pietra Vincent J.'}) 11
+frozenset({'Della Pietra Stephen A.', 'Brown Peter F.'}) 10
+frozenset({'Della Pietra Vincent J.', 'Brown Peter F.'}) 11
+frozenset({'Mercer Robert L.', 'Brown Peter F.'}) 12
+frozenset({'Mercer Robert L.', 'Della Pietra Stephen A.'}) 10
+frozenset({'Mercer Robert L.', 'Della Pietra Vincent J.'}) 12
+frozenset({'Polifroni Joseph', 'Zue Victor'}) 11
+frozenset({'Zue Victor', 'Phillips Michael'}) 12
+frozenset({'Glass James', 'Zue Victor'}) 12
+frozenset({'Seneff Stephanie', 'Phillips Michael'}) 11
+frozenset({'Polifroni Joseph', 'Phillips Michael'}) 10
+frozenset({'Glass James', 'Polifroni Joseph'}) 10
+frozenset({'Glass James', 'Phillips Michael'}) 12
