@@ -1,0 +1,27 @@
+﻿<?xml version="1.0"?>
+<annotation>
+    <folder>images</folder>
+    <filename>169.jpg</filename>
+    <path>images/169.jpg</path>
+    <source>
+        <database>Unknown</database>
+    </source>
+    <size>
+        <width>824</width>
+        <height>549</height>
+        <depth>3</depth>
+    </size>
+    <segmented>0</segmented>
+    <object>
+        <name>license</name>
+        <pose>Unspecified</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>386</xmin>
+            <ymin>364.0000305175781</ymin>
+            <xmax>547</xmax>
+            <ymax>408</ymax>
+        </bndbox>
+    </object>
+</annotation>

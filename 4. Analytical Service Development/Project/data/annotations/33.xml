@@ -1,0 +1,27 @@
+﻿<?xml version="1.0"?>
+<annotation>
+    <folder>images</folder>
+    <filename>33.jpg</filename>
+    <path>images/33.jpg</path>
+    <source>
+        <database>Unknown</database>
+    </source>
+    <size>
+        <width>824</width>
+        <height>549</height>
+        <depth>3</depth>
+    </size>
+    <segmented>0</segmented>
+    <object>
+        <name>license</name>
+        <pose>Unspecified</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>322.0000305175781</xmin>
+            <ymin>375</ymin>
+            <xmax>499</xmax>
+            <ymax>426</ymax>
+        </bndbox>
+    </object>
+</annotation>
