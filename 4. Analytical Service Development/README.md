@@ -80,3 +80,6 @@ Finally, we use the predicited area given by our model to crop the images and ce
 <li><a href=https://www.kaggle.com/datasets/andrewmvd/car-plate-detection/code>
     Car License Plate Detection
 </li>
+<li><a href=https://towardsdatascience.com/transfer-learning-with-vgg16-and-keras-50ea161580b4>
+    Transfer Learning with VGG16 and Keras
+</li>
