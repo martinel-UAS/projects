@@ -2,7 +2,7 @@
 
 ## The problem
 
-<hr>
+
 
 **Used cars – The hidden business of an automotive brand**: During the last 10 years working in the automotive industry, I’ve discovered that one of the key business for an automotive brand is, on top of manufacture and sell new vehicles, to resell used vehicles in the secondhand market.
 
@@ -14,9 +14,9 @@ All these pictures are filtered and published in our corporate website and all t
 
 **The objective of this project is to carry out a license plate recognition system to get the car data with as less human intervention as possible.**
 
-## Dataset and high level procedure
-
 <hr>
+
+## Dataset and high level procedure
 
 We got a dataset of 300 car images from our customer which has been used to train the model.
 
@@ -25,10 +25,11 @@ The first step has been to label every single image, highlighting the region of 
 Once we labeled all the images, we applied some preprocessing (resizing of images and annotations) and we split our data into train, validation and test sets to train and evaluate the performance of our model.
 
 Finally, we use the predicited area given by our model to crop the images and center the car plate. With the obtained subset we apply some image processing tecniques (blur, grayscale, contours, etc) to identify the exact area of the plate and finally usign OCR we
+
 <hr>
 
-### Steps
-<hr>
+## Steps
+
 <ol type="1">
     <li>Import required libraries and define main varaibles</li>
     <li>Read and resize images and save them into an array (X)</li>
@@ -39,10 +40,10 @@ Finally, we use the predicited area given by our model to crop the images and ce
     <li>Evaluating the model</li>
     <li>Plotting results</li>
 </ol>
+
 <hr>
 
-### Model Architecture
-<hr>
+## Model Architecture
 
 <ol type="1">
     <li>Embedding Layer</li>
@@ -50,23 +51,23 @@ Finally, we use the predicited area given by our model to crop the images and ce
     <li>Dense (activation function using sigmoid)</li>
     <li>Optimizer: Rmsprop, Loss Function: Binary Crossentropy</li>
 </ol>
+
 <hr>
 
-### As IS
-<hr>
+## As IS
 
 ![](image/README/1651762094471.png)
 
-### To BE
-<hr>
+## To BE
+
 ![](image/README/1651762191707.png)
 
-### Analytics process
-<hr>
+## Analytics process
+
 ![](image/README/1651762288462.png)
 
-### References
-<hr>
+## References
+
 <li><a href=https://medium.com/geekculture/10-hyperparameters-to-keep-an-eye-on-for-your-lstm-model-and-other-tips-f0ff5b63fcd4>
     https://medium.com/geekculture/10-hyperparameters-to-keep-an-eye-on-for-your-lstm-model-and-other-tips-f0ff5b63fcd4
 </li>
