@@ -35,7 +35,10 @@ Finally, we use the predicited area given by our model to crop the images and ce
    3. Evaluating the model
 7. Plotting results
 8. Predict
+
+<hr>
    .....Work in progress
+   
 9. Crop images around the area of the plate prediction
 10. Read in a randomly selected Image, Grayscale and Blur it
 11. Apply filter and find edges for localization
