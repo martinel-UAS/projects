@@ -1,6 +1,7 @@
 # Analytical Service Development
 
-### The problem
+## The problem
+
 <hr>
 
 **Used cars – The hidden business of an automotive brand**: During the last 10 years working in the automotive industry, I’ve discovered that one of the key business for an automotive brand is, on top of manufacture and sell new vehicles, to resell used vehicles in the secondhand market.
@@ -12,9 +13,9 @@ In the case of Nissan Nordic, our team in the Used Cars department receive from 
 All these pictures are filtered and published in our corporate website and all the information about the car is manually typed which is, of course,  not a very efficient process.
 
 **The objective of this project is to carry out a license plate recognition system to get the car data with as less human intervention as possible.**
-<hr>
 
-### Dataset and high level procedure
+## Dataset and high level procedure
+
 <hr>
 
 We got a dataset of 300 car images from our customer which has been used to train the model.
