@@ -1,27 +1,38 @@
 # Analytical Service Development
 
-`<b>`Sentiment Analysis`</b>` is a classification of emotions (in this case, positive and negative) on text data using text analysis techniques (I use LSTM).
+### The problem
 
-`<b>`LSTM`</b>` (Long Short-Term Memory) is one of the Recurrent Neural Network (RNN) architecture used in Deep Learning.
+`<b>`Used cars – The hidden business of an automotive brand `</b>` is a classification of emotions (in this case, positive and negative) on text data using text analysis techniques (I use LSTM).
 
-`<b>`Keras`</b>` is an open-source Python Deep Learning library, that could be run on Tensorflow back-end.
+During the last 10 years working in the automotive industry, I’ve discovered that one of the key business for an automotive brand is, on top of manufacture and sell new vehicles, is to resell used vehicles in the secondhand market.
 
-### Dataset
+In Nissan concretely, thousands of vehicles returned from fleets, company cars or leased cars are sold in the secondhand market every year and, in order to make these cars visible for the customers, a huge number of advertisements are published daily.
 
-<hr>
-In this work, I use the <a href="https://www.tensorflow.org/api_docs/python/tf/keras/datasets/imdb/load_data">Keras API</a> to load the data of IMDB dataset.
-</p>
-This is a dataset for binary sentiment classification containing substantially more data than previous benchmark datasets. We provide a set of 25,000 highly polar movie reviews for training, and 25,000 for testing. There is additional unlabeled data for use as well. Raw text and already processed bag of words formats are provided. See the README file contained in the release for more details.
+In the case of Nissan Nordic, our team in the Used Cars department receive from our Nissan dealers in Finland, the information of the cars (model, mileage, year, etc.) and the pictures of those cars that need to be published. 
+
+All these pictures are filtered and published in our corporate website and all the information about the car is manually typed which is, of course,  not a very efficient process.
+
+`<b>` The objective of this project is to carry out a license plate recognition system to get the car data with as less human intervention as possible. `<\b>`
+
+
+### Dataset and high level procedure
+
+We got a dataset of 300 car images from our customer which has been used to train the model.
+
+The first step has been to label every single image, highlighting the region of the picture where the car plate is located. To do this we have used <li><a href=https://imglab.in/#> ImgLab </li> which is a platform independent data annoation tool that runs directly from the browser, and has no prerequisites. It requires minimal CPU and memory and supports multiple formats such as dlib XML, dlib pts, Pascal VOC, COCO and Tensorflow.
+
+Once we labeled all the images, we applied some preprocessing (resizing of images and annotations) and we split our data into train, validation and test sets to train and evaluate the performance of our model.
+
+Finally, we use the predicited area given by our model to crop the images and center the car plate. With the obtained subset we apply some image processing tecniques (blur, grayscale, contours, etc) to identify the exact area of the plate and finally usign OCR we 
 
 ### Steps
 
-<hr>
 <ol type="1">
-    <li>Import all the dependencies</li>
-    <li>Defining Key Values</li>
-    <li>Loading the data</li>
-    <li>Data preprocessing</li>
-    <li>Building the model</li>
+    <li>Import required libraries and define main varaibles</li>
+    <li>Read and resize images and save them into an array (X)</li>
+    <li>Parsing data from XML annotations, resize them to fit the new image sizes and save them into y</li>
+    <li>Verfy X and y shapes and print the first 20 images from the dataset</li>
+    <li>Convolutional Neural Network (CNN)</li>
     <li>Training the model</li>
     <li>Evaluating the model</li>
     <li>Plotting results</li>
@@ -37,25 +48,17 @@ This is a dataset for binary sentiment classification containing substantially m
     <li>Optimizer: Rmsprop, Loss Function: Binary Crossentropy</li>
 </ol>
 
-### Model Tuning
+### As IS
 
-<hr>
-<ol type="1">
-    <li>Increase the number of epochs</li>
-    <li>Reduce batch size</li>
-    <li>Change the optimizer from rmsprop to adam</li>
-    <li>Increase the maximun number of words to consider</li>
-    <li>Increase the number of dictinct words</li>
-    <li>Reduce the size of the vector space in which words will be embedded</li>
-    <li>Reduce the number of LSTM units</li>
-    <li>Add dropout layer</li>
-    <li>Add early stopper</li>
-</ol>
+![](image/README/1651762094471.png)
 
-### Comparing with GRU
+### To BE
 
-<hr>
-Here we will carry out a comparative analysis of our LSTM tuned model with another RNN: Gated Recurrent Units (GRU)
+![](image/README/1651762191707.png)
+
+### Analytics process
+
+![](image/README/1651762288462.png)
 
 ### References
 
