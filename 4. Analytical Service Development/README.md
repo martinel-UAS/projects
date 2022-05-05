@@ -2,8 +2,6 @@
 
 ## The problem
 
-
-
 **Used cars – The hidden business of an automotive brand**: During the last 10 years working in the automotive industry, I’ve discovered that one of the key business for an automotive brand is, on top of manufacture and sell new vehicles, to resell used vehicles in the secondhand market.
 
 In Nissan concretely, thousands of vehicles returned from fleets, company cars or leased cars are sold in the secondhand market every year and, in order to make these cars visible for the customers, a huge number of advertisements are published daily.
@@ -26,24 +24,34 @@ Finally, we use the predicited area given by our model to crop the images and ce
 
 ## Steps
 
-<ol type="1">
-    <li>Import required libraries and define main varaibles</li>
-    <li>Read and resize images and save them into an array (X)</li>
-    <li>Parsing data from XML annotations, resize them to fit the new image sizes and save them into y</li>
-    <li>Verfy X and y shapes and print the first 20 images from the dataset</li>
-    <li>Convolutional Neural Network (CNN)</li>
-    <li>Training the model</li>
-    <li>Evaluating the model</li>
-    <li>Plotting results</li>
-</ol>
+1. Import required libraries and define main varaibles
+2. Read and resize images and save them into an array (X)
+3. Parsing data from XML annotations, resize them to fit the new image sizes and save them into y
+4. Verfy X and y shapes and print the first 20 images from the dataset
+5. Preparing the data for the CNN
+6. Convolutional Neural Network (CNN)
+   1. Creating the model
+   2. Compiling and training the model
+   3. Evaluating the model
+7. Plotting results
+8. Predict
+   .....Work in progress
+9. Crop images around the area of the plate prediction
+10. Read in a randomly selected Image, Grayscale and Blur it
+11. Apply filter and find edges for localization
+12. Find Contours and apply mask
+13. Recognize the text using OCR
 
 ## Model Architecture
 
 <ol type="1">
-    <li>Embedding Layer</li>
-    <li>LSTM Layer</li>
-    <li>Dense (activation function using sigmoid)</li>
-    <li>Optimizer: Rmsprop, Loss Function: Binary Crossentropy</li>
+    <li>Tranfer learning using VGG16 model</li>
+    <li>Flatten layer</li>
+    <li>Dense Layer 128 (activation function using relu)</li>
+    <li>Dense Layer 128 (activation function using relu)</li>
+    <li>Dense Layer 64 (activation function using relu)</li>
+    <li>Dense Layer 4 (activation function using sigmoid)</li>
+    <li>Optimizer: Adam, Loss Function: MSE</li>
 </ol>
 
 ## As IS
@@ -62,4 +70,13 @@ Finally, we use the predicited area given by our model to crop the images and ce
 
 <li><a href=https://medium.com/programming-fever/license-plate-recognition-using-opencv-python-7611f85cdd6c>
     License Plate Recognition using OpenCV Python
+</li>
+<li><a href=https://harshthakare70.medium.com/number-plate-recognition-using-opencv-python-4de86163d609>
+    Number Plate Recognition using OpenCV Python
+</li>
+<li><a href=https://www.linkedin.com/pulse/automatic-number-plate-recognition-step-stepguide-devi-g/>
+    7 Steps to Build Automatic Number Plate Recognition in Python
+</li>
+<li><a href=https://www.kaggle.com/datasets/andrewmvd/car-plate-detection/code>
+    Car License Plate Detection
 </li>
