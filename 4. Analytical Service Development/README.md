@@ -25,12 +25,12 @@ Finally, we use the predicited area given by our model to crop the images and ce
 ## Steps
 
 1. Import required libraries and define main varaibles
-2. Parsing data from XML annotations, resizing annotations and saving all the data into CSV file (and pandas dataframe)
+2. Parse data from XML annotations, resize annotations, resize images and save all the data into CSV file (and pandas dataframe)
 3. Preview dataset
-4. Split data into train, val and test: 
-    - *60% - train set* 
-    - *20% - validation set* 
-    - *20% - test set*
+4. Split data into train, val and test:
+   - *60% - train set*
+   - *20% - validation set*
+   - *20% - test set*
 5. Prepare the data for the CNN
 6. Convolutional Neural Network (CNN)
    1. Create the model
@@ -95,4 +95,3 @@ Finally, we use the predicited area given by our model to crop the images and ce
 <li><a href=https://albumentations.ai/docs/getting_started/bounding_boxes_augmentation/>
     Bounding boxes augmentation for object detection
 </li>
-
