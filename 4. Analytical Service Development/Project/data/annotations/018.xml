@@ -1,0 +1,27 @@
+﻿<?xml version="1.0"?>
+<annotation>
+    <folder>images</folder>
+    <filename>018.jpg</filename>
+    <path>images/018.jpg</path>
+    <source>
+        <database>Unknown</database>
+    </source>
+    <size>
+        <width>706</width>
+        <height>471</height>
+        <depth>3</depth>
+    </size>
+    <segmented>0</segmented>
+    <object>
+        <name>license</name>
+        <pose>Unspecified</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>300.0000305175781</xmin>
+            <ymin>348</ymin>
+            <xmax>425.0000305175781</xmax>
+            <ymax>380</ymax>
+        </bndbox>
+    </object>
+</annotation>

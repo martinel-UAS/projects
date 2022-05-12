@@ -25,25 +25,28 @@ Finally, we use the predicited area given by our model to crop the images and ce
 ## Steps
 
 1. Import required libraries and define main varaibles
-2. Read and resize images and save them into an array (X)
-3. Parsing data from XML annotations, resize them to fit the new image sizes and save them into y
-4. Verfy X and y shapes and print the first 20 images from the dataset
-5. Preparing the data for the CNN
+2. Parsing data from XML annotations, resizing annotations and saving all the data into CSV file (and pandas dataframe)
+3. Preview dataset
+4. Split data into train, val and test: 
+    - *60% - train set* 
+    - *20% - validation set* 
+    - *20% - test set*
+5. Prepare the data for the CNN
 6. Convolutional Neural Network (CNN)
-   1. Creating the model
-   2. Compiling and training the model
-   3. Evaluating the model
-7. Plotting results
-8. Predict
-
-<hr>
-   .....Work in progress
-   
-9. Crop images around the area of the plate prediction
-10. Read in a randomly selected Image, Grayscale and Blur it
-11. Apply filter and find edges for localization
-12. Find Contours and apply mask
-13. Recognize the text using OCR
+   1. Create the model
+   2. Compile and train the model
+   3. Evaluate the model
+7. Plot model results
+8. Predict bounding boxes in the test set
+9. Preview results
+10. Crop images around the area of the plate prediction
+11. Preview cropped images
+12. Read in a randomly selected Image, Grayscale and Blur it
+13. Apply filter and find edges for localization
+14. Find Contours and apply mask
+15. Crop image using the mask
+16. Apply EasyOCR to get the text of the plate
+17. Render results
 
 ## Model Architecture
 
@@ -86,3 +89,10 @@ Finally, we use the predicited area given by our model to crop the images and ce
 <li><a href=https://towardsdatascience.com/transfer-learning-with-vgg16-and-keras-50ea161580b4>
     Transfer Learning with VGG16 and Keras
 </li>
+<li><a href=https://www.learndatasci.com/tutorials/hands-on-transfer-learning-keras/>
+    Hands-on Transfer Learning with Keras and the VGG16 Model
+</li>
+<li><a href=https://albumentations.ai/docs/getting_started/bounding_boxes_augmentation/>
+    Bounding boxes augmentation for object detection
+</li>
+
