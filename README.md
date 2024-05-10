@@ -1,3 +1,3 @@
-# BDA_Assignments
+# Main projects
 
-This repository contains the exercises and assignmenets for the Big Data Analytics Master Degree @ Arcada UAS
+This repository contains the main projects I've worked on with solutions developed in Python (for Data Analytics), .NET (for web app development) and Angular with Ionic framework (for mobile app development)
