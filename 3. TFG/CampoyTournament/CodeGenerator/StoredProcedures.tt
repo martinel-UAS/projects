@@ -1,0 +1,447 @@
+﻿<#@ include file="DataBase.NAME.tt" #>
+<#
+for (int i = 0; i < this.Tables.Tables[0].Rows.Count; i++)	 
+{
+	this.TableName = this.Tables.Tables[0].Rows[i].ItemArray[2].ToString();
+#>
+<#@ include file="DataBase.CORE.tt" #>
+--*****************************************
+-- Author : Luis Martinez Palomino
+-- DateCreated : <#= DateTime.Now #>
+-- DateModified: <#= DateTime.Now #>
+-- Description: CAUTION: THIS SCRIPT REMOVE ALL STORED PROCEDURES FROM AN ENTITY
+--*****************************************
+
+--**********************************************************************************
+-- DROP PROCEDURES
+--**********************************************************************************
+DROP PROCEDURE dbo.uspGet<#= this.TableName #>ById
+GO
+DROP PROCEDURE dbo.uspGetAll<#= this.TableName #>
+GO
+DROP PROCEDURE dbo.uspInsert<#= this.TableName #>
+GO
+DROP PROCEDURE dbo.uspUpdate<#= this.TableName #>
+GO
+DROP PROCEDURE dbo.uspDelete<#= this.TableName #>
+GO
+DROP PROCEDURE dbo.uspGet<#= this.TableName #>s
+GO
+DROP PROCEDURE dbo.uspLogicalDelete<#= this.TableName #>
+GO
+
+--**********************************************************************************
+-- GetById PROCEDURE
+--**********************************************************************************
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+--*****************************************
+-- Author : Luis Martinez Palomino
+-- DateCreated : <#= DateTime.Now #>
+-- DateModified: <#= DateTime.Now #>
+-- Description:
+--*****************************************
+CREATE PROCEDURE uspGet<#= this.TableName #>ById
+	@Id int
+AS
+BEGIN
+	SELECT <# WriteGetByIdSelectClause(this.Table); #>	
+    FROM [<#= this.SchemaName #>].[<#= this.TableName #>] 
+	WHERE [Id] = @Id AND
+		  [IsDeleted] = 0
+END
+
+--**********************************************************************************
+-- GetAll PROCEDURE
+--**********************************************************************************
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+--*****************************************
+-- Author : Luis Martinez Palomino
+-- DateCreated : <#= DateTime.Now #>
+-- DateModified: <#= DateTime.Now #>
+-- Description:
+--*****************************************
+CREATE PROCEDURE uspGetAll<#= this.TableName #>
+AS
+BEGIN
+	SELECT <# WriteGetAllSelectClause(this.Table); #>	
+    FROM [<#= this.SchemaName #>].[<#= this.TableName #>] 
+	WHERE [IsDeleted] = 0
+END
+
+--**********************************************************************************
+-- Insert PROCEDURE
+--**********************************************************************************
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+--*****************************************
+-- Author : Luis Martinez Palomino
+-- DateCreated : <#= DateTime.Now #>
+-- DateModified: <#= DateTime.Now #>
+-- Description:
+--*****************************************
+CREATE PROCEDURE uspInsert<#= this.TableName #>
+    <# WriteParameterDeclarations(this.Table); #> 
+AS
+BEGIN
+	INSERT INTO [<#= this.SchemaName #>].[<#= this.TableName #>] 
+	(
+		<# WriteInsertClause(this.Table); #>	
+    ) 
+    VALUES 
+    (
+		<# WriteValuesClause(this.Table); #> 
+    )
+	SET NOCOUNT ON
+    <# WriteOutputParameters(this.Table); #>
+END
+	
+--**********************************************************************************
+-- Update PROCEDURE
+--**********************************************************************************
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+--*****************************************
+-- Author : Luis Martinez Palomino
+-- DateCreated : <#= DateTime.Now #>
+-- DateModified: <#= DateTime.Now #>
+-- Description:
+--*****************************************
+CREATE PROCEDURE uspUpdate<#= this.TableName #>
+    <# WriteUpdateParameterDeclarations(this.Table); #> 
+AS
+BEGIN
+	UPDATE [<#= this.SchemaName #>].[<#= this.TableName #>] 
+	SET
+		<# WriteUpdateSetClause(this.Table); #>	
+	WHERE
+		<# WriteWhereClause(this.Table); #>	
+END
+
+--**********************************************************************************
+-- Delete Procedure
+--**********************************************************************************
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+--*****************************************
+-- Author : Luis Martinez Palomino
+-- DateCreated : <#= DateTime.Now #>
+-- DateModified: <#= DateTime.Now #>
+-- Description:
+--*****************************************
+CREATE PROCEDURE uspDelete<#= this.TableName #>
+    <# WriteDeleteParameterDeclarations(this.Table); #> 
+AS
+BEGIN
+	DELETE FROM [<#= this.SchemaName #>].[<#= this.TableName #>] 
+	WHERE
+		<# WriteWhereClause(this.Table); #>	
+END
+
+--**********************************************************************************
+-- Get(T)s PROCEDURE
+--**********************************************************************************
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+--*****************************************
+-- Author : Luis Martinez Palomino
+-- DateCreated : <#= DateTime.Now #>
+-- DateModified: <#= DateTime.Now #>
+-- Description:
+--*****************************************
+CREATE PROCEDURE uspGet<#= this.TableName #>s
+(
+	@whereClause as nvarchar(max) = null,
+	@OrderByClause as nvarchar(max) = null
+)
+AS
+BEGIN
+	DECLARE @MegaString nvarchar(max);
+	set @MegaString = N'SELECT ' + <# WriteGetSelectClause(this.Table); #> '+
+    'FROM [<#= this.SchemaName #>].[<#= this.TableName #>] ';
+ 
+	IF (@whereClause <> NULL OR @whereClause <> '')
+		BEGIN
+			SET @MegaString = @MegaString + 'WHERE ' + @whereClause + ' ';
+		END
+	
+	IF (@OrderByClause <> NULL  OR @OrderByClause <> '')
+		begin
+			SET @MegaString = @MegaString + 'ORDER BY ' + @OrderByClause + ' ';
+		END
+   EXEC(@MegaString);
+END
+
+--**********************************************************************************
+-- Logical Delete Procedure
+--**********************************************************************************
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+--*****************************************
+-- Author : Luis Martinez Palomino
+-- DateCreated : <#= DateTime.Now #>
+-- DateModified: <#= DateTime.Now #>
+-- Description:
+--*****************************************
+CREATE PROCEDURE uspLogicalDelete<#= this.TableName #>
+    @Id int 
+AS
+BEGIN
+	UPDATE [<#= this.SchemaName #>].[<#= this.TableName #>] 
+	SET
+		[IsDeleted] = 1
+	WHERE
+		[Id] = @Id	
+	SET NOCOUNT ON   
+END
+
+--**********************************************************************************
+--**********************************************************************************
+--**********************************************************************************
+<#
+        ProcessContent(this.TableName + "SP" + ".sql", this.GenerationEnvironment.ToString());
+        this.GenerationEnvironment.Remove(0, this.GenerationEnvironment.Length);
+    }
+#>
+<#+
+	/// <summary>
+	/// Writes stored procedure parameter declarations for all columns in the primary 
+	/// key of the specified table. 
+	/// </summary>
+	void WriteDeleteParameterDeclarations(Table table)
+	{
+		PushIndent("    ");
+		int parameterIndex = 0;
+		foreach(Column column in table.Columns)
+		{
+			if (column.InPrimaryKey)
+			{
+				if (parameterIndex > 0)
+					WriteLine(",");
+				Write("@{0} {1}", column.Name, GetDataTypeDeclaration(column.DataType));
+				parameterIndex++;
+			}
+		}
+		PopIndent();
+	}
+	
+	/// <summary>
+	/// Writes list of column names for the Select statement
+	/// </summary>
+	void WriteGetAllSelectClause(Table table)
+	{
+		PushIndent("        ");
+		int columnIndex = 0;
+		for(int i = 0; i < table.Columns.Count; i++)
+		{
+			Column column = table.Columns[i];
+
+			if (columnIndex > 0)
+				WriteLine(",");
+			Write("[{0}]", column.Name);
+			columnIndex++;
+		}
+		PopIndent();
+	}
+	/// <summary>
+	/// Writes list of column names for the Select statement
+	/// </summary>
+	void WriteGetByIdSelectClause(Table table)
+	{
+		PushIndent("        ");
+		int columnIndex = 0;
+		for(int i = 0; i < table.Columns.Count; i++)
+		{
+			Column column = table.Columns[i];
+
+			if (columnIndex > 0)
+				WriteLine(",");
+			Write("[{0}]", column.Name);
+			columnIndex++;
+		}
+		PopIndent();
+	}
+	/// <summary>
+	/// Writes list of column names for the Select statement
+	/// </summary>
+	void WriteGetSelectClause(Table table)
+	{
+		PushIndent("        ");
+		int columnIndex = 0;
+		for(int i = 0; i < table.Columns.Count; i++)
+		{
+			Column column = table.Columns[i];
+
+			if (columnIndex > 0)
+				WriteLine(", '+");
+			Write("'[{0}]", column.Name);
+			columnIndex++;
+		}
+		PopIndent();
+	}
+	/// <summary>
+	/// Writes stored procedure parameter declarations for all columns of the 
+	/// specified table. For IDENTITY columns parameters are 
+	/// generated as OUTPUT in the end of parameter list.
+	/// </summary>
+	void WriteParameterDeclarations(Table table)
+	{
+		PushIndent("    ");
+
+		Column identityColumn = null;
+
+		int parameterIndex = 0;
+		for(int i = 0; i < table.Columns.Count; i++)
+		{
+			Column column = table.Columns[i];
+			if (column.Identity == true)
+			{
+				identityColumn = column;
+				continue;
+			}
+
+			// Write input parameter for a regular column
+			if (parameterIndex > 0)
+				WriteLine(",");
+			Write("@{0} {1}", column.Name, GetDataTypeDeclaration(column.DataType));
+			parameterIndex++;
+		}
+
+		// Write output parameter for identity column
+		if (identityColumn != null)
+		{
+			if (parameterIndex > 0)
+				WriteLine(",");
+			Write("@{0} {1} output", identityColumn.Name, GetDataTypeDeclaration(identityColumn.DataType));
+			parameterIndex++;
+		}
+
+		PopIndent();
+	}
+
+	/// <summary>
+	/// Writes list of column names for the INSERT statement
+	/// </summary>
+	void WriteInsertClause(Table table)
+	{
+		PushIndent("        ");
+		int columnIndex = 0;
+		for(int i = 0; i < table.Columns.Count; i++)
+		{
+			Column column = table.Columns[i];
+			if (column.Identity == true)
+				continue;
+
+			if (columnIndex > 0)
+				WriteLine(",");
+			Write("[{0}]", column.Name);
+			columnIndex++;
+		}
+		PopIndent();
+	}
+
+	/// <summary>
+	/// Writes list of parameter names for VALUES clause of the INSERT statement
+	/// </summary>
+	void WriteValuesClause(Table table)
+	{
+		PushIndent("        ");
+		int parameterIndex = 0;
+		for(int i = 0; i < table.Columns.Count; i++)
+		{
+			Column column = table.Columns[i];
+			if (column.Identity == true)
+				continue;
+
+			if (parameterIndex > 0)
+				WriteLine(",");
+				
+			Write("@{0}", column.Name);
+
+			parameterIndex++;
+		}
+		PopIndent();
+	}
+
+
+	/// <summary>
+	/// Writes code that assigns value to OUTPUT parameter of the IDENTITY column.
+	/// </summary>
+	void WriteIdentityOutputParameter(Column column)
+	{
+#>
+
+	-- Return <#= column.Name #> value of the new row
+	set @<#= column.Name #> = scope_identity()
+<#+
+	}
+	/// <summary>
+	/// Writes stored procedure parameter declarations for all columns of the 
+	/// specified table.
+	/// </summary>
+	void WriteUpdateParameterDeclarations(Table table)
+	{
+		PushIndent("    ");
+
+		int parameterIndex = 0;
+		for(int i = 0; i < table.Columns.Count; i++)
+		{
+			Column column = table.Columns[i];
+
+			// Write input parameter for a regular column
+			if (parameterIndex > 0)
+				WriteLine(",");
+			Write("@{0} {1}", column.Name, GetDataTypeDeclaration(column.DataType));
+			parameterIndex++;
+		}
+
+		PopIndent();
+	}
+
+	/// <summary>
+	/// Writes set clause of the update statement.
+	/// </summary>
+	void WriteUpdateSetClause(Table table)
+	{
+		PushIndent("        ");
+		int setIndex = 0;
+		foreach(Column column in table.Columns)
+		{
+			if (column.InPrimaryKey)
+				continue;
+			if (setIndex > 0)
+				WriteLine(",");
+			Write("[{0}] = @{0}", column.Name);
+			setIndex++;
+		}
+		PopIndent();
+	}
+
+	/// <summary>
+	/// Writes code that assigns value to OUTPUT parameters of the stored procedure.
+	/// </summary>
+	void WriteOutputParameters(Table table)
+	{
+		foreach(Column column in table.Columns)
+		{
+			if (column.Identity == true)
+				WriteIdentityOutputParameter(column);
+		}
+	}
+
+#>

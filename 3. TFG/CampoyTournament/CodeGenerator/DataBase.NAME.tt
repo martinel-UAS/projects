@@ -1,0 +1,12 @@
+﻿<#@ template language="C#" debug="True" hostspecific="True" #>
+<#+ 
+//Modify these parameters according to your own configuration
+
+/// Name of the schema that contains target table. CRUD templates will generate
+/// stored procedures in this schema as well.
+string SchemaName = "dbo"; 
+
+// Database connection string. Specifies database where CRUD templates will 
+// be looking for the table for which they will generate stored procedures.
+string ConnectionString = "Data Source=PAVILLION\\SQLSERVER;Initial Catalog=CampoyTournament;Integrated Security=False;User ID=campoy;Password=campoy;Connect Timeout=15;Encrypt=False;TrustServerCertificate=False";
+#>

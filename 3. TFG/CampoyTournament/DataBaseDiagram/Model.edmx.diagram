@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="75376cd82eb3425baf807bb6a7a2478c" Name="Diagram1">
+        <EntityTypeShape EntityType="CampoyTournamentModel.Field" Width="1.5" PointX="3.25" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CampoyTournamentModel.Hole" Width="1.5" PointX="3.25" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CampoyTournamentModel.Match" Width="1.5" PointX="5.25" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CampoyTournamentModel.Player" Width="1.5" PointX="7.25" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CampoyTournamentModel.Result" Width="1.5" PointX="5.25" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="CampoyTournamentModel.Role" Width="1.5" PointX="9.25" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CampoyTournamentModel.Tournament" Width="1.5" PointX="7.25" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CampoyTournamentModel.User" Width="1.5" PointX="9.25" PointY="3.625" IsExpanded="true" />
+        <AssociationConnector Association="CampoyTournamentModel.FK_Hole_Field" ManuallyRouted="false" />
+        <AssociationConnector Association="CampoyTournamentModel.FK_Match_Field" ManuallyRouted="false" />
+        <AssociationConnector Association="CampoyTournamentModel.FK_Result_Hole" ManuallyRouted="false" />
+        <AssociationConnector Association="CampoyTournamentModel.FK_Match_Tournament" ManuallyRouted="false" />
+        <AssociationConnector Association="CampoyTournamentModel.FK_Result_Match" ManuallyRouted="false" />
+        <AssociationConnector Association="CampoyTournamentModel.FK_Result_Player" ManuallyRouted="false" />
+        <AssociationConnector Association="CampoyTournamentModel.FK_User_Player" ManuallyRouted="false" />
+        <AssociationConnector Association="CampoyTournamentModel.FK_User_Role" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

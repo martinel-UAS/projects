@@ -1,0 +1,81 @@
+﻿@model WebApplication.Models.Result.MatchScoreCardModel
+@using WebApplication.Models.Result;
+@{
+    ViewBag.Title = "Introducir resultado";
+    var i = 0;
+    var j = 0;
+}
+@using (Html.BeginForm("Insert", "Result", FormMethod.Post, htmlAttributes: new { @class = "form-horizontal" }))
+{
+    @Html.AntiForgeryToken()
+    @Html.HiddenFor(m => Model.MatchId)
+
+    <ul class="list-group">
+        @Html.ValidationSummary()
+    </ul>
+    foreach (var ScoreCard in Model.ScoreCards)
+    {
+
+        @Html.HiddenFor(m => ScoreCard.ScoreCard[j])
+
+        <div class="container">
+            <div class="row">
+                <div class="panel panel-default widget">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">
+                            <span class="glyphicon glyphicon-user"></span> Jugador @(j + 1)
+                        </h3>
+                    </div>
+
+                    <div class="panel-body">
+                        <div class="table-responsive">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <td colspan="18">
+                                            @Html.DropDownListFor(m => Model.ScoreCards[j].PlayerSelected, Model.ScoreCards[j].Players, "Seleccione jugador", new { @class = "form-control", required = "true" })
+                                        </td>
+
+                                    </tr>
+                                </thead>
+
+                                <tbody class="centered">
+                                    <tr>
+                                        @for (i = 0; i < 9; i++)
+                                        {
+                                            <th class="centered">H@(i + 1)</th>
+                                        }
+                                    </tr>
+                                    <tr>
+                                        @for (i = 0; i < 9; i++)
+                                        {
+                                            <td>@Html.DropDownListFor(m => Model.ScoreCards[j].ScoreCard[i].SelectedStrikes, Model.ScoreCards[j].ScoreCard[i].AvailablesStrikes, new { required = "true" })</td>
+                                            @Html.HiddenFor(m => Model.ScoreCards[j].ScoreCard[i].HoleId)
+                                        }
+                                    </tr>
+                                    <tr>
+                                        @for (i = 9; i < 18; i++)
+                                        {
+                                            <th class="centered">H@(i + 1)</th>
+                                        }
+                                    </tr>
+                                    <tr>
+                                        @for (i = 9; i < 18; i++)
+                                        {
+                                            <td>@Html.DropDownListFor(m => Model.ScoreCards[j].ScoreCard[i].SelectedStrikes, Model.ScoreCards[j].ScoreCard[i].AvailablesStrikes, new { required = "true" })</td>
+                                            @Html.HiddenFor(m => Model.ScoreCards[j].ScoreCard[i].HoleId)
+                                        }
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        j++;
+    }
+    <button id="buttonSend" type="submit" class="btn btn-primary">Aceptar</button>
+    @Html.ActionLink("Cancelar", "Index", "Result", null, new { @class = "btn btn-default" })
+} 

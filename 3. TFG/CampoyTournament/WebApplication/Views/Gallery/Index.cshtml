@@ -1,0 +1,110 @@
+﻿@model List<WebApplication.Models.Gallery.ImageViewModel>
+@using WebApplication.Managers
+@{
+    ViewBag.Title = "Galeria";
+    var i = 0;
+}
+<style>
+    .btn-file {
+        position: relative;
+        overflow: hidden;
+    }
+
+        .btn-file input[type=file] {
+            position: absolute;
+            top: 0;
+            right: 0;
+            min-width: 100%;
+            min-height: 100%;
+            font-size: 999px;
+            text-align: right;
+            filter: alpha(opacity=0);
+            opacity: 0;
+            background: red;
+            cursor: inherit;
+            display: block;
+        }
+
+    input[readonly] {
+        background-color: whitesmoke !important;
+        cursor: text !important;
+    }
+</style>
+
+<script>
+    $(document)
+        .on('change', '.btn-file :file', function () {
+            var input = $(this),
+            label = input.val().replace(/\\/g, '/').replace(/.*\//, '');
+            input.trigger('fileselect', [label]);
+        });
+
+    $(document).ready(function () {
+        $('.btn-file :file').on('fileselect', function (event, label) {
+
+            var input = $(this).parents('.input-group').find(':text'),
+                log = label;
+
+            if (input.length) {
+                input.val(log);
+            } else {
+                if (log) alert(log);
+            }
+
+        });
+    });
+</script>
+@if (UserManager.IsInRole(UserManager.User, "Admin Player"))
+{
+    <div class="panel panel-default widget">
+        <div class="panel-heading">
+            <h3 class="panel-title">
+                <span class="glyphicon glyphicon-picture"></span> Nueva Imagen
+            </h3>
+        </div>
+        <div class="panel-body">
+            @using (Html.BeginForm("Upload", "Gallery", FormMethod.Post, new { enctype = "multipart/form-data" }))
+            {
+                <div class="row">
+                    <div class="col-lg-12 col-sm-6 col-12">
+                        <h4>Seleccione la imagen</h4>
+                        <div class="input-group">
+                            <span class="input-group-btn">
+                                <span class="btn btn-default btn-file">
+                                    <i class="glyphicon glyphicon-folder-open"></i> Buscar&hellip; <input type="file" name="fileUpload">
+                                </span>
+                            </span>
+                            <input type="text" class="form-control" readonly>
+                        </div>
+                        <span class="help-block">
+                            @Html.ValidationSummary(true, "No hay imagen o ésta no es válida")
+                        </span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-sm-6 col-12">
+                        <input type="submit" value="Enviar" class="btn btn-primary" />
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+}
+<div class="panel panel-default widget">
+    <div class="panel-heading">
+        <h3 class="panel-title">
+            <span class="glyphicon glyphicon-picture"></span> @ViewBag.Title
+        </h3>
+    </div>
+    <div class="panel-body">
+
+        <div class="container-fluid centered">
+            @foreach (var image in Model)
+            {
+                <span class="centered">
+                    @Html.Image("previewImage", image.Path, new {  width = 190, height = 190, style = "margin-bottom:4px" })
+                </span>
+            }
+        </div>
+    </div>
+</div>

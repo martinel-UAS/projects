@@ -1,0 +1,86 @@
+﻿<#@ include file="DataBase.NAME.tt" #>
+<#
+for (int i = 0; i < this.Tables.Tables[0].Rows.Count; i++)	 
+{
+	this.TableName = this.Tables.Tables[0].Rows[i].ItemArray[2].ToString();
+#>
+<#@ include file="DataBase.CORE.tt" #>
+//************************************************************
+//************************************************************
+///<Project>CampoyTournament</Project>
+///<CreatedBy>Luis Martínez Palomino</CreatedBy>
+///<DateCreated><#= DateTime.Now #></DateCreated>
+///<DateModified><#= DateTime.Now #></DateModified>
+///<Observations><#= this.TableName #> entity</Observations>
+//************************************************************
+//************************************************************
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Drawing;
+
+namespace DomainEntities
+{
+    /// <summary>
+    /// 	This class represents a '<#= this.TableName #>'
+    /// </summary>
+    public class <#= this.TableName #> : BaseEntity
+    {
+		<# WriteProperties(this.Table); #> 
+		<# WriteChildTablesProperties(this.Table2); #> 
+    }
+}
+
+<#
+        ProcessContent(this.TableName + ".cs", this.GenerationEnvironment.ToString());
+        this.GenerationEnvironment.Remove(0, this.GenerationEnvironment.Length);
+    }
+#>
+
+<#+
+	
+	void WriteProperties(Table table)
+	{
+		PushIndent("        ");
+		int parameterIndex = 0;
+		for(int i = 0; i < table.Columns.Count; i++)
+		{
+			Column column = table.Columns[i];
+			if (column.Identity == true)
+				continue;
+			if(column.Name == "IsDeleted")
+				continue;
+#>
+	/// <summary>
+        /// 	Gets or sets the <#= column.Name #>
+        /// </summary>
+		public <#= GetDataTypeCSharpType(column.DataType) #> <#= column.Name #> { get; set; }
+<#+			
+			parameterIndex++;
+		}
+		PopIndent();
+	}
+
+	void WriteChildTablesProperties(DataSet table)
+	{
+		PushIndent("        ");
+		foreach (DataRow theRow in table.Tables[0].Rows)
+        {
+#>
+	/// <summary>
+        /// 	Gets or sets the <#= theRow["TABLE_NAME"] #>
+        /// </summary>
+		private ICollection<<#= theRow["TABLE_NAME"] #>> <#= theRow["TABLE_NAME"].ToString().ToLower() #>s;
+		public ICollection<<#= theRow["TABLE_NAME"] #>> <#= theRow["TABLE_NAME"] #>s
+        {
+            get { return <#= theRow["TABLE_NAME"].ToString().ToLower() #>s ?? (<#= theRow["TABLE_NAME"].ToString().ToLower() #>s = new List<<#= theRow["TABLE_NAME"] #>>()); }
+            set { <#= theRow["TABLE_NAME"].ToString().ToLower() #>s = value; }
+        }
+<#+			
+        }
+		
+		PopIndent();
+	}
+
+#>

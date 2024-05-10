@@ -1,0 +1,69 @@
+﻿html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0; 
+  font-family: Helvetica, Arial, Verdana, sans-serif;
+  font-size: 14px;
+}
+a {
+  color: rgb(42, 13, 189);
+}
+
+#wrap {
+  width: 603px;
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+
+#header {
+  padding-top: 30px;
+  border-bottom: 1px solid #ffffff;
+}
+#header h1 {
+  margin: 0;
+  padding: 30px 0 10px;
+  text-align: center;
+  border-bottom: 1px solid #e5e2da;
+  font-size: 28px;
+}
+
+#content h2 {
+  text-align: center;
+  margin: 0;
+  padding: 10px 0;
+  font-size: 21px;
+  line-height: 30px;
+  color: #444;
+}
+
+#content p {
+  color: #444;
+  padding-bottom: 15px;
+}
+
+#choices a {
+  display: block;
+  width: 152px;
+  height: 20px;
+  line-height: 20px;
+  padding-top: 160px;
+  text-align: center;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+#download-ie {
+  background: url(images/site/icon-ie.png);
+}
+#download-chrome {
+  background: url(images/site/icon-chrome.png);
+}
+#download-firefox {
+  background: url(images/site/icon-firefox.png);
+}
+#download-safari {
+  background: url(images/site/icon-safari.png);
+}

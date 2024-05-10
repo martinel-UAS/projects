@@ -1,0 +1,51 @@
+﻿@model IEnumerable<WebApplication.Models.Classification.ClassificationViewModel>
+@using WebApplication.Managers;
+@{
+    ViewBag.Title = "Clasificación";
+}
+<script src="@Url.Content("~/Scripts/table.js")"></script>
+<div class="container">
+    <div class="row">
+        <div class="panel panel-default widget">
+            <div class="panel-heading">
+                <h3 class="panel-title">
+                    <span class="glyphicon glyphicon-eye-open"></span> @ViewBag.Title
+                </h3>
+            </div>
+            <div class="panel-body">
+                <div class="reset btn btn-default btn-xs" data-column="0" data-filter="" style="margin-bottom:15px"><i class="glyphicon glyphicon-refresh"></i> Borrar filtros</div>
+                <div class="table-responsive">
+                    <table id="classificationTable" class="tablesorter">
+                        <thead>
+                            <tr class="centered">
+                                <td>@Html.DisplayNameFor(model => model.FirstOrDefault().PlayerName)</td>
+                                <td>@Html.DisplayNameFor(model => model.FirstOrDefault().PlayerLicense)</td>
+                                <td>@Html.DisplayNameFor(model => model.FirstOrDefault().GamesPlayed)</td>
+                                <td>@Html.DisplayNameFor(model => model.FirstOrDefault().GamesDiscarted)</td>
+                                <td>@Html.DisplayNameFor(model => model.FirstOrDefault().TotalGames)</td>
+                                <td>@Html.DisplayNameFor(model => model.FirstOrDefault().TotalStrikes)</td>
+                                <td>@Html.DisplayNameFor(model => model.FirstOrDefault().TotalPoints)</td>
+                            </tr>
+                        </thead>
+                        <tbody class="centered">
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td>@Html.DisplayFor(modelItem => item.PlayerName)</td>
+                                    <td>@Html.DisplayFor(modelItem => item.PlayerLicense)</td>
+                                    <td>@Html.DisplayFor(modelItem => item.GamesPlayed)</td>
+                                    <td>@Html.DisplayFor(modelItem => item.GamesDiscarted)</td>
+                                    <td>@Html.DisplayFor(modelItem => item.TotalGames)</td>
+                                    <td>@Html.DisplayFor(modelItem => item.TotalStrikes)</td>
+                                    <td>@Html.DisplayFor(modelItem => item.TotalPoints)</td>
+                                </tr>
+                            }
+                        </tbody>
+
+                    </table>
+                    @Html.Partial("_PagerPartial")                   
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

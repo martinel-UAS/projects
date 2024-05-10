@@ -1,0 +1,45 @@
+﻿@using WebApplication.Models.Remind
+@using WebApplication.Models.Login
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="Torneo Campoy" content="Torneo Campoy Pitch&Putt" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title · ASP.NET · @DateTime.Now.Year</title>
+    <script src="@Url.Content("~/Scripts/browserCheck.js")"></script>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+
+
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            @Html.Partial("_RemindPartial", new RemindModel())
+            <div class="navbar navbar-default" role="navigation">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    @Html.ActionLink("Torneo Campoy", "Index", "Home", null, new { @class = "navbar-brand" })
+                </div>
+                <div class="navbar-collapse collapse">
+                    @Html.Partial("_LoginPartial", new LoginModel())
+                </div>
+            </div>
+            <div class="jumbotron myjumbo">
+                @RenderBody()
+            </div>
+            <hr />
+            <footer>
+                <p>&copy; @DateTime.Now.Year · Torneo Campoy · ASP.NET</p>
+            </footer>
+        </div>
+    </div>
+    @RenderSection("scripts", required: false)
+</body>

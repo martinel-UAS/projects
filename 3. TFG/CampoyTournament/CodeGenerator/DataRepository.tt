@@ -1,0 +1,238 @@
+﻿<#@ include file="DataBase.NAME.tt" #>
+<#
+for (int i = 0; i < this.Tables.Tables[0].Rows.Count; i++)	 
+{
+	this.TableName = this.Tables.Tables[0].Rows[i].ItemArray[2].ToString();
+#>
+<#@ include file="DataBase.CORE.tt" #>
+//************************************************************
+//************************************************************
+///<Project>CampoyTournament</Project>
+///<CreatedBy>Luis Martinez Palomino</CreatedBy>
+///<DateCreated><#= DateTime.Now #></DateCreated>
+///<DateModified><#= DateTime.Now #></DateModified>
+///<Observations><#= this.TableName #> repository</Observations>
+//************************************************************
+//************************************************************
+using System.Data;
+using System.Data.Common;
+using System.Collections.Generic;
+using Microsoft.Practices.EnterpriseLibrary.Data;
+using DomainEntities;
+
+namespace DataRepository
+{
+	/// <summary>
+    /// This class contains the main CRUD methods to interact between Database and the '<#= this.TableName #>' entity 
+    /// </summary>
+    public class <#= this.TableName #>Repository : IRepository<<#= this.TableName #>>
+    {
+        /// <summary>
+        /// Get a registry by ID
+        /// </summary>
+        /// <param name="Id">Id entity</param>
+        /// <returns>Return a entity type <#= this.TableName #></returns>
+        public <#= this.TableName #> GetById(int Id)
+        {
+            Database db = DatabaseFactory.CreateDatabase();
+            DbCommand command = db.GetStoredProcCommand("uspGet<#= this.TableName #>ById");
+            db.AddInParameter(command, "@Id", DbType.Int32, Id);
+            IDataReader dr = db.ExecuteReader(command);
+            <#= this.TableName #> <#= this.TableName.ToLower() #> = null;
+            if(dr.Read())
+            {
+                <#= this.TableName.ToLower() #> = new <#= this.TableName #>();
+				<# WriteCompleteField(this.Table); #>	
+            }
+			dr.Close();
+            return <#= this.TableName.ToLower() #>;
+        }
+
+        /// <summary>
+        /// Get all table
+        /// </summary>
+        /// <param name="Id">Id entity</param>
+        /// <returns>Return all <#= this.TableName #>s entities</returns>
+        public List<<#= this.TableName #>> GetAll()
+        {
+            Database db = DatabaseFactory.CreateDatabase();
+            DbCommand command = db.GetStoredProcCommand("uspGetAll<#= this.TableName #>");
+            IDataReader dr = db.ExecuteReader(command);
+            List<<#= this.TableName #>> <#= this.TableName.ToLower() #>s = new List<<#= this.TableName #>>(); 
+            while (dr.Read())
+            {
+                <#= this.TableName #> <#= this.TableName.ToLower() #> = new <#= this.TableName #>();
+				<# WriteCompleteField(this.Table); #>
+                <#= this.TableName.ToLower() #>s.Add(<#= this.TableName.ToLower() #>);
+            }
+			dr.Close();
+            return <#= this.TableName.ToLower() #>s;
+        }
+
+        /// <summary>
+        /// Method to save in Database a <#= this.TableName #> entity 
+        /// </summary>
+        /// <param name="entity"><#= this.TableName #></param>
+        /// <returns>Return Id entity registered</returns>
+        public int Insert(<#= this.TableName #> entity)
+        {
+            Database db = DatabaseFactory.CreateDatabase();
+            using (DbCommand command = db.GetStoredProcCommand("uspInsert<#= this.TableName #>")) 
+            {
+				<# WriteInsertRepositoryField(this.Table); #>
+                db.AddOutParameter(command, "@Id", DbType.Int32, int.MaxValue);
+                db.ExecuteNonQuery(command);
+                return (int)db.GetParameterValue(command, "@Id");
+            }            
+        }
+
+        /// <summary>
+        /// Method to update in Database a <#= this.TableName #> entity 
+        /// </summary>
+        /// <param name="entity"><#= this.TableName #></param>
+        /// <returns>Return the number of the rows affeted</returns>
+        public int Update(<#= this.TableName #> entity)
+        {
+            Database db = DatabaseFactory.CreateDatabase();
+            using (DbCommand command = db.GetStoredProcCommand("uspUpdate<#= this.TableName #>"))
+            {
+				<# WriteUpdateRepositoryField(this.Table); #>
+                return db.ExecuteNonQuery(command);
+            }
+        }
+
+        /// <summary>
+        /// Method to delete in Database a <#= this.TableName #> entity 
+        /// </summary>
+        /// <param name="entity"><#= this.TableName #></param>
+        /// <returns>Return the number of the rows affeted</returns>
+        public int Delete(<#= this.TableName #> entity)
+        {
+            Database db = DatabaseFactory.CreateDatabase();
+            using (DbCommand command = db.GetStoredProcCommand("uspDelete<#= this.TableName #>"))
+            {
+                db.AddInParameter(command, "@Id", DbType.Int32, entity.Id);
+                return db.ExecuteNonQuery(command);
+            }
+        }
+
+        /// <summary>
+        /// Method to delete in a logical-way a <#= this.TableName #> entity 
+        /// </summary>
+        /// <param name="entity"><#= this.TableName #></param>
+        /// <returns>Return the number of the rows affeted</returns>
+        public int LogicalDelete(<#= this.TableName #> entity)
+        {
+            Database db = DatabaseFactory.CreateDatabase();
+            using (DbCommand command = db.GetStoredProcCommand("uspLogicalDelete<#= this.TableName #>"))
+            {
+                db.AddInParameter(command, "@Id", DbType.Int32, entity.Id);
+                return db.ExecuteNonQuery(command);
+            }
+        }
+
+        /// <summary>
+        ///  Get <#= this.TableName.ToLower() #>s from database with conditions
+        /// </summary>
+        /// <param name="whereClause"></param>
+        /// <param name="orderBy"></param>
+        /// <returns></returns>
+        public List<<#= this.TableName #>> GetByWhereClause(string whereClause = null, string orderBy = null)
+        {
+            Database db = DatabaseFactory.CreateDatabase();
+            DbCommand command = db.GetStoredProcCommand("uspGet<#= this.TableName #>s");
+            db.AddInParameter(command, "@whereClause", DbType.String, whereClause);
+            db.AddInParameter(command, "@OrderByClause", DbType.String, orderBy);
+            IDataReader dr = db.ExecuteReader(command);
+            List<<#= this.TableName #>> <#= this.TableName.ToLower() #>s = new List<<#= this.TableName #>>();
+            while (dr.Read())
+            {
+                <#= this.TableName #> <#= this.TableName.ToLower() #> = new <#= this.TableName #>();
+				<# WriteCompleteField(this.Table); #>
+                <#= this.TableName.ToLower() #>s.Add(<#= this.TableName.ToLower() #>);
+            }
+			dr.Close();
+            return <#= this.TableName.ToLower() #>s;
+        } 
+		
+    }
+}
+
+<#
+        ProcessContent(this.TableName + "Repository" + ".cs", this.GenerationEnvironment.ToString());
+        this.GenerationEnvironment.Remove(0, this.GenerationEnvironment.Length);
+    }
+#>
+
+<#+
+
+
+	void WriteInsertClause(Table table)
+	{
+		PushIndent("        ");
+		int columnIndex = 0;
+		for(int i = 0; i < table.Columns.Count; i++)
+		{
+			Column column = table.Columns[i];
+			if (column.Identity == true)
+				continue;
+			if (columnIndex > 0)
+				WriteLine(",");
+			Write("[{0}]", column.Name);
+			columnIndex++;
+		}
+		PopIndent();
+	}
+	/// <summary>
+	/// 
+	/// </summary>
+	void WriteCompleteField(Table table)
+	{
+		PushIndent("    ");
+		int parameterIndex = 0;
+		foreach(Column column in table.Columns)
+		{
+#>
+			if (!dr.IsDBNull(dr.GetOrdinal("<#= column.Name #>"))) <#= this.TableName.ToLower() #>.<#= column.Name #> = dr.Get<#= GetDataTypeGetType(column.DataType) #>(dr.GetOrdinal("<#= column.Name #>"));
+<#+
+				parameterIndex++;
+			
+		}
+		PopIndent();
+	}
+
+	void WriteInsertRepositoryField(Table table)
+	{
+		PushIndent("    ");
+		int parameterIndex = 0;
+		foreach(Column column in table.Columns)
+		{
+			if (column.InPrimaryKey)
+				continue;
+#>
+			db.AddInParameter(command, "@<#= column.Name #>", DbType.<#= GetDataTypeGetType(column.DataType) #>, entity.<#= column.Name #>);
+<#+
+				parameterIndex++;
+			
+		}
+		PopIndent();
+	}
+
+	void WriteUpdateRepositoryField(Table table)
+	{
+		PushIndent("    ");
+		int parameterIndex = 0;
+		foreach(Column column in table.Columns)
+		{
+#>
+			db.AddInParameter(command, "@<#= column.Name #>", DbType.<#= GetDataTypeGetType(column.DataType) #>, entity.<#= column.Name #>);
+<#+
+				parameterIndex++;
+			
+		}
+		PopIndent();
+	}
+
+	
+#>
+

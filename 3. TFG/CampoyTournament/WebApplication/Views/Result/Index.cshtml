@@ -1,0 +1,91 @@
+﻿@model WebApplication.Models.Result.ResultViewModel
+@using WebApplication.Managers;
+@{
+    ViewBag.Title = "Resultados";
+}
+<div class="panel panel-default widget">
+    <div class="panel-heading">
+        <h3 class="panel-title">
+            <span class="glyphicon glyphicon-list-alt"></span> @ViewBag.Title
+        </h3>
+    </div>
+    <div class="panel-body">
+        <ul class="list-group">
+            <li class="list-group-item">
+                <div class="row">
+                    <div class="col-xs-10 col-md-11">
+                        @using (Html.BeginForm("Details", "Result", FormMethod.Post, htmlAttributes: new { @class = "form-horizontal" }))
+                        {
+                            @Html.AntiForgeryToken()
+                            <fieldset>
+                                <h3>
+                                    Ver Resultados
+                                    <small>Seleccione el evento:</small>
+                                </h3>
+                                <hr />                 
+                                <div class="form-group">   
+                                    <div class="col-sm-1">
+                                        @Html.LabelFor(m => m.AvailableResults)
+                                    </div>                                 
+                                    <div class="col-sm-2">
+                                        @Html.DropDownListFor(m => m.Id, Model.AvailableResults, "", new { @class = "form-control", required = "true" }) 
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <button id="buttonSend" type="submit" class="btn btn-primary">Ver Resultados</button>
+                                    </div>
+                                </div>                                                                
+                            </fieldset>
+                        }
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+@if (UserManager.IsInRole(UserManager.User, "Admin Player")){
+<div class="panel panel-default widget">
+    <div class="panel-heading">
+        <h3 class="panel-title">
+            <span class="glyphicon glyphicon-list-alt"></span> Introducir Resultado
+        </h3>
+    </div>
+    <div class="panel-body">
+        <ul class="list-group">
+            <li class="list-group-item">
+                <div class="row">
+                    <div class="col-xs-10 col-md-11">
+                        @using (Html.BeginForm("Create", "Result", FormMethod.Post, htmlAttributes: new { @class = "form-horizontal" }))
+                        {
+                            @Html.AntiForgeryToken()       
+                            <fieldset>
+                                <h3>
+                                    Nuevo Resultado
+                                    <small>Seleccione el evento:</small>
+                                </h3>
+                                <hr />
+                                <div class="form-group">        
+                                    <div class="col-sm-1">
+                                        @Html.LabelFor(m => m.AvailableMatches)
+                                    </div>                            
+                                    <div class="col-sm-2">                                        
+                                        @Html.DropDownListFor(m => m.Id, Model.AvailableMatches, "", new { @class = "form-control", required = "true" })                                                                             
+                                    </div>
+                                    <div class="col-sm-1">
+                                        @Html.LabelFor(m => m.NumberOfPlayers)
+                                    </div>
+                                    <div class="col-sm-2">
+                                        @Html.DropDownListFor(m => m.numberOfPlayers, Model.NumberOfPlayers, "", new { @class = "form-control", required = "true" })
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <button id="buttonSend" type="submit" class="btn btn-primary">Nuevo Resultado</button>
+                                    </div>
+                                </div>                                                                
+                            </fieldset>
+                        }
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+}

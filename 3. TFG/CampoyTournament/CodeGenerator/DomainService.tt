@@ -1,0 +1,149 @@
+﻿<#@ include file="DataBase.NAME.tt" #>
+<#
+for (int i = 0; i < this.Tables.Tables[0].Rows.Count; i++)	 
+{
+	this.TableName = this.Tables.Tables[0].Rows[i].ItemArray[2].ToString();
+#>
+<#@ include file="DataBase.CORE.tt" #>
+//************************************************************
+//************************************************************
+///<Project>CampoyTournament</Project>
+///<CreatedBy>Luis Martinez Palomino <#= this.CurrentIndent #> </CreatedBy>
+///<DateCreated><#= DateTime.Now #></DateCreated>
+///<DateModified><#= DateTime.Now #></DateModified>
+///<Observations><#= this.TableName #> Service</Observations>
+//************************************************************
+//************************************************************
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using DomainEntities;
+using DataRepository;
+
+namespace DomainServices
+{
+    /// <summary>
+    /// <#= this.TableName #> service
+    /// </summary>
+    public class <#= this.TableName #>Service
+    {
+		#region Properties
+        private readonly IRepository<<#= this.TableName #>> <#= this.TableName.ToLower() #>Repository;
+        #endregion
+		#region Constructor
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        ///<param name="<#= this.TableName.ToLower() #>Repository"></param>
+        public <#= this.TableName #>Service()
+        {
+			this.<#= this.TableName.ToLower() #>Repository = (<#= this.TableName #>Repository)InstanceService.CreateInstanceRepository("<#= this.TableName #>Repository");
+        }
+        #endregion
+
+		#region Methods
+        /// <summary>
+        /// Gets a <#= this.TableName.ToLower() #>
+        /// </summary>
+        /// <param name="<#= this.TableName.ToLower() #>Id"><#= this.TableName #> identifier</param>
+        /// <returns><#= this.TableName #></returns>
+        public  <#= this.TableName #> Get<#= this.TableName #>ById(int <#= this.TableName.ToLower() #>Id)
+        {
+            if (<#= this.TableName.ToLower() #>Id == 0)
+                return null;
+            return <#= this.TableName.ToLower() #>Repository.GetById(<#= this.TableName.ToLower() #>Id);
+        }
+
+		/// <summary>
+        /// GetAll <#= this.TableName.ToLower() #> 
+        /// </summary>
+        /// <param name="orderBy">Column name</param>
+        /// <returns></returns>
+        public List<<#= this.TableName #>> GetAll<#= this.TableName #>()
+        {
+            List<<#= this.TableName #>> <#= this.TableName.ToLower() #>s = <#= this.TableName.ToLower() #>Repository.GetAll();
+            return <#= this.TableName.ToLower() #>s;
+        }
+
+        /// <summary>
+        /// Inserts <#= this.TableName.ToLower() #>
+        /// </summary>
+        /// <param name="<#= this.TableName.ToLower() #>"><#= this.TableName #></param>
+        public int Insert<#= this.TableName #>(<#= this.TableName #> <#= this.TableName.ToLower() #>)
+        {
+            if (<#= this.TableName.ToLower() #> == null)
+                throw new ArgumentNullException("<#= this.TableName.ToLower() #>");
+            return <#= this.TableName.ToLower() #>Repository.Insert(<#= this.TableName.ToLower() #>);
+        }
+
+        /// <summary>
+        /// Updates the <#= this.TableName.ToLower() #>
+        /// </summary>
+        /// <param name="<#= this.TableName.ToLower() #>"><#= this.TableName #></param>
+        public int Update<#= this.TableName #>(<#= this.TableName #> <#= this.TableName.ToLower() #>)
+        {
+            if (<#= this.TableName.ToLower() #> == null)
+                throw new ArgumentNullException("<#= this.TableName.ToLower() #>");
+            return <#= this.TableName.ToLower() #>Repository.Update(<#= this.TableName.ToLower() #>);
+        }
+
+        /// <summary>
+        /// Delete <#= this.TableName.ToLower() #>
+        /// </summary>
+        /// <param name="<#= this.TableName.ToLower() #>"><#= this.TableName #></param>
+        public int Delete<#= this.TableName #>(<#= this.TableName #> <#= this.TableName.ToLower() #>)
+        {
+            if (<#= this.TableName.ToLower() #> == null)
+                throw new ArgumentNullException("<#= this.TableName.ToLower() #>");
+            return <#= this.TableName.ToLower() #>Repository.Delete(<#= this.TableName.ToLower() #>);
+        }
+
+        /// <summary>
+        /// Logical Delete
+        /// </summary>
+        /// <param name="<#= this.TableName.ToLower() #>"><#= this.TableName #></param>
+        public int LogicalDelete<#= this.TableName #>(<#= this.TableName #> <#= this.TableName.ToLower() #>)
+        {
+            if (<#= this.TableName.ToLower() #> == null)
+                throw new ArgumentNullException("<#= this.TableName.ToLower() #>");
+            <#= this.TableName.ToLower() #>.IsDeleted = true;
+            return <#= this.TableName.ToLower() #>Repository.LogicalDelete(<#= this.TableName.ToLower() #>);
+        }
+
+		/// <summary>
+        /// Get all <#= this.TableName.ToLower() #> ordered by
+        /// </summary>
+        /// <param name="orderBy">Column name</param>
+        /// <returns></returns>
+        public List<<#= this.TableName #>> GetAll<#= this.TableName #>sOrderBy(string orderBy)
+        {
+            List<<#= this.TableName #>> <#= this.TableName.ToLower() #>s = <#= this.TableName.ToLower() #>Repository.GetByWhereClause(null, orderBy);
+            return <#= this.TableName.ToLower() #>s;
+        }
+
+		/// <summary>
+        /// Get all <#= this.TableName.ToLower() #> ordered by
+        /// </summary>
+		/// <param name="whereClause">Where Clause</param>
+        /// <param name="orderBy">Column name</param>
+        /// <returns></returns>
+        public List<<#= this.TableName #>> GetAll<#= this.TableName #>sOrderBy(string whereClause, string orderBy)
+        {
+            List<<#= this.TableName #>> <#= this.TableName.ToLower() #>s = <#= this.TableName.ToLower() #>Repository.GetByWhereClause(whereClause, orderBy);
+            return <#= this.TableName.ToLower() #>s;
+        }
+
+        #endregion
+		#region Custom Methods
+        
+
+        #endregion
+    }
+}
+
+<#
+        ProcessContent(this.TableName + "Service" + ".cs", this.GenerationEnvironment.ToString());
+        this.GenerationEnvironment.Remove(0, this.GenerationEnvironment.Length);
+    }
+#>

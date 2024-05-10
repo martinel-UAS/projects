@@ -1,0 +1,279 @@
+﻿<#@ Assembly Name="C:\Program Files (x86)\Common Files\microsoft shared\MSEnv\PublicAssemblies\envdte.dll" #>
+<#@ assembly name="System.Data" #>
+<#@ assembly name="System.Xml" #>
+<#@ assembly name="Microsoft.SqlServer.ConnectionInfo" #>
+<#@ assembly name="Microsoft.SqlServer.Smo" #>
+<#@ assembly name="Microsoft.SqlServer.Management.Sdk.Sfc" #>
+
+<#@ import Namespace="EnvDTE" #>
+<#@ import namespace="System.IO" #>
+<#@ import namespace="System.Data" #>
+<#@ import namespace="System.Data.SqlClient" #>
+<#@ import namespace="Microsoft.SqlServer.Management.Smo" #>
+<#@ import namespace="Microsoft.SqlServer.Management.Common" #>
+<#+
+string TableName;
+
+	// ---------------------------------------------------------------------------------------------
+	// Implementation methods common for all CRUD templates
+	// ---------------------------------------------------------------------------------------------
+	
+	/// <summary>
+	///	Returns table names from the schema.
+	/// </summary>
+	DataSet Tables
+	{
+		get
+		{
+			if (true)
+			{
+				Server server = new Server(new ServerConnection(new SqlConnection(this.ConnectionString)));
+				SqlConnectionStringBuilder connectionStringBuilder = new SqlConnectionStringBuilder(this.ConnectionString);
+				
+				Database database = new Database(server, connectionStringBuilder.InitialCatalog);				
+				                                  				
+				string megaQuery ="SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE'";				
+				_tables = database.ExecuteWithResults(megaQuery);
+								
+			}
+			return _tables;
+		}
+	}
+	DataSet _tables;
+
+	/// <summary>
+	///	Returns table for which stored procedures need to be generated.
+	/// </summary>
+	Table Table
+	{
+		get
+		{
+			if (true)
+			{
+				Server server = new Server(new ServerConnection(new SqlConnection(this.ConnectionString)));
+				SqlConnectionStringBuilder connectionStringBuilder = new SqlConnectionStringBuilder(this.ConnectionString);
+				Database database = new Database(server, connectionStringBuilder.InitialCatalog);				
+
+				_table = new Table(database, this.TableName, this.SchemaName);
+				_table.Refresh();
+			}
+			return _table;
+		}
+	}
+	Table _table;
+
+	/// <summary>
+	///	Returns foreingn keys from a table
+	/// </summary>
+	DataSet Table2
+	{
+		get
+		{
+			if (true)
+			{
+				Server server = new Server(new ServerConnection(new SqlConnection(this.ConnectionString)));
+				SqlConnectionStringBuilder connectionStringBuilder = new SqlConnectionStringBuilder(this.ConnectionString);
+				
+				Database database = new Database(server, connectionStringBuilder.InitialCatalog);
+				                                  
+				string megaQuery = "SELECT " +
+						"CONSTRAINT_NAME = REF_CONST.CONSTRAINT_NAME, " +
+						"TABLE_CATALOG = FK.TABLE_CATALOG, " +
+						"TABLE_SCHEMA = FK.TABLE_SCHEMA, " +
+						"TABLE_NAME = FK.TABLE_NAME, " +
+						"COLUMN_NAME = FK_COLS.COLUMN_NAME, " +
+						"REFERENCED_TABLE_CATALOG = PK.TABLE_CATALOG, " +
+						"REFERENCED_TABLE_SCHEMA = PK.TABLE_SCHEMA, " +
+						"REFERENCED_TABLE_NAME = PK.TABLE_NAME, " +
+						"REFERENCED_COLUMN_NAME = PK_COLS.COLUMN_NAME " +
+						"FROM INFORMATION_SCHEMA.REFERENTIAL_CONSTRAINTS REF_CONST " +
+						"INNER JOIN INFORMATION_SCHEMA.TABLE_CONSTRAINTS FK " +
+						"ON REF_CONST.CONSTRAINT_CATALOG = FK.CONSTRAINT_CATALOG " +
+						"AND REF_CONST.CONSTRAINT_SCHEMA = FK.CONSTRAINT_SCHEMA " +
+						"AND REF_CONST.CONSTRAINT_NAME = FK.CONSTRAINT_NAME " +
+						"AND FK.CONSTRAINT_TYPE = 'FOREIGN KEY' " +
+						"INNER JOIN INFORMATION_SCHEMA.TABLE_CONSTRAINTS PK ON REF_CONST.UNIQUE_CONSTRAINT_CATALOG = PK.CONSTRAINT_CATALOG " +
+						"AND REF_CONST.UNIQUE_CONSTRAINT_SCHEMA = PK.CONSTRAINT_SCHEMA " +
+						"AND REF_CONST.UNIQUE_CONSTRAINT_NAME = PK.CONSTRAINT_NAME " +
+						"AND PK.CONSTRAINT_TYPE = 'PRIMARY KEY' " +
+						"INNER JOIN INFORMATION_SCHEMA.KEY_COLUMN_USAGE FK_COLS ON REF_CONST.CONSTRAINT_NAME = FK_COLS.CONSTRAINT_NAME " +
+						"INNER JOIN INFORMATION_SCHEMA.KEY_COLUMN_USAGE PK_COLS ON PK.CONSTRAINT_NAME = PK_COLS.CONSTRAINT_NAME " +
+						"WHERE PK.TABLE_NAME = '" + this.TableName + "'";
+
+				_table2 = database.ExecuteWithResults(megaQuery);
+				
+			}
+			return _table2;
+		}
+	}
+	DataSet _table2;
+
+	/// <summary>
+	/// Returns a string that contains T-SQL declaration for the specified data 
+	/// type. For string data types this includes maximum length, for numeric 
+	/// data types this includes scale and precision.
+	/// </summary>
+	string GetDataTypeDeclaration(DataType dataType)
+	{
+		string result = dataType.Name;
+		switch(dataType.SqlDataType)
+		{
+			case SqlDataType.Binary:
+			case SqlDataType.Char:
+			case SqlDataType.NChar:
+			case SqlDataType.NVarChar:
+			case SqlDataType.VarBinary:
+			case SqlDataType.VarChar:
+				result += string.Format("({0})", dataType.MaximumLength);
+				break;
+
+			case SqlDataType.NVarCharMax:
+			case SqlDataType.VarBinaryMax:
+			case SqlDataType.VarCharMax:
+				result += "(max)";
+				break;
+
+			case SqlDataType.Decimal:
+			case SqlDataType.Numeric:
+				result += string.Format("({0}, {1})", dataType.NumericPrecision, dataType.NumericScale);
+				break;
+		}
+		return result;
+	}
+
+	/// <summary>
+	/// Returns a string that contains T-SQL declaration for the specified data 
+	/// type. For string data types this includes maximum length, for numeric 
+	/// data types this includes scale and precision.
+	/// </summary>
+	string GetDataTypeGetType(DataType dataType)
+	{
+		string result = dataType.ToString();
+		switch(dataType.ToString())
+		{
+			case "bit":
+				result = "Boolean";
+				break;
+			case "char":
+				result = "Char";
+				break;
+			case "nchar":
+				result = "Char";
+				break;
+			case "nvarchar":
+				result = "String";
+				break;
+			case "varbinary":
+			case "varchar":
+				result = "String";
+				break;
+			case "nvrcharmax":
+			case "varbinarymax":
+			case "varcharmax":
+				result = "(max)";
+				break;
+			case "decimal":
+				result = "Int32";
+				break;
+			case "float":
+				result = "Double";
+				break;
+			case "int":
+				result = "Int32";
+				break;
+			case "datetime":
+			case "date":
+				result = "DateTime";
+				break;
+			case "numeric":
+				result = "Decimal";
+				break;
+		}
+		return result;
+	}
+	/// <summary>
+	/// Returns a string that contains C# declaration for the specified data type. 
+	/// </summary>
+	string GetDataTypeCSharpType(DataType dataType)
+	{
+		string result = dataType.ToString();
+		switch(dataType.ToString())
+		{
+			case "bit":
+				result = "bool";
+				break;
+			case "char":
+				result = "char";
+				break;
+			case "nchar":
+				result = "char";
+				break;
+			case "nvarchar":
+				result = "string";
+				break;
+			case "varbinary":
+			case "varchar":
+				result = "string";
+				break;
+			case "nvrcharmax":
+			case "varbinarymax":
+			case "varcharmax":
+				result = "(max)";
+				break;
+			case "decimal":
+				result = "Decimal";
+				break;
+			case "float":
+				result = "Double";
+				break;
+			case "int":
+				result = "int";
+				break;
+			case "datetime":
+			case "date":
+				result = "DateTime";
+				break;
+			case "numeric":
+				result = "Decimal";
+				break;
+		}
+		return result;
+	}
+
+	/// <summary>
+	/// Generates where clause for UPDATE and DELETE statements for the specified
+	/// table.
+	/// </summary>
+	void WriteWhereClause(Table table)
+	{
+		PushIndent("        ");
+		int whereIndex = 0;
+		foreach(Column column in table.Columns)
+		{
+			if (column.InPrimaryKey)
+			{
+				if (whereIndex > 0)
+					WriteLine(" and");
+				Write("[{0}] = @{0}", column.Name);
+				whereIndex++;			
+			}
+		}
+		PopIndent();
+	}
+
+	/// <summary>
+	/// Generates multiple output files. 
+	/// </summary>
+    public void ProcessContent(string outputFileName, string content)
+    {
+        string templateDirectory = Path.GetDirectoryName(Host.TemplateFile);
+        string outputFilePath = Path.Combine(templateDirectory, outputFileName);
+        File.WriteAllText(outputFilePath, content);
+
+        IServiceProvider hostServiceProvider = (IServiceProvider)Host;
+        EnvDTE.DTE dte = (EnvDTE.DTE)hostServiceProvider.GetService(typeof(EnvDTE.DTE));
+        ProjectItem containingProjectItem = dte.Solution.FindProjectItem(Host.TemplateFile);
+        containingProjectItem.ProjectItems.AddFromFile(outputFilePath);
+    }
+
+#>
