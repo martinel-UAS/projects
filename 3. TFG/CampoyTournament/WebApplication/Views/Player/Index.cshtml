@@ -1,0 +1,63 @@
+﻿@model IEnumerable<WebApplication.Models.Player.PlayerViewModel>
+@using WebApplication.Managers;
+@{
+    ViewBag.Title = "Jugadores";
+}
+<script src="@Url.Content("~/Scripts/table.js")"></script>
+<div class="container">
+    <div class="row">
+        <div class="panel panel-default widget">
+            <div class="panel-heading">
+                <h3 class="panel-title">
+                    <span class="glyphicon glyphicon-user"></span> @ViewBag.Title
+                </h3>
+            </div>
+            <div class="panel-body">
+                <div class="reset btn btn-default btn-xs" data-column="0" data-filter="" style="margin-bottom:15px"><i class="glyphicon glyphicon-refresh"></i> Borrar filtros</div>
+                <div class="table-responsive">
+                    <table id="playerTable" class="tablesorter">
+                        <thead>
+                            <tr class="centered">
+                                <td>Licencia</td>
+                                <td>Nombre</td>
+                                <td>Apodo</td>
+                                <td>HP Juego</td>
+                                <td class="filtered sorter-false filter-false"></td>
+                            </tr>
+                        </thead>
+                        <tbody class="centered">
+                            @foreach (var player in Model)
+                            {
+                                <tr>
+                                    <td>@Html.DisplayFor(modelItem => player.License)</td>
+                                    <td>@Html.DisplayFor(modelItem => player.Name) @Html.DisplayFor(modelItem => player.Surname)</td>
+                                    <td>@Html.DisplayFor(modelItem => player.Alias)</td>
+                                    <td>@Html.DisplayFor(modelItem => player.GameHP)</td>
+                                    @if (UserManager.IsInRole(UserManager.User, "Admin"))
+                                    {
+                                        <td class="action">
+                                            @Html.SpanLink("Detalle", "<button type='button' class='btn btn-info btn-xs' title='Detalle'><span class='glyphicon glyphicon-eye-open'></span></button>", "Details", "Player", new { id = player.Id })
+                                            @Html.SpanLink("Editar", "<button type='button' class='btn btn-primary btn-xs' title='Editar'><span class='glyphicon glyphicon-pencil'></span></button>", "Edit", "Player", new { id = player.Id })
+                                            @Html.SpanLink("Borrar", "<button type='button' class='btn btn-danger btn-xs' title='Borrar'><span class='glyphicon glyphicon-trash'></span></button>", "Delete", "Player", new { id = player.Id })
+                                        </td>
+                                    }
+                                    else
+                                    {
+                                        <td class="action">
+                                            @Html.SpanLink("Detalle", "<button type='button' class='btn btn-primary btn-xs' title='Detalle'><span class='glyphicon glyphicon-eye-open'></span></button>", "Details", "Player", new { id = player.Id })
+                                        </td>
+                                    }                                    
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                    @Html.Partial("_PagerPartial")
+                </div>
+            </div>
+            @if (UserManager.IsInRole(UserManager.User, "Admin"))
+            {
+                @Html.ActionLink("Nuevo Jugador", "Create", "Player", null, new { @class = "btn btn-primary btn-sm btn-block" })
+            }
+        </div>
+    </div>
+</div>

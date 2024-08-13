@@ -1,0 +1,104 @@
+﻿@model WebApplication.Models.Player.PlayerViewModel
+
+@{
+    ViewBag.Title = "Editar Perfil Jugador";
+}
+<div class="panel panel-default widget">
+    <div class="panel-heading">
+        <h3 class="panel-title">
+            <span class="glyphicon glyphicon-user"></span> @ViewBag.Title
+        </h3>
+    </div>
+    <div class="panel-body">
+        <ul class="list-group">
+            <li class="list-group-item">
+                <div class="row">
+                    <div class="col-xs-10 col-md-11">
+                        @using (Html.BeginForm("Edit", "Player", FormMethod.Post, htmlAttributes: new { @class = "form-horizontal" }))
+                        {
+                            @Html.AntiForgeryToken()
+                            <fieldset>
+                                <h3>
+                                    Datos de Jugador
+                                    <small>Modifique los datos:</small>
+                                </h3>
+                                <hr />
+                                <ul class="list-group">
+                                    @Html.ValidationSummary()
+                                </ul>
+
+                                @Html.HiddenFor(model => model.PlayerId)
+
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.RoleId, new { @class = "control-label col-md-2" })
+                                    <div class="col-md-10">
+                                        @Html.DropDownList("RoleId", Model.AvailableRoles, new { @class = "form-control", required = "true" })                                        
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.License, new { @class = "control-label col-md-2" })
+                                    <div class="col-md-10">
+                                        @Html.TextBoxFor(model => model.License, new { @class = "form-control", placeholder = "Licencia", required = "true", type = "text" })
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.Name, new { @class = "control-label col-md-2" })
+                                    <div class="col-md-10">
+                                        @Html.TextBoxFor(model => model.Name, new { @class = "form-control", placeholder = "Nombre", required = "true", type = "text" })
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.Surname, new { @class = "control-label col-md-2" })
+                                    <div class="col-md-10">
+                                        @Html.TextBoxFor(model => model.Surname, new { @class = "form-control", placeholder = "Apellido", required = "true", type = "text" })
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.Alias, new { @class = "control-label col-md-2" })
+                                    <div class="col-md-10">
+                                        @Html.TextBoxFor(model => model.Alias, new { @class = "form-control", placeholder = "Alias", required = "true", type = "text" })
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.Phone, new { @class = "control-label col-md-2" })
+                                    <div class="col-md-10">
+                                        @Html.TextBoxFor(model => model.Phone, new { @class = "form-control", placeholder = "Teléfono", required = "true", type = "text" })
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.RealHP, new { @class = "control-label col-md-2" })
+                                    <div class="col-md-10">
+                                        @Html.TextBoxFor(model => model.RealHP, new { @class = "form-control", placeholder = "Handicap Real", required = "true", type = "number", step = "0.1"})
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.GameHP, new { @class = "control-label col-md-2" })
+                                    <div class="col-md-10">
+                                        @Html.TextBoxFor(model => model.GameHP, new { @class = "form-control", placeholder = "Handicap de Juego", required = "true", type = "number", step = "0.1"})
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.Email, new { @class = "control-label col-md-2" })
+                                    <div class="col-md-10">
+                                        @Html.TextBoxFor(model => model.Email, new { @class = "form-control", placeholder = "Email", required = "true", type = "text" })
+                                    </div>
+                                </div>
+                                <hr />
+                                <button id="buttonSend" type="submit" class="btn btn-primary">Aceptar</button>
+                                @Html.ActionLink("Cancelar", "Index", "Player", null, new { @class = "btn btn-default" })
+                            </fieldset>
+                        }
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>

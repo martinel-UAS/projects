@@ -1,0 +1,979 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="CampoyTournamentModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="CampoyTournamentModelStoreContainer">
+    <EntitySet Name="Field" EntityType="CampoyTournamentModel.Store.Field" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Hole" EntityType="CampoyTournamentModel.Store.Hole" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Match" EntityType="CampoyTournamentModel.Store.Match" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Player" EntityType="CampoyTournamentModel.Store.Player" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Result" EntityType="CampoyTournamentModel.Store.Result" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Role" EntityType="CampoyTournamentModel.Store.Role" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Tournament" EntityType="CampoyTournamentModel.Store.Tournament" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="User" EntityType="CampoyTournamentModel.Store.User" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_Hole_Field" Association="CampoyTournamentModel.Store.FK_Hole_Field">
+      <End Role="Field" EntitySet="Field" />
+      <End Role="Hole" EntitySet="Hole" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Match_Field" Association="CampoyTournamentModel.Store.FK_Match_Field">
+      <End Role="Field" EntitySet="Field" />
+      <End Role="Match" EntitySet="Match" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Result_Hole" Association="CampoyTournamentModel.Store.FK_Result_Hole">
+      <End Role="Hole" EntitySet="Hole" />
+      <End Role="Result" EntitySet="Result" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Match_Tournament" Association="CampoyTournamentModel.Store.FK_Match_Tournament">
+      <End Role="Tournament" EntitySet="Tournament" />
+      <End Role="Match" EntitySet="Match" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Result_Match" Association="CampoyTournamentModel.Store.FK_Result_Match">
+      <End Role="Match" EntitySet="Match" />
+      <End Role="Result" EntitySet="Result" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Result_Player" Association="CampoyTournamentModel.Store.FK_Result_Player">
+      <End Role="Player" EntitySet="Player" />
+      <End Role="Result" EntitySet="Result" />
+    </AssociationSet>
+    <AssociationSet Name="FK_User_Player" Association="CampoyTournamentModel.Store.FK_User_Player">
+      <End Role="Player" EntitySet="Player" />
+      <End Role="User" EntitySet="User" />
+    </AssociationSet>
+    <AssociationSet Name="FK_User_Role" Association="CampoyTournamentModel.Store.FK_User_Role">
+      <End Role="Role" EntitySet="Role" />
+      <End Role="User" EntitySet="User" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Field">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Address" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="City" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Province" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Web" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Email" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Phone" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Hole">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FieldId" Type="int" Nullable="false" />
+    <Property Name="Handicap" Type="int" Nullable="false" />
+    <Property Name="Distance" Type="int" Nullable="false" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Match">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TournamentId" Type="int" Nullable="false" />
+    <Property Name="FieldId" Type="int" Nullable="false" />
+    <Property Name="Date" Type="datetime" Nullable="false" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="IsTournament" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Player">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="License" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Alias" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Phone" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="RealHP" Type="float" Nullable="false" />
+    <Property Name="GameHP" Type="float" Nullable="false" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Result">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="HoleId" Type="int" Nullable="false" />
+    <Property Name="MatchId" Type="int" Nullable="false" />
+    <Property Name="PlayerId" Type="int" Nullable="false" />
+    <Property Name="Strikes" Type="int" Nullable="false" />
+    <Property Name="Handicap" Type="float" Nullable="false" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Role">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RoleName" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Tournament">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Year" Type="int" Nullable="false" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="IsFinished" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Surname" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Email" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Password" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="RoleId" Type="int" Nullable="false" />
+    <Property Name="PlayerId" Type="int" Nullable="true" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_Hole_Field">
+    <End Role="Field" Type="CampoyTournamentModel.Store.Field" Multiplicity="1" />
+    <End Role="Hole" Type="CampoyTournamentModel.Store.Hole" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Field">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Hole">
+        <PropertyRef Name="FieldId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Match_Field">
+    <End Role="Field" Type="CampoyTournamentModel.Store.Field" Multiplicity="1" />
+    <End Role="Match" Type="CampoyTournamentModel.Store.Match" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Field">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Match">
+        <PropertyRef Name="FieldId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Result_Hole">
+    <End Role="Hole" Type="CampoyTournamentModel.Store.Hole" Multiplicity="1" />
+    <End Role="Result" Type="CampoyTournamentModel.Store.Result" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Hole">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Result">
+        <PropertyRef Name="HoleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Match_Tournament">
+    <End Role="Tournament" Type="CampoyTournamentModel.Store.Tournament" Multiplicity="1" />
+    <End Role="Match" Type="CampoyTournamentModel.Store.Match" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tournament">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Match">
+        <PropertyRef Name="TournamentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Result_Match">
+    <End Role="Match" Type="CampoyTournamentModel.Store.Match" Multiplicity="1" />
+    <End Role="Result" Type="CampoyTournamentModel.Store.Result" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Match">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Result">
+        <PropertyRef Name="MatchId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Result_Player">
+    <End Role="Player" Type="CampoyTournamentModel.Store.Player" Multiplicity="1" />
+    <End Role="Result" Type="CampoyTournamentModel.Store.Result" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Player">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Result">
+        <PropertyRef Name="PlayerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_User_Player">
+    <End Role="Player" Type="CampoyTournamentModel.Store.Player" Multiplicity="0..1" />
+    <End Role="User" Type="CampoyTournamentModel.Store.User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Player">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="User">
+        <PropertyRef Name="PlayerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_User_Role">
+    <End Role="Role" Type="CampoyTournamentModel.Store.Role" Multiplicity="1" />
+    <End Role="User" Type="CampoyTournamentModel.Store.User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Role">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="User">
+        <PropertyRef Name="RoleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="CampoyTournamentModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="CampoyTournamentEntities" p1:LazyLoadingEnabled="true">
+          <EntitySet Name="Field" EntityType="CampoyTournamentModel.Field" />
+          <EntitySet Name="Hole" EntityType="CampoyTournamentModel.Hole" />
+          <EntitySet Name="Match" EntityType="CampoyTournamentModel.Match" />
+          <EntitySet Name="Player" EntityType="CampoyTournamentModel.Player" />
+          <EntitySet Name="Result" EntityType="CampoyTournamentModel.Result" />
+          <EntitySet Name="Role" EntityType="CampoyTournamentModel.Role" />
+          <EntitySet Name="Tournament" EntityType="CampoyTournamentModel.Tournament" />
+          <EntitySet Name="User" EntityType="CampoyTournamentModel.User" />
+          <AssociationSet Name="FK_Hole_Field" Association="CampoyTournamentModel.FK_Hole_Field">
+            <End Role="Field" EntitySet="Field" />
+            <End Role="Hole" EntitySet="Hole" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Match_Field" Association="CampoyTournamentModel.FK_Match_Field">
+            <End Role="Field" EntitySet="Field" />
+            <End Role="Match" EntitySet="Match" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Result_Hole" Association="CampoyTournamentModel.FK_Result_Hole">
+            <End Role="Hole" EntitySet="Hole" />
+            <End Role="Result" EntitySet="Result" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Match_Tournament" Association="CampoyTournamentModel.FK_Match_Tournament">
+            <End Role="Tournament" EntitySet="Tournament" />
+            <End Role="Match" EntitySet="Match" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Result_Match" Association="CampoyTournamentModel.FK_Result_Match">
+            <End Role="Match" EntitySet="Match" />
+            <End Role="Result" EntitySet="Result" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Result_Player" Association="CampoyTournamentModel.FK_Result_Player">
+            <End Role="Player" EntitySet="Player" />
+            <End Role="Result" EntitySet="Result" />
+          </AssociationSet>
+          <AssociationSet Name="FK_User_Player" Association="CampoyTournamentModel.FK_User_Player">
+            <End Role="Player" EntitySet="Player" />
+            <End Role="User" EntitySet="User" />
+          </AssociationSet>
+          <AssociationSet Name="FK_User_Role" Association="CampoyTournamentModel.FK_User_Role">
+            <End Role="Role" EntitySet="Role" />
+            <End Role="User" EntitySet="User" />
+          </AssociationSet>
+          <FunctionImport Name="uspDeleteField">
+            <Parameter Name="Id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="uspDeleteHole">
+            <Parameter Name="Id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="uspDeleteMatch">
+            <Parameter Name="Id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="uspDeletePlayer">
+            <Parameter Name="Id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="uspDeleteResult">
+            <Parameter Name="Id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="uspDeleteRole">
+            <Parameter Name="Id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="uspDeleteTournament">
+            <Parameter Name="Id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="uspDeleteUser">
+            <Parameter Name="Id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="uspGetAllField" ReturnType="Collection(CampoyTournamentModel.uspGetAllField_Result)" />
+          <FunctionImport Name="uspGetAllHole" ReturnType="Collection(CampoyTournamentModel.uspGetAllHole_Result)" />
+          <FunctionImport Name="uspGetAllMatch" ReturnType="Collection(CampoyTournamentModel.uspGetAllMatch_Result)" />
+          <FunctionImport Name="uspGetAllPlayer" ReturnType="Collection(CampoyTournamentModel.uspGetAllPlayer_Result)" />
+          <FunctionImport Name="uspGetAllResult" ReturnType="Collection(CampoyTournamentModel.uspGetAllResult_Result)" />
+          <FunctionImport Name="uspGetAllRole" ReturnType="Collection(CampoyTournamentModel.uspGetAllRole_Result)" />
+          <FunctionImport Name="uspGetAllTournament" ReturnType="Collection(CampoyTournamentModel.uspGetAllTournament_Result)" />
+          <FunctionImport Name="uspGetAllUser" ReturnType="Collection(CampoyTournamentModel.uspGetAllUser_Result)" />
+          <FunctionImport Name="uspGetFieldById" ReturnType="Collection(CampoyTournamentModel.uspGetFieldById_Result)">
+            <Parameter Name="Id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="uspGetFields">
+            <Parameter Name="whereClause" Mode="In" Type="String" />
+            <Parameter Name="OrderByClause" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="uspGetHoleById" ReturnType="Collection(CampoyTournamentModel.uspGetHoleById_Result)">
+            <Parameter Name="Id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="uspGetHoles">
+            <Parameter Name="whereClause" Mode="In" Type="String" />
+            <Parameter Name="OrderByClause" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="uspGetMatchById" ReturnType="Collection(CampoyTournamentModel.uspGetMatchById_Result)">
+            <Parameter Name="Id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="uspGetMatchs">
+            <Parameter Name="whereClause" Mode="In" Type="String" />
+            <Parameter Name="OrderByClause" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="uspGetPlayerById" ReturnType="Collection(CampoyTournamentModel.uspGetPlayerById_Result)">
+            <Parameter Name="Id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="uspGetPlayers">
+            <Parameter Name="whereClause" Mode="In" Type="String" />
+            <Parameter Name="OrderByClause" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="uspGetResultById" ReturnType="Collection(CampoyTournamentModel.uspGetResultById_Result)">
+            <Parameter Name="Id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="uspGetResults">
+            <Parameter Name="whereClause" Mode="In" Type="String" />
+            <Parameter Name="OrderByClause" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="uspGetRoleById" ReturnType="Collection(CampoyTournamentModel.uspGetRoleById_Result)">
+            <Parameter Name="Id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="uspGetRoles">
+            <Parameter Name="whereClause" Mode="In" Type="String" />
+            <Parameter Name="OrderByClause" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="uspGetTournamentById" ReturnType="Collection(CampoyTournamentModel.uspGetTournamentById_Result)">
+            <Parameter Name="Id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="uspGetTournaments">
+            <Parameter Name="whereClause" Mode="In" Type="String" />
+            <Parameter Name="OrderByClause" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="uspGetUserById" ReturnType="Collection(CampoyTournamentModel.uspGetUserById_Result)">
+            <Parameter Name="Id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="uspGetUsers">
+            <Parameter Name="whereClause" Mode="In" Type="String" />
+            <Parameter Name="OrderByClause" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="uspInsertField">
+            <Parameter Name="Name" Mode="In" Type="String" />
+            <Parameter Name="Address" Mode="In" Type="String" />
+            <Parameter Name="City" Mode="In" Type="String" />
+            <Parameter Name="Province" Mode="In" Type="String" />
+            <Parameter Name="Web" Mode="In" Type="String" />
+            <Parameter Name="Email" Mode="In" Type="String" />
+            <Parameter Name="Phone" Mode="In" Type="String" />
+            <Parameter Name="IsDeleted" Mode="In" Type="Boolean" />
+            <Parameter Name="Id" Mode="InOut" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="uspInsertHole">
+            <Parameter Name="FieldId" Mode="In" Type="Int32" />
+            <Parameter Name="Handicap" Mode="In" Type="Int32" />
+            <Parameter Name="Distance" Mode="In" Type="Int32" />
+            <Parameter Name="IsDeleted" Mode="In" Type="Boolean" />
+            <Parameter Name="Id" Mode="InOut" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="uspInsertMatch">
+            <Parameter Name="TournamentId" Mode="In" Type="Int32" />
+            <Parameter Name="FieldId" Mode="In" Type="Int32" />
+            <Parameter Name="Date" Mode="In" Type="DateTime" />
+            <Parameter Name="IsDeleted" Mode="In" Type="Boolean" />
+            <Parameter Name="IsTournament" Mode="In" Type="Boolean" />
+            <Parameter Name="Id" Mode="InOut" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="uspInsertPlayer">
+            <Parameter Name="License" Mode="In" Type="String" />
+            <Parameter Name="Alias" Mode="In" Type="String" />
+            <Parameter Name="Phone" Mode="In" Type="String" />
+            <Parameter Name="RealHP" Mode="In" Type="Double" />
+            <Parameter Name="GameHP" Mode="In" Type="Double" />
+            <Parameter Name="IsDeleted" Mode="In" Type="Boolean" />
+            <Parameter Name="Id" Mode="InOut" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="uspInsertResult">
+            <Parameter Name="HoleId" Mode="In" Type="Int32" />
+            <Parameter Name="MatchId" Mode="In" Type="Int32" />
+            <Parameter Name="PlayerId" Mode="In" Type="Int32" />
+            <Parameter Name="Strikes" Mode="In" Type="Int32" />
+            <Parameter Name="Handicap" Mode="In" Type="Double" />
+            <Parameter Name="IsDeleted" Mode="In" Type="Boolean" />
+            <Parameter Name="Id" Mode="InOut" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="uspInsertRole">
+            <Parameter Name="RoleName" Mode="In" Type="String" />
+            <Parameter Name="IsDeleted" Mode="In" Type="Boolean" />
+            <Parameter Name="Id" Mode="InOut" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="uspInsertTournament">
+            <Parameter Name="Year" Mode="In" Type="Int32" />
+            <Parameter Name="IsDeleted" Mode="In" Type="Boolean" />
+            <Parameter Name="IsFinished" Mode="In" Type="Boolean" />
+            <Parameter Name="Id" Mode="InOut" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="uspInsertUser">
+            <Parameter Name="Name" Mode="In" Type="String" />
+            <Parameter Name="Surname" Mode="In" Type="String" />
+            <Parameter Name="Email" Mode="In" Type="String" />
+            <Parameter Name="Password" Mode="In" Type="String" />
+            <Parameter Name="RoleId" Mode="In" Type="Int32" />
+            <Parameter Name="PlayerId" Mode="In" Type="Int32" />
+            <Parameter Name="IsDeleted" Mode="In" Type="Boolean" />
+            <Parameter Name="Id" Mode="InOut" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="uspLogicalDeleteField">
+            <Parameter Name="Id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="uspLogicalDeleteHole">
+            <Parameter Name="Id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="uspLogicalDeleteMatch">
+            <Parameter Name="Id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="uspLogicalDeletePlayer">
+            <Parameter Name="Id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="uspLogicalDeleteResult">
+            <Parameter Name="Id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="uspLogicalDeleteRole">
+            <Parameter Name="Id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="uspLogicalDeleteTournament">
+            <Parameter Name="Id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="uspLogicalDeleteUser">
+            <Parameter Name="Id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="uspUpdateField">
+            <Parameter Name="Id" Mode="In" Type="Int32" />
+            <Parameter Name="Name" Mode="In" Type="String" />
+            <Parameter Name="Address" Mode="In" Type="String" />
+            <Parameter Name="City" Mode="In" Type="String" />
+            <Parameter Name="Province" Mode="In" Type="String" />
+            <Parameter Name="Web" Mode="In" Type="String" />
+            <Parameter Name="Email" Mode="In" Type="String" />
+            <Parameter Name="Phone" Mode="In" Type="String" />
+            <Parameter Name="IsDeleted" Mode="In" Type="Boolean" />
+          </FunctionImport>
+          <FunctionImport Name="uspUpdateHole">
+            <Parameter Name="Id" Mode="In" Type="Int32" />
+            <Parameter Name="FieldId" Mode="In" Type="Int32" />
+            <Parameter Name="Handicap" Mode="In" Type="Int32" />
+            <Parameter Name="Distance" Mode="In" Type="Int32" />
+            <Parameter Name="IsDeleted" Mode="In" Type="Boolean" />
+          </FunctionImport>
+          <FunctionImport Name="uspUpdateMatch">
+            <Parameter Name="Id" Mode="In" Type="Int32" />
+            <Parameter Name="TournamentId" Mode="In" Type="Int32" />
+            <Parameter Name="FieldId" Mode="In" Type="Int32" />
+            <Parameter Name="Date" Mode="In" Type="DateTime" />
+            <Parameter Name="IsDeleted" Mode="In" Type="Boolean" />
+            <Parameter Name="IsTournament" Mode="In" Type="Boolean" />
+          </FunctionImport>
+          <FunctionImport Name="uspUpdatePlayer">
+            <Parameter Name="Id" Mode="In" Type="Int32" />
+            <Parameter Name="License" Mode="In" Type="String" />
+            <Parameter Name="Alias" Mode="In" Type="String" />
+            <Parameter Name="Phone" Mode="In" Type="String" />
+            <Parameter Name="RealHP" Mode="In" Type="Double" />
+            <Parameter Name="GameHP" Mode="In" Type="Double" />
+            <Parameter Name="IsDeleted" Mode="In" Type="Boolean" />
+          </FunctionImport>
+          <FunctionImport Name="uspUpdateResult">
+            <Parameter Name="Id" Mode="In" Type="Int32" />
+            <Parameter Name="HoleId" Mode="In" Type="Int32" />
+            <Parameter Name="MatchId" Mode="In" Type="Int32" />
+            <Parameter Name="PlayerId" Mode="In" Type="Int32" />
+            <Parameter Name="Strikes" Mode="In" Type="Int32" />
+            <Parameter Name="Handicap" Mode="In" Type="Double" />
+            <Parameter Name="IsDeleted" Mode="In" Type="Boolean" />
+          </FunctionImport>
+          <FunctionImport Name="uspUpdateRole">
+            <Parameter Name="Id" Mode="In" Type="Int32" />
+            <Parameter Name="RoleName" Mode="In" Type="String" />
+            <Parameter Name="IsDeleted" Mode="In" Type="Boolean" />
+          </FunctionImport>
+          <FunctionImport Name="uspUpdateTournament">
+            <Parameter Name="Id" Mode="In" Type="Int32" />
+            <Parameter Name="Year" Mode="In" Type="Int32" />
+            <Parameter Name="IsDeleted" Mode="In" Type="Boolean" />
+            <Parameter Name="IsFinished" Mode="In" Type="Boolean" />
+          </FunctionImport>
+          <FunctionImport Name="uspUpdateUser">
+            <Parameter Name="Id" Mode="In" Type="Int32" />
+            <Parameter Name="Name" Mode="In" Type="String" />
+            <Parameter Name="Surname" Mode="In" Type="String" />
+            <Parameter Name="Email" Mode="In" Type="String" />
+            <Parameter Name="Password" Mode="In" Type="String" />
+            <Parameter Name="RoleId" Mode="In" Type="Int32" />
+            <Parameter Name="PlayerId" Mode="In" Type="Int32" />
+            <Parameter Name="IsDeleted" Mode="In" Type="Boolean" />
+          </FunctionImport>
+        </EntityContainer>
+        <EntityType Name="Field">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Address" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="City" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Province" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Web" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Email" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Phone" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="Hole" Relationship="CampoyTournamentModel.FK_Hole_Field" FromRole="Field" ToRole="Hole" />
+          <NavigationProperty Name="Match" Relationship="CampoyTournamentModel.FK_Match_Field" FromRole="Field" ToRole="Match" />
+        </EntityType>
+        <EntityType Name="Hole">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="FieldId" Type="Int32" Nullable="false" />
+          <Property Name="Handicap" Type="Int32" Nullable="false" />
+          <Property Name="Distance" Type="Int32" Nullable="false" />
+          <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="Field" Relationship="CampoyTournamentModel.FK_Hole_Field" FromRole="Hole" ToRole="Field" />
+          <NavigationProperty Name="Result" Relationship="CampoyTournamentModel.FK_Result_Hole" FromRole="Hole" ToRole="Result" />
+        </EntityType>
+        <EntityType Name="Match">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="TournamentId" Type="Int32" Nullable="false" />
+          <Property Name="FieldId" Type="Int32" Nullable="false" />
+          <Property Name="Date" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+          <Property Name="IsTournament" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="Field" Relationship="CampoyTournamentModel.FK_Match_Field" FromRole="Match" ToRole="Field" />
+          <NavigationProperty Name="Tournament" Relationship="CampoyTournamentModel.FK_Match_Tournament" FromRole="Match" ToRole="Tournament" />
+          <NavigationProperty Name="Result" Relationship="CampoyTournamentModel.FK_Result_Match" FromRole="Match" ToRole="Result" />
+        </EntityType>
+        <EntityType Name="Player">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="License" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Alias" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Phone" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="RealHP" Type="Double" Nullable="false" />
+          <Property Name="GameHP" Type="Double" Nullable="false" />
+          <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="Result" Relationship="CampoyTournamentModel.FK_Result_Player" FromRole="Player" ToRole="Result" />
+          <NavigationProperty Name="User" Relationship="CampoyTournamentModel.FK_User_Player" FromRole="Player" ToRole="User" />
+        </EntityType>
+        <EntityType Name="Result">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="HoleId" Type="Int32" Nullable="false" />
+          <Property Name="MatchId" Type="Int32" Nullable="false" />
+          <Property Name="PlayerId" Type="Int32" Nullable="false" />
+          <Property Name="Strikes" Type="Int32" Nullable="false" />
+          <Property Name="Handicap" Type="Double" Nullable="false" />
+          <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="Hole" Relationship="CampoyTournamentModel.FK_Result_Hole" FromRole="Result" ToRole="Hole" />
+          <NavigationProperty Name="Match" Relationship="CampoyTournamentModel.FK_Result_Match" FromRole="Result" ToRole="Match" />
+          <NavigationProperty Name="Player" Relationship="CampoyTournamentModel.FK_Result_Player" FromRole="Result" ToRole="Player" />
+        </EntityType>
+        <EntityType Name="Role">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="RoleName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="User" Relationship="CampoyTournamentModel.FK_User_Role" FromRole="Role" ToRole="User" />
+        </EntityType>
+        <EntityType Name="Tournament">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="Year" Type="Int32" Nullable="false" />
+          <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+          <Property Name="IsFinished" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="Match" Relationship="CampoyTournamentModel.FK_Match_Tournament" FromRole="Tournament" ToRole="Match" />
+        </EntityType>
+        <EntityType Name="User">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Surname" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Email" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Password" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="RoleId" Type="Int32" Nullable="false" />
+          <Property Name="PlayerId" Type="Int32" />
+          <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="Player" Relationship="CampoyTournamentModel.FK_User_Player" FromRole="User" ToRole="Player" />
+          <NavigationProperty Name="Role" Relationship="CampoyTournamentModel.FK_User_Role" FromRole="User" ToRole="Role" />
+        </EntityType>
+        <Association Name="FK_Hole_Field">
+          <End Role="Field" Type="CampoyTournamentModel.Field" Multiplicity="1" />
+          <End Role="Hole" Type="CampoyTournamentModel.Hole" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Field">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Hole">
+              <PropertyRef Name="FieldId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Match_Field">
+          <End Role="Field" Type="CampoyTournamentModel.Field" Multiplicity="1" />
+          <End Role="Match" Type="CampoyTournamentModel.Match" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Field">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Match">
+              <PropertyRef Name="FieldId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Result_Hole">
+          <End Role="Hole" Type="CampoyTournamentModel.Hole" Multiplicity="1" />
+          <End Role="Result" Type="CampoyTournamentModel.Result" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Hole">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Result">
+              <PropertyRef Name="HoleId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Match_Tournament">
+          <End Role="Tournament" Type="CampoyTournamentModel.Tournament" Multiplicity="1" />
+          <End Role="Match" Type="CampoyTournamentModel.Match" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Tournament">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Match">
+              <PropertyRef Name="TournamentId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Result_Match">
+          <End Role="Match" Type="CampoyTournamentModel.Match" Multiplicity="1" />
+          <End Role="Result" Type="CampoyTournamentModel.Result" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Match">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Result">
+              <PropertyRef Name="MatchId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Result_Player">
+          <End Role="Player" Type="CampoyTournamentModel.Player" Multiplicity="1" />
+          <End Role="Result" Type="CampoyTournamentModel.Result" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Player">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Result">
+              <PropertyRef Name="PlayerId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_User_Player">
+          <End Role="Player" Type="CampoyTournamentModel.Player" Multiplicity="0..1" />
+          <End Role="User" Type="CampoyTournamentModel.User" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Player">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="User">
+              <PropertyRef Name="PlayerId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_User_Role">
+          <End Role="Role" Type="CampoyTournamentModel.Role" Multiplicity="1" />
+          <End Role="User" Type="CampoyTournamentModel.User" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Role">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="User">
+              <PropertyRef Name="RoleId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <ComplexType Name="uspGetAllField_Result">
+          <Property Type="Int32" Name="Id" Nullable="false" />
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="Address" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="City" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="Province" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="Web" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="Email" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="Phone" Nullable="false" MaxLength="50" />
+          <Property Type="Boolean" Name="IsDeleted" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="uspGetAllHole_Result">
+          <Property Type="Int32" Name="Id" Nullable="false" />
+          <Property Type="Int32" Name="FieldId" Nullable="false" />
+          <Property Type="Int32" Name="Handicap" Nullable="false" />
+          <Property Type="Int32" Name="Distance" Nullable="false" />
+          <Property Type="Boolean" Name="IsDeleted" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="uspGetAllMatch_Result">
+          <Property Type="Int32" Name="Id" Nullable="false" />
+          <Property Type="Int32" Name="TournamentId" Nullable="false" />
+          <Property Type="Int32" Name="FieldId" Nullable="false" />
+          <Property Type="DateTime" Name="Date" Nullable="false" />
+          <Property Type="Boolean" Name="IsDeleted" Nullable="false" />
+          <Property Type="Boolean" Name="IsTournament" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="uspGetAllPlayer_Result">
+          <Property Type="Int32" Name="Id" Nullable="false" />
+          <Property Type="String" Name="License" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="Alias" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="Phone" Nullable="false" MaxLength="50" />
+          <Property Type="Double" Name="RealHP" Nullable="false" />
+          <Property Type="Double" Name="GameHP" Nullable="false" />
+          <Property Type="Boolean" Name="IsDeleted" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="uspGetAllResult_Result">
+          <Property Type="Int32" Name="Id" Nullable="false" />
+          <Property Type="Int32" Name="HoleId" Nullable="false" />
+          <Property Type="Int32" Name="MatchId" Nullable="false" />
+          <Property Type="Int32" Name="PlayerId" Nullable="false" />
+          <Property Type="Int32" Name="Strikes" Nullable="false" />
+          <Property Type="Double" Name="Handicap" Nullable="false" />
+          <Property Type="Boolean" Name="IsDeleted" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="uspGetAllRole_Result">
+          <Property Type="Int32" Name="Id" Nullable="false" />
+          <Property Type="String" Name="RoleName" Nullable="false" MaxLength="50" />
+          <Property Type="Boolean" Name="IsDeleted" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="uspGetAllTournament_Result">
+          <Property Type="Int32" Name="Id" Nullable="false" />
+          <Property Type="Int32" Name="Year" Nullable="false" />
+          <Property Type="Boolean" Name="IsDeleted" Nullable="false" />
+          <Property Type="Boolean" Name="IsFinished" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="uspGetAllUser_Result">
+          <Property Type="Int32" Name="Id" Nullable="false" />
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="Surname" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="Email" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="Password" Nullable="false" MaxLength="50" />
+          <Property Type="Int32" Name="RoleId" Nullable="false" />
+          <Property Type="Int32" Name="PlayerId" Nullable="true" />
+          <Property Type="Boolean" Name="IsDeleted" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="uspGetFieldById_Result">
+          <Property Type="Int32" Name="Id" Nullable="false" />
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="Address" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="City" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="Province" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="Web" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="Email" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="Phone" Nullable="false" MaxLength="50" />
+          <Property Type="Boolean" Name="IsDeleted" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="uspGetHoleById_Result">
+          <Property Type="Int32" Name="Id" Nullable="false" />
+          <Property Type="Int32" Name="FieldId" Nullable="false" />
+          <Property Type="Int32" Name="Handicap" Nullable="false" />
+          <Property Type="Int32" Name="Distance" Nullable="false" />
+          <Property Type="Boolean" Name="IsDeleted" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="uspGetMatchById_Result">
+          <Property Type="Int32" Name="Id" Nullable="false" />
+          <Property Type="Int32" Name="TournamentId" Nullable="false" />
+          <Property Type="Int32" Name="FieldId" Nullable="false" />
+          <Property Type="DateTime" Name="Date" Nullable="false" />
+          <Property Type="Boolean" Name="IsDeleted" Nullable="false" />
+          <Property Type="Boolean" Name="IsTournament" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="uspGetPlayerById_Result">
+          <Property Type="Int32" Name="Id" Nullable="false" />
+          <Property Type="String" Name="License" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="Alias" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="Phone" Nullable="false" MaxLength="50" />
+          <Property Type="Double" Name="RealHP" Nullable="false" />
+          <Property Type="Double" Name="GameHP" Nullable="false" />
+          <Property Type="Boolean" Name="IsDeleted" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="uspGetResultById_Result">
+          <Property Type="Int32" Name="Id" Nullable="false" />
+          <Property Type="Int32" Name="HoleId" Nullable="false" />
+          <Property Type="Int32" Name="MatchId" Nullable="false" />
+          <Property Type="Int32" Name="PlayerId" Nullable="false" />
+          <Property Type="Int32" Name="Strikes" Nullable="false" />
+          <Property Type="Double" Name="Handicap" Nullable="false" />
+          <Property Type="Boolean" Name="IsDeleted" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="uspGetRoleById_Result">
+          <Property Type="Int32" Name="Id" Nullable="false" />
+          <Property Type="String" Name="RoleName" Nullable="false" MaxLength="50" />
+          <Property Type="Boolean" Name="IsDeleted" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="uspGetTournamentById_Result">
+          <Property Type="Int32" Name="Id" Nullable="false" />
+          <Property Type="Int32" Name="Year" Nullable="false" />
+          <Property Type="Boolean" Name="IsDeleted" Nullable="false" />
+          <Property Type="Boolean" Name="IsFinished" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="uspGetUserById_Result">
+          <Property Type="Int32" Name="Id" Nullable="false" />
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="Surname" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="Email" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="Password" Nullable="false" MaxLength="50" />
+          <Property Type="Int32" Name="RoleId" Nullable="false" />
+          <Property Type="Int32" Name="PlayerId" Nullable="true" />
+          <Property Type="Boolean" Name="IsDeleted" Nullable="false" />
+        </ComplexType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+    <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="CampoyTournamentModelStoreContainer" CdmEntityContainer="CampoyTournamentEntities">
+    <EntitySetMapping Name="Field">
+      <EntityTypeMapping TypeName="IsTypeOf(CampoyTournamentModel.Field)">
+        <MappingFragment StoreEntitySet="Field">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="Province" ColumnName="Province" />
+          <ScalarProperty Name="Web" ColumnName="Web" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Hole">
+      <EntityTypeMapping TypeName="IsTypeOf(CampoyTournamentModel.Hole)">
+        <MappingFragment StoreEntitySet="Hole">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="FieldId" ColumnName="FieldId" />
+          <ScalarProperty Name="Handicap" ColumnName="Handicap" />
+          <ScalarProperty Name="Distance" ColumnName="Distance" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Match">
+      <EntityTypeMapping TypeName="IsTypeOf(CampoyTournamentModel.Match)">
+        <MappingFragment StoreEntitySet="Match">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="TournamentId" ColumnName="TournamentId" />
+          <ScalarProperty Name="FieldId" ColumnName="FieldId" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="IsTournament" ColumnName="IsTournament" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Player">
+      <EntityTypeMapping TypeName="IsTypeOf(CampoyTournamentModel.Player)">
+        <MappingFragment StoreEntitySet="Player">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="License" ColumnName="License" />
+          <ScalarProperty Name="Alias" ColumnName="Alias" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="RealHP" ColumnName="RealHP" />
+          <ScalarProperty Name="GameHP" ColumnName="GameHP" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Result">
+      <EntityTypeMapping TypeName="IsTypeOf(CampoyTournamentModel.Result)">
+        <MappingFragment StoreEntitySet="Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="HoleId" ColumnName="HoleId" />
+          <ScalarProperty Name="MatchId" ColumnName="MatchId" />
+          <ScalarProperty Name="PlayerId" ColumnName="PlayerId" />
+          <ScalarProperty Name="Strikes" ColumnName="Strikes" />
+          <ScalarProperty Name="Handicap" ColumnName="Handicap" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Role">
+      <EntityTypeMapping TypeName="IsTypeOf(CampoyTournamentModel.Role)">
+        <MappingFragment StoreEntitySet="Role">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="RoleName" ColumnName="RoleName" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tournament">
+      <EntityTypeMapping TypeName="IsTypeOf(CampoyTournamentModel.Tournament)">
+        <MappingFragment StoreEntitySet="Tournament">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="IsFinished" ColumnName="IsFinished" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="User">
+      <EntityTypeMapping TypeName="IsTypeOf(CampoyTournamentModel.User)">
+        <MappingFragment StoreEntitySet="User">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Surname" ColumnName="Surname" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+          <ScalarProperty Name="PlayerId" ColumnName="PlayerId" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping></edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+        <DesignerProperty Name="UseLegacyProvider" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

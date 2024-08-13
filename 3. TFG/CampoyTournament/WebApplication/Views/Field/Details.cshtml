@@ -1,0 +1,137 @@
+﻿@model WebApplication.Models.Field.FieldViewModel
+@using WebApplication.Managers;
+@{
+    ViewBag.Title = "Detalles";
+}
+<div class="container">
+    <div class="row">
+        <div class="panel panel-default widget">
+            <div class="panel-heading">
+                <h3 class="panel-title">
+                    <span class="glyphicon glyphicon-eye-open"></span> @ViewBag.Title
+                </h3>
+            </div>
+            <div class="panel-body">
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <div class="row">
+                            <div class="col-xs-2 col-md-1">
+                                <img src="~/Content/images/site/field.jpg" class="img-circle img-responsive" alt="" />
+                            </div>
+                            <div class="col-xs-10 col-md-11">
+                                <div>
+                                    <h4>
+                                        @Html.DisplayFor(model => model.Name)
+                                    </h4>
+                                    <hr />
+                                    <div class="mic-info">
+                                        <strong>@Html.DisplayNameFor(model => model.Address): </strong>
+                                        @Html.DisplayFor(model => model.Address)
+                                    </div>
+                                    <div class="mic-info">
+                                        <strong>@Html.DisplayNameFor(model => model.City): </strong>
+                                        @Html.DisplayFor(model => model.City)
+                                    </div>
+                                    <div class="mic-info">
+                                        <strong>@Html.DisplayNameFor(model => model.Province): </strong>
+                                        @Html.DisplayFor(model => model.Province)
+                                    </div>
+                                    <div class="mic-info">
+                                        <strong>@Html.DisplayNameFor(model => model.Web): </strong>
+                                        @Html.DisplayFor(model => model.Web)
+                                    </div>
+                                    <div class="mic-info">
+                                        <strong>@Html.DisplayNameFor(model => model.Email): </strong>
+                                        @Html.DisplayFor(model => model.Email)
+                                    </div>
+                                    <div class="mic-info">
+                                        <strong>@Html.DisplayNameFor(model => model.Phone): </strong>
+                                        @Html.DisplayFor(model => model.Phone)
+                                    </div>
+                                </div>
+                                <hr />
+                                <div class="table-responsive">
+                                    <table class="table table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <td colspan="10" align="center"><strong>Primera vuelta:</strong></td>
+                                            </tr>
+                                            <tr>
+                                                <th></th>
+                                                @for (var i = 0; i < 9; i++)
+                                                {
+                                                    <th class="text-center">H@(i + 1)</th>
+                                                }
+                                            </tr>
+                                        </thead>
+                                        <tr>
+                                            <td><strong>Handicap</strong></td>
+                                            @for (var i = 0; i < 9; i++)
+                                            {
+                                                <td align="center">@Html.DisplayFor(model => model.Holes[i].Handicap)</td>
+                                            }
+                                        </tr>
+
+                                        <tr>
+                                            <td><strong>Distancia</strong></td>
+                                            @for (var i = 0; i < 9; i++)
+                                            {
+                                                <td align="center">
+                                                    @Html.DisplayFor(model => model.Holes[i].Distance)
+                                                </td>
+                                            }
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div class="table-responsive">
+                                    <table class="table table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <td colspan="10" align="center"><strong>Segunda vuelta:</strong></td>
+                                            </tr>
+                                            <tr>
+                                                <th></th>
+                                                @for (var i = 9; i < 18; i++)
+                                                {
+                                                    <th class="text-center">H@(i + 1)</th>
+                                                }
+                                            </tr>
+                                        </thead>
+                                        <tr>
+                                            <td><strong>Handicap</strong></td>
+                                            @for (var i = 9; i < 18; i++)
+                                            {
+                                                <td align="center">@Html.DisplayFor(model => model.Holes[i].Handicap)</td>
+                                            }
+                                        </tr>
+
+                                        <tr>
+                                            <td><strong>Distancia</strong></td>
+                                            @for (var i = 9; i < 18; i++)
+                                            {
+                                                <td align="center">@Html.DisplayFor(model => model.Holes[i].Distance)</td>
+                                            }
+                                        </tr>
+                                    </table>
+                                </div>
+                                @if (UserManager.IsInRole(UserManager.User,"Admin"))
+                                {
+                                    <div class="action">
+                                            @Html.SpanLink("Editar", "<button type='button' class='btn btn-primary btn-xs' title='Editar'><span class='glyphicon glyphicon-pencil'></span></button>", "Edit", "Field", new { id = Model.Id })
+                                            @Html.SpanLink("Volver", "<button type='button' class='btn btn-default btn-xs' title='Volver'><span class='glyphicon glyphicon-arrow-left'></span></button>", "Index", "Field", null)                                        
+                                    </div>
+                                }
+                                else
+                                {
+                                    <div class="action">
+                                        @Html.SpanLink("Volver", "<button type='button' class='btn btn-default btn-xs' title='Volver'><span class='glyphicon glyphicon-arrow-left'></span></button>", "Index", "Field", null)                                        
+                                    </div>
+                                }
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

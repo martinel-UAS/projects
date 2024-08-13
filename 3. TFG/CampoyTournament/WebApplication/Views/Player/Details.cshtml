@@ -1,0 +1,78 @@
+﻿@model WebApplication.Models.Player.PlayerViewModel
+@using WebApplication.Managers
+@{
+    ViewBag.Title = "Detalle";
+}
+<div class="container">
+    <div class="row">
+        <div class="panel panel-default widget">
+            <div class="panel-heading">
+                <h3 class="panel-title">
+                    <span class="glyphicon glyphicon-user"></span> @ViewBag.Title
+                </h3>
+            </div>
+            <div class="panel-body">
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <div class="row">
+                            <div class="col-xs-2 col-md-1">
+                                <img src="~/Content/images/site/player.jpg" class="img-circle img-responsive" alt="" />
+                            </div>
+                            <div class="col-xs-10 col-md-11">
+                                <div>
+                                    <h4>
+                                        @Html.HiddenFor(model => model.Id)
+                                        @Html.DisplayFor(model => model.License)
+                                    </h4>
+                                    <hr />
+                                    <div class="mic-info">
+                                        <strong>@Html.DisplayNameFor(model => model.Name): </strong>
+                                        @Html.DisplayFor(model => model.Name)
+                                    </div>
+                                    <div class="mic-info">
+                                        <strong>@Html.DisplayNameFor(model => model.Surname): </strong>
+                                        @Html.DisplayFor(model => model.Surname)
+                                    </div>
+                                    <div class="mic-info">
+                                        <strong>@Html.DisplayNameFor(model => model.Alias): </strong>
+                                        @Html.DisplayFor(model => model.Alias)
+                                    </div>
+                                    <div class="mic-info">
+                                        <strong>@Html.DisplayNameFor(model => model.Phone): </strong>
+                                        @Html.DisplayFor(model => model.Phone)
+                                    </div>
+                                    <div class="mic-info">
+                                        <strong>@Html.DisplayNameFor(model => model.Email): </strong>
+                                        @Html.DisplayFor(model => model.Email)
+                                    </div>
+                                    <div class="mic-info">
+                                        <strong>@Html.DisplayNameFor(model => model.RealHP): </strong>
+                                        @Html.DisplayFor(model => model.RealHP)
+                                    </div>
+                                    <div class="mic-info">
+                                        <strong>@Html.DisplayNameFor(model => model.GameHP): </strong>
+                                        @Html.DisplayFor(model => model.GameHP)
+                                    </div>
+                                </div>
+                                <hr />
+                                @if (UserManager.IsInRole(UserManager.User, "Admin"))
+                                {
+                                    <div class="action">
+                                        @Html.SpanLink("Editar", "<button type='button' class='btn btn-primary btn-xs' title='Editar'><span class='glyphicon glyphicon-pencil'></span></button>", "Edit", "Player", new { id = Model.Id })
+                                        @Html.SpanLink("Volver", "<button type='button' class='btn btn-default btn-xs' title='Volver'><span class='glyphicon glyphicon-arrow-left'></span></button>", "Index", "Player", null)
+                                    </div>
+                                }
+                                else
+                                {
+                                    <div class="action">
+                                        @Html.SpanLink("Volver", "<button type='button' class='btn btn-default btn-xs' title='Volver'><span class='glyphicon glyphicon-arrow-left'></span></button>", "Index", "Player", null)
+                                    </div>
+                                }
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,52 @@
+﻿@model WebApplication.Models.Match.MatchViewModel
+@{
+    ViewBag.Title = "Eliminar evento";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="panel panel-default widget">
+            <div class="panel-heading">
+
+                <h3 class="panel-title">
+                    <span class="glyphicon glyphicon-eye-open"></span> @ViewBag.Title
+                </h3>
+            </div>
+            <div class="panel-body">
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <div class="row">
+                            <div class="col-xs-2 col-md-1">
+                                <img src="~/Content/images/site/match.jpg" class="img-circle img-responsive" alt="" />
+                            </div>
+                            <div class="col-xs-10 col-md-11">
+                                <div>
+                                    <div class="mic-info">
+                                        <strong>@Html.DisplayNameFor(model => model.FieldName): </strong>
+                                        @Html.DisplayFor(model => model.FieldName)
+                                    </div>
+                                    <div class="mic-info">
+                                        <strong>@Html.DisplayNameFor(model => model.Date): </strong>
+                                        @Html.DisplayFor(model => model.Date)
+                                    </div>
+                                </div>
+                                <hr />
+
+                                <div class="alert alert-warning">Está seguro de querer borrar el evento?</div>
+                                @using (Html.BeginForm())
+                                {
+                                    @Html.AntiForgeryToken()
+
+                                    <div class="form-actions no-color">
+                                        <input type="submit" value="Borrar" class="btn btn-primary" />
+                                        @Html.ActionLink("Cancelar", "Index", null, new { @class = "btn btn-default" })
+                                    </div>
+                                }
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

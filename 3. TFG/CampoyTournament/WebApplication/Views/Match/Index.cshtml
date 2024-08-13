@@ -1,0 +1,113 @@
+﻿@model MatchViewModel
+@using WebApplication.Models.Match;
+@using WebApplication.Managers;
+@{
+    ViewBag.Title = "Calendario";
+}
+<script src="@Url.Content("~/Scripts/table.js")"></script>
+
+<div class="container">
+    <div class="row">
+        <div class="panel panel-default widget">
+            <div class="panel-heading">
+                <h3 class="panel-title">
+                    <span class="glyphicon glyphicon-calendar"></span>Próximos Eventos
+                </h3>
+            </div>
+            <div class="panel-body">
+                <div class="reset btn btn-default btn-xs" data-column="0" data-filter="" style="margin-bottom:15px"><i class="glyphicon glyphicon-refresh"></i> Borrar filtros</div>
+                <div class="table-responsive">
+                    <table id="matchTable" class="table tablesorter">
+
+                        <thead>
+                            <tr class="centered">
+                                <td class="filter-select">Tipo de evento</td>
+                                <td class="filter-select">Campo</td>
+                                <td data-sorter="shortDate" data-date-format="dd-MMM-yyyy">Fecha</td>
+                                <td class="filtered sorter-false filter-false"></td>
+                            </tr>
+                        </thead>
+
+                        <tbody class="centered">
+                            @foreach (var item in Model.FutureMatchs)
+                            {
+                                <tr>
+                                    <td>@Html.DisplayFor(modelItem => item.KindOfEvent)</td>
+                                    <td>@Html.DisplayFor(modelItem => item.FieldName)</td>
+                                    <td>@Html.DisplayFor(modelItem => item.Date)</td>
+                                    @if (UserManager.IsInRole(UserManager.User, "Admin Player"))
+                                    {
+                                        <td class="action">
+                                            @Html.SpanLink("Detalle", "<button type='button' class='btn btn-info btn-xs' title='Detalle'><span class='glyphicon glyphicon-eye-open'></span></button>", "Details", "Match", new { id = item.Id })
+                                            @if (!item.HasResults)
+                                            {
+                                                @Html.SpanLink("Editar", "<button type='button' class='btn btn-primary btn-xs' title='Editar'><span class='glyphicon glyphicon-pencil'></span></button>", "Edit", "Match", new { id = item.Id })
+                                            } @if (!item.HasResults)
+                                            {
+                                                @Html.SpanLink("Borrar", "<button type='button' class='btn btn-danger btn-xs' title='Borrar'><span class='glyphicon glyphicon-trash'></span></button>", "Delete", "Match", new { id = item.Id })
+                                            }
+                                        </td>
+                                    }
+                                    else
+                                    {
+                                        <td class="action">@Html.SpanLink("Detalle", "<button type='button' class='btn btn-primary btn-xs' title='Detalle'><span class='glyphicon glyphicon-eye-open'></span></button>", "Details", "Match", new { id = item.Id })</td>
+                                    }
+                                </tr>
+                            }
+
+                        </tbody>
+
+                    </table>
+                    @Html.Partial("_PagerPartial")
+                </div>
+            </div>
+            @if (UserManager.IsInRole(UserManager.User,"Admin Player"))
+                {
+                    @Html.ActionLink("Nuevo Evento", "Create", "Match", null, new { @class = "btn btn-primary btn-sm btn-block" })
+                }
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="panel panel-default widget">
+            <div class="panel-heading">
+                <h3 class="panel-title">
+                    <span class="glyphicon glyphicon-calendar"></span>Eventos Recientes
+                </h3>
+            </div>
+            <div class="panel-body">
+                <ul class="list-group">
+                    @foreach (var item in Model.RecentMatchs)
+                    {
+                        <li class="list-group-item">
+                            <div class="row">
+                                <div class="col-xs-2 col-md-1">
+                                    <img src="~/Content/images/site/match.jpg" class="img-circle img-responsive" alt="" />
+                                </div>
+                                <div class="col-xs-10 col-md-11">
+                                    <div class="mic-info">
+                                        <strong>@Html.DisplayNameFor(model => model.KindOfEvent): </strong>                                      
+                                        @Html.DisplayFor(modelItem => item.KindOfEvent, Model.KindOfEvents)
+                                    </div>
+                                    <div class="mic-info">
+                                        <strong>@Html.DisplayNameFor(model => model.FieldName): </strong>
+                                        @Html.DisplayFor(modelItem => item.FieldName)
+                                    </div>
+                                    <div class="mic-info">
+                                        <strong>@Html.DisplayNameFor(model => model.Date): </strong>
+                                        @Html.DisplayFor(modelItem => item.Date)
+                                    </div>
+                                    <hr />
+                                    <div class="action">
+                                        @if (item.HasResults) {
+                                        @Html.ActionLink("Resultados", "Details", "Result", new { id = item.Id }, new { @class = "btn btn-default btn-xs" })  } 
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    }
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

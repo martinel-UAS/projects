@@ -1,0 +1,59 @@
+﻿@model IEnumerable<WebApplication.Models.Field.FieldViewModel>
+@using WebApplication.Managers;
+@{
+    ViewBag.Title = "Campos";
+}
+<script src="@Url.Content("~/Scripts/table.js")"></script>
+
+<div class="panel panel-default widget">
+    <div class="panel-heading">
+        <h3 class="panel-title">
+            <span class="glyphicon glyphicon-picture"></span> @ViewBag.Title
+        </h3>
+    </div>
+    <div class="panel-body">
+        <div class="reset btn btn-default btn-xs" data-column="0" data-filter="" style="margin-bottom:15px"><i class="glyphicon glyphicon-refresh"></i> Borrar filtros</div>
+        <div class="table-responsive">
+            <table id="myTable" class="table tablesorter">
+                <thead>
+                    <tr class="centered">
+                        <td>Nombre</td>
+                        <td class="filter-select">Ciudad</td>
+                        <td class="filter-select">Provincia</td>
+                        <td class="filtered sorter-false filter-false"></td>
+                    </tr>
+                </thead>
+                <tbody class="centered">
+                    @foreach (var field in Model)
+                    {
+                        <tr>
+                            <td>@Html.DisplayFor(modelItem => field.Name)</td>
+                            <td>@Html.DisplayFor(modelItem => field.City)</td>
+                            <td>@Html.DisplayFor(modelItem => field.Province)</td>
+
+                            @if (UserManager.IsInRole(UserManager.User, "Admin"))
+                            {
+                                <td class="action">
+                                    @Html.SpanLink("Detalle", "<button type='button' class='btn btn-info btn-xs' title='Detalle'><span class='glyphicon glyphicon-eye-open'></span></button>", "Details", "Field", new { id = field.Id })
+                                    @Html.SpanLink("Editar", "<button type='button' class='btn btn-primary btn-xs' title='Editar'><span class='glyphicon glyphicon-pencil'></span></button>", "Edit", "Field", new { id = field.Id })
+                                    @Html.SpanLink("Borrar", "<button type='button' class='btn btn-danger btn-xs' title='Borrar'><span class='glyphicon glyphicon-trash'></span></button>", "Delete", "Field", new { id = field.Id })
+                                </td>
+                            }
+                            else
+                            {
+                                <td class="action">
+                                    @Html.SpanLink("Detalle", "<button type='button' class='btn btn-primary btn-xs' title='Detalle'><span class='glyphicon glyphicon-eye-open'></span></button>", "Details", "Field", new { id = field.Id })
+                                </td>
+                            }
+                        </tr>
+                    }
+                </tbody>
+            </table>
+            @Html.Partial("_PagerPartial")
+        </div>
+    </div>
+    @if (UserManager.IsInRole(UserManager.User, "Admin"))
+    {
+        @Html.ActionLink("Nuevo Campo", "Create", "Field", null, new { @class = "btn btn-primary btn-sm btn-block" })
+    }
+</div>

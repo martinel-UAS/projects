@@ -1,0 +1,72 @@
+﻿@model WebApplication.Models.Result.MatchScoreCardModel
+@using WebApplication.Managers;
+@{
+    ViewBag.Title = "Resultados";
+}
+<div class="container">
+    <div class="row">
+        <div class="panel panel-default widget">
+            <div class="panel-heading">
+                <h3 class="panel-title">
+                    <span class="glyphicon glyphicon-list-alt"></span> @ViewBag.Title - @Model.FieldName (@Model.Date.ToString("dd-MMM-yyyy"))                    
+                </h3>
+            </div>
+            <div class="panel-body">
+                <div class="table-responsive">
+                    <table class="table table-bordered">
+                        <thead class="centered">
+                            <tr class="centered">
+                                <th class="centered">Licencia</th>
+                                <th class ="centered">Nombre</th>
+                                <th class="centered">HP</th>
+                                <th class="centered">Golpes</th>
+                                <th class="centered">Puntos</th>
+                                <th class="centered">H1/10</th>
+                                <th class="centered">H2/11</th>
+                                <th class="centered">H3/12</th>
+                                <th class="centered">H4/13</th>
+                                <th class="centered">H5/14</th>
+                                <th class="centered">H6/15</th>
+                                <th class="centered">H7/16</th>
+                                <th class="centered">H8/17</th>
+                                <th class="centered">H9/18</th>
+
+                            </tr>
+                        </thead>
+                        <tbody class="centered">
+                            @foreach (var scoreCard in Model.ScoreCards)
+                            {
+                                var result = scoreCard.ScoreCard;
+                                <tr>
+                                    <td rowspan="2" class="centered">@Html.DisplayFor(modelItem => scoreCard.PlayerLicense)</td>
+                                    <td rowspan="2" class="centered">@Html.DisplayFor(modelItem => scoreCard.PlayerName)</td>
+                                    <td rowspan="2" class="centered">@Html.DisplayFor(modelItem => scoreCard.PlayerGameHP)</td>
+                                    <td rowspan="2">@Html.DisplayFor(m => scoreCard.TotalStrikes)</td>
+                                    <td rowspan="2">@Html.DisplayFor(m => scoreCard.TotalStableFordPoints)</td>
+                                    @for (var i = 0; i < result.Count/2; i++)
+                                    {                                        
+                                        <td>@Html.DisplayFor(m => result[i].SelectedStrikes)</td>
+                                    }
+
+                                </tr>
+                                
+                                <tr>
+                                    @for (var i = 9; i < result.Count; i++)
+                                    {
+                                        <td>@Html.DisplayFor(m => result[i].SelectedStrikes)</td>
+                                    }
+
+                                </tr>                                                               
+                     
+                            }
+                        </tbody>
+                        <!-- Html.Partial("_PagerPartial") -->
+                    </table>
+                    <div class="action">                        
+                        @Html.SpanLink("Volver", "<button type='button' class='btn btn-default btn-xs' title='Volver'><span class='glyphicon glyphicon-arrow-left'></span></button>", "Index", "Result", null)
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

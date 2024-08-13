@@ -1,0 +1,113 @@
+﻿@using WebApplication.Managers
+@using WebApplication.Models.Login
+@model LoginModel
+@Html.AntiForgeryToken()
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        // Set form to submit as ajax.
+        $('#loginForm').ajaxForm({
+            dataType: 'json',
+            beforeSubmit: function (arr, $form, options) {
+                $('#loginLoader').removeClass('hide');
+                $('#buttonLogin').addClass('hide');
+                $('#buttonRecPass').addClass('hide');
+            },
+            success: function (result) {
+                $('#loginLoader').addClass('hide');
+                $('#buttonLogin').removeClass('hide');
+                $('#buttonRecPass').removeClass('hide');
+                // Send user to landing page.
+                if (result.Status == 'OK') {
+                    document.location = result.RedirectUrl;
+                }
+                else {
+                    $('#loginStatus').html(result.Status);
+                }
+            }
+        });
+    });
+</script>
+
+@if (User.Identity.IsAuthenticated)
+{
+    var fullname = UserManager.User.Name + ' ' + UserManager.User.Surname;
+    <ul class="nav navbar-nav">
+        @Html.MenuLink("Campos", "Index", "Field", "<span class='glyphicon glyphicon-picture'></span>")
+        <li class="divider-vertical"></li>
+        @Html.MenuLink("Jugadores", "Index", "Player", "<span class='glyphicon glyphicon-play'></span>")
+        <li class="divider-vertical"></li>
+        @Html.MenuLink("Calendario", "Index", "Match", "<span class='glyphicon glyphicon-calendar'></span>")
+        <li class="divider-vertical"></li>
+        @Html.MenuLink("Resultados", "Index", "Result", "<span class='glyphicon glyphicon-list-alt'></span>")
+        <li class="divider-vertical"></li>
+        @Html.MenuLink("Clasificacion", "Index", "Classification", "<span class='glyphicon glyphicon-eye-open'></span>")
+        <li class="divider-vertical"></li>
+        @Html.MenuLink("Galeria", "Index", "Gallery", "<span class='glyphicon glyphicon-picture'></span>")
+        <li class="divider-vertical"></li>
+    </ul>
+    <ul class="nav navbar-nav pull-right">
+        <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">@fullname<b class="caret"></b></a>
+            <ul class="dropdown-menu">
+                <li><a href="@Url.Action("Edit", "Profile", new { id = UserManager.User.Id })"><span class="glyphicon glyphicon-user"></span> Mi Perfil</a></li>
+                <li class="divider"></li>
+                <li><a href="@Url.Action("ChangePassword", "Profile", new { id = UserManager.User.Id })"><span class="glyphicon glyphicon-cog"></span> Cambiar password</a></li>
+                <li class="divider"></li>
+                <li><a href="@Url.Action("Index", "Contact")"><span class="glyphicon glyphicon-envelope"></span> Contacto</a></li>
+                <li class="divider"></li>
+                @if (UserManager.IsInRole(UserManager.User, "Admin"))
+                {
+                    <li><a href="@Url.Action("Index", "User")"><span class="glyphicon glyphicon-list"></span> Usuarios</a></li>
+                    <li class="divider"></li>
+                }
+                <li><a href="@Url.Action("Index", "About")"><span class="glyphicon glyphicon-info-sign"></span> Acerca de</a></li>
+                <li class="divider"></li>
+                <li><a href="@Url.Action("LogOut", "Login")"><span class="glyphicon glyphicon-off"></span> Cerrar Sesión</a></li>
+            </ul>
+        </li>
+    </ul>
+}
+else
+{
+    <ul class="nav navbar-nav navbar-right">
+        <li><a href="@Url.Action("Register", "Profile")">   <span class="glyphicon glyphicon-pencil">   </span> Registrarse</a></li>
+        <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-log-in"></span> Iniciar Sesión <b class="caret"></b></a>
+            <ul class="dropdown-menu login-form">
+                <li>
+                    @using (Html.BeginForm("Login", "Login", FormMethod.Post, new { id = "loginForm" }))
+                    {
+                        @Html.HiddenFor(m => m.RedirectUrl, new { value = Model.RedirectUrl })
+
+                        <div id="block">
+                            @Html.LabelFor(m => m.Email)
+                            @Html.TextBoxFor(m => m.Email, new { id = "userid", @class = "form-control", @required = "true" })
+                        </div>
+
+                        <div id="block">
+                            @Html.LabelFor(m => m.Password)
+                            @Html.PasswordFor(m => m.Password, new { id = "passowdid", @class = "form-control", @required = "true" })
+                        </div>
+
+                        <div id="block">
+                            <button id="buttonLogin" type="submit" class="btn btn-primary">
+                                Iniciar sesión
+                            </button>
+                        </div>
+
+                        <div id="loginLoader" align="center" class="hide"> <img src="~/Content/images/ajax-loader.gif"> </div>
+                        <div id="loginStatus" class="field-validation-error"></div>
+
+                        <div class="divider"></div>
+
+                        <!-- Button trigger modal -->
+                        <button id="buttonRecPass" class="btn btn-link" data-toggle="modal" data-target="#myModal">
+                            ¿Olvidaste tu contraseña?
+                        </button>
+                    }
+                </li>
+            </ul>
+        </li>
+    </ul>
+}

@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "nissan-performance-dashboard",
+  "private_key_id": "d1f157f011e4e7ebbe42ace0799bdd0e9cccb540",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDDZ4eP7/OPP6k3\nc5RTi21IPAxYY/wD+4w1Ht0mMX33KH9L4i0U1Ml+p2OaXDPrXb/JTL9IuoUi6qi0\nBrAjwYya0RqdqlhVMf13iqOrqaukHJ58ZMtOX6XosY/L4tkia3rPQ8dvkyP2cdIg\nF6CPZSm/C4d9e1dFuAAiYOSl4dTzBnOgcFMD0BnbVQpIHx2KUklSvEoyPuEJkaaP\nTaZo4uMOXyRPLrnKshwZJVjTvzse5vpBjL18GfLMWwQ7tupktebADAB/NdBzjAo0\nvIzljcm1RtjlID2EcLftcIBaCf4DrudhsNVK/VZ5Fz2tfldShGUiM80XZyIyAwe1\nEW/RUrxVAgMBAAECggEAAYaS6X3k1HCZge9uMCYA14hxSwiVnkBXpjVUYhwPBDmC\nn1VbDcEVkhGwUBm5/0BcCX0G0OrbGqkwLp7b8p0fW59LVzTOLygbQ9ST/F8J3vFC\nqYaUWDHPlumgALMH1MirDLUJeLNyge+XxbYstw61DNYdtWfO1O85WdgqbamKowHq\nSHhrdqpjfIB05ga9L/OrcsztjHoPEukfYnLrowB7dhO5b+cgTNpvPASlvf3qZtfM\nfutI/MSXOz0RhkZx7I0MFt5OefjVEVZ1f3ZnBFu6L1BgTgOu2Wr/cKNwzQnwfvyn\nlN1wdaKIev1JDXF1tDdx8dYZ09CeJIoFGlMbbN2WQQKBgQDzddIlIl2pAShnPJe7\nPWkjP/F6GDy2s29RW/FEkRc/rqD6i4O3vsQHPZdy04rdqoWaX77wGRtwpddVRR7l\nuGA60KEVAPCVT1/vn2gUUjqkFPsOkgnj1dYC/Ho3XRpaPoTVM4gycEmRRvV66DuX\nhqj8XqZ6r81L0AaCeIBYfQk4oQKBgQDNeA/UL3d3wtbWIixftBe50yqxyA5/TS4+\nAFQVoxrnLx8c5KfayKxZXxcmEZX5t4T53QK65jtk9/y5DB8l2DmI9PkUrZgCeRvT\nlLq9vFOgLWXyQK7B/iCbNUMCqDddRANqBZ/kzkxzvKFQihHloVuNvq0on0+deJF8\nm/e58CwjNQKBgQDh38b3ItooiWV12nafhgs8Y//imggCLZmyrw254q7iK1849CVh\nXUC7wv32z6L/o0xO/FPGqFSX/5U3jGhtEtFc3+EC/ps2u6yzQX6rk9rKDpkaXI2G\nbwceQCYXpW5kmapdr3DF8v2eJmpr/HgFTi8L7bihDOf4VWkktS3Ga0MZ4QKBgQCd\nSbCMVP3Wbw+5ApYHeTzEYtOHHseCShoBGo1DtwVsPlVJ7/xS7lWJYNK+sK2naQZh\no/9oBcEn7PLI0W+yr9BzeFyIqM757a4QjQVbI6S8tKQbC8r79EcPqXkvuogPXHZk\nngOlywsZeiffGKLUr23/lxzFQRdYS6jLxDWiYCnZlQKBgFDecWKeD9tl6yuItQ8/\nsOzV3hf0/cSluyo2e+g2DKnlK8E4fbA83c6DH9fw7j3C0Ta+8GN/6egkXSytXvyY\n9PGA8a0ChRSP6uJ9vg5U6+QpkVfAiD25fNeOmNAZ3LpGjZWQwivtF47MhImN2EDf\n2ST7bu7g4iEuZon2/1uD12HZ\n-----END PRIVATE KEY-----\n",
+  "client_email": "arcadia-analytics1@nissan-performance-dashboard.iam.gserviceaccount.com",
+  "client_id": "111300352419678112218",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/arcadia-analytics1%40nissan-performance-dashboard.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

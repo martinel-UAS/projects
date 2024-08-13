@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="DomainServices.AccountService" Collapsed="true">
+    <Position X="2" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAgAAAAAAAA=</HashCode>
+      <FileName>AccountService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DomainServices.FieldService" Collapsed="true">
+    <Position X="3.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACgAgAAAIAgAAAAAAAACAAAAAAAAAAAAAAEAAAEAAA=</HashCode>
+      <FileName>FieldService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DomainServices.HoleService" Collapsed="true">
+    <Position X="5.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAAAAAAAIAAAIAAAABAAQAABAAAABAAQAAAA=</HashCode>
+      <FileName>HoleService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DomainServices.InstanceService" Collapsed="true">
+    <Position X="7.25" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>InstanceService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DomainServices.JsonResponseService" Collapsed="true">
+    <Position X="2" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAA=</HashCode>
+      <FileName>JsonResponseService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DomainServices.MatchService" Collapsed="true">
+    <Position X="3.75" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAAAAiAEAAAgAAAAAAgAAAAAAAACAIAAAAA=</HashCode>
+      <FileName>MatchService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DomainServices.PlayerService" Collapsed="true">
+    <Position X="5.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAgAACAgAABAAAAAAAAAAAAAAAAAAAAIAAEAAQA=</HashCode>
+      <FileName>PlayerService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DomainServices.ResultService" Collapsed="true">
+    <Position X="7.25" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIAAhAIAAQAAYACAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ResultService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DomainServices.TournamentService">
+    <Position X="2" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQAAAAAAAAAAgAIAAAAYAACAAAAQBAAAAA=</HashCode>
+      <FileName>TournamentService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DomainServices.UserService">
+    <Position X="3.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIQAAAAAAEAAAAAAEAYYAACAAAAAAAAIAAAAA=</HashCode>
+      <FileName>UserService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>
